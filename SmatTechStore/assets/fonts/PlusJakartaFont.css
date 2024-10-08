@@ -1,0 +1,33 @@
+@font-face {
+    font-family: PlusJakartaDisplay-Bold;
+    src: url("PlusJakartaDisplay-Bold.otf");
+  }
+
+  @font-face {
+    font-family: PlusJakartaDisplay-BoldItalic;
+    src: url("PlusJakartaDisplay-BoldItalic.otf");
+  }
+  @font-face {
+    font-family: PlusJakartaDisplay-Italic;
+    src: url("PlusJakartaDisplay-Italic.otf");
+  }
+  @font-face {
+    font-family: PlusJakartaDisplay-Light;
+    src: url("PlusJakartaDisplay-Light.otf");
+  }
+  @font-face {
+    font-family: PlusJakartaDisplay-LightItalic;
+    src: url("PlusJakartaDisplay-LightItalic.otf");
+  }
+  @font-face {
+    font-family: PlusJakartaDisplay-Medium;
+    src: url("PlusJakartaDisplay-Medium.otf");
+  }
+  @font-face {
+    font-family: PlusJakartaDisplay-MediumItalic;
+    src: url("PlusJakartaDisplay-MediumItalic.otf");
+  }
+  @font-face {
+    font-family: PlusJakartaDisplay-Regular;
+    src: url("PlusJakartaDisplay-Regular.otf");
+  }

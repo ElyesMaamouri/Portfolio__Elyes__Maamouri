@@ -1,0 +1,12 @@
+<svg id="Desktop" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="Main-Desktop">
+    <g id="Footer">
+      <g id="social-normal">
+        <g id="facebook-icon">
+          <path id="Page-1" d="M25,12.5A12.5,12.5,0,1,1,12.5,0,12.5,12.5,0,0,1,25,12.5Z" fill="#4094e9"/>
+          <path id="Path_778" data-name="Path 778" d="M13.448,17.361H11.426V12.612h-1.01V10.975h1.01V9.992c0-1.335.571-2.13,2.19-2.13h1.349V9.5h-.842c-.631,0-.673.229-.673.656l0,.819h1.528L14.8,12.612H13.448v4.749" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- File Css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Plugin Country Picker Flags -->
+    <link rel="stylesheet" href="./assets/plugin/country-picker-flags/build/css/countrySelect.min.css">
+    <!-- International Telephone Input Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+    <!-- International Telephone Input Script Link -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+    <!-- Leaflet CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <title>Témoignage Video</title>
+</head>
+
+<body>
+    <!-- ======= Section Navigation ======= -->
+    <nav class="top-menu">
+        <div class="main-container navbar">
+            <i class='bx bx-menu' id="menu-toggle"></i>
+            <div class="logo"><a href="#"> <img class="logo-website" src="./assets/img/Logo-Servihealth.png"
+                        alt="Servihealth.net" /></a></div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <img class="logo-website" src="./assets/img/Logo-Servihealth.png" />
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li>
+                        <a href="#" onclick="showMenuInSideBar('menu-1','icon-1')">Interventions</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-1"></i>
+                        <ul class="htmlCss-sub-menu sub-menu" id="menu-1">
+                            <li class="more">
+                                <span><a href="#" onclick="showMenuInSideBar('menu-11','icon-11')">Chirurgies De La
+                                        Silhouette</a>
+                                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-11"></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu" id="menu-11">
+                                    <li><a href="#">BBL – Brazilian Butt Lift</a></li>
+                                    <li><a href="#">Liposuccion</a></li>
+                                    <li><a href="#">Abdominoplastie</a></li>
+                                    <li><a href="#">Lifting Cuisses</a></li>
+                                    <li><a href="#">Lifting Bras</a></li>
+                                </ul>
+                            </li>
+                            <li class="more">
+                                <span><a href="#" onclick="showMenuInSideBar('menu-12','icon-12')">Chirurgies Des
+                                        Seins</a>
+                                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-12"></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu" id="menu-12">
+                                    <li><a href="#">Augmentation Mammaire</a></li>
+                                    <li><a href="#">Lifting Mammaire</a></li>
+                                    <li><a href="#">Réduction Mammaire</a></li>
+                                    <li><a href="#">Gynécomastie</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="more">
+                                <span><a href="#" onclick="showMenuInSideBar('menu-13','icon-13')">Chirurgies De
+                                        Visage</a>
+                                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-13"></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu" id="menu-13">
+                                    <li><a href="#">Rhinoplastie</a></li>
+                                    <li><a href="#">Lifting Visage</a></li>
+                                    <li><a href="#">Blépharoplastie</a></li>
+                                    <li><a href="#">Génioplastie</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="more">
+                                <span><a href="#" onclick="showMenuInSideBar('menu-14','icon-14')">Chirurgies De
+                                        L’obésité</a>
+                                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-14"></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu" id="menu-14">
+                                    <li><a href="#">Sleeve Gastrectomie</a></li>
+                                    <li><a href="#">Bypass</a></li>
+                                    <li><a href="#">Anneau Gastrique</a></li>
+                                </ul>
+                            </li>
+                            <li class="more">
+                                <span><a href="#" onclick="showMenuInSideBar('menu-15','icon-15')">Chirurgies Intime</a>
+                                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-15"></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu" id="menu-15">
+                                    <li><a href="#">Pénoplastie</a></li>
+                                    <li><a href="#">Vaginoplastie</a></li>
+                                    <li><a href="#">Hyménoplastie</a></li>
+                                    <li><a href="#">Nymphoplastie</a></li>
+                                </ul>
+                            </li>
+                            <li class="more">
+                                <span><a href="#" onclick="showMenuInSideBar('menu-16','icon-16')">Chirurgies
+                                        Dentaire</a>
+                                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-16"></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu" id="menu-16">
+                                    <li><a href="#">Blanchiment Dentaire</a></li>
+                                    <li><a href="#">Facette Dentaire</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="more">
+                                <span><a href="#" onclick="showMenuInSideBar('menu-17','icon-17')">Médecine
+                                        Esthétique</a>
+                                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-17"></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu" id="menu-17">
+                                    <li><a href="#">PRP</a></li>
+                                    <li><a href="#">Injection Acide Hyaluronique</a></li>
+                                </ul>
+                            </li>
+                            <li class="more">
+                                <span><a href="#">Greffe Cheveux</a></span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Blanchiment Dentaire</a></li>
+                                    <li><a href="#">Facette Dentaire</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Tarifs</a>
+                    </li>
+                    <li><a href="#">Devis</a></li>
+                    <li>
+                        <a href="#" onclick="showMenuInSideBar('menu-2','icon-2')">Chirurgiens</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-2"></i>
+                        <ul class="js-sub-menu sub-menu" id="menu-2">
+                            <li><a href="#">Dr Djemal Taher</a></li>
+                            <li><a href="#">Dr Saidane Walid</a></li>
+                            <li><a href="#">Dr Ayadi Sofiene</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showMenuInSideBar('menu-3','icon-3')">Cliniques</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-3"></i>
+                        <ul class="js-sub-menu sub-menu" id="menu-3">
+                            <li><a href="#">Clinique Myron</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showMenuInSideBar('menu-4','icon-4')">Séjour</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-4"></i>
+                        <ul class="js-sub-menu sub-menu" id="menu-4">
+                            <li><a href="#">Hôtel El Mouradi Gammarth</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showMenuInSideBar('menu-5','icon-5')">Témoignages</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-5"></i>
+                        <ul class="js-sub-menu sub-menu" id="menu-5">
+                            <li><a href="#">Témoignages Vidéos</a></li>
+                            <li><a href="#">Photos Avant Après</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showMenuInSideBar('menu-6','icon-6')">L'agence</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  show-arrow' id="icon-6"></i>
+                        <ul class="js-sub-menu sub-menu" id="menu-6">
+                            <li><a href="#">Qui Sommes Nous</a></li>
+                            <li><a href="#">Processus</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a class="client-space" href="">Espace Perso</a>
+        </div>
+    </nav>
+    <!-- ======= End Section Navigation ======= -->
+    <!-- ======= Main Web Site ======= -->
+    <main>
+        <!-- ======= Section Twenty Nine ======= -->
+        <section id="29" class="section-color">
+            <div class="testimony-hero main-container">
+                <div class="testimony-with-video">
+                    <h1 class="text-testimony-hero">Temoignages Chirurgie Esthetique Tunisie</h1>
+                    <div class="record-video">
+                        <img class="picture-operation" src="./assets/img/Temoignages-Chirurgie-Esthetique-Tunisie.webp"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= End Section Twenty Nine ======= -->
+        <!-- ======= Section Thirty ======= -->
+        <section id="30">
+            <div class="list-testimonials ">
+                <div class="satisfied-patients main-container">
+                    <h2 class="title-satisfied-patients">Patients Satisfaits En Vidéos</h2>
+                    <p class="text-satisfied-patients">Les Temoignages Chirurgie Esthetique Tunisie des patients de
+                        ServiHealth en Tunisie sont un
+                        puissant témoignage de satisfaction et de confiance. Les patients partagent leurs expériences
+                        positives, mettant en avant les résultats remarquables qu’ils ont obtenus grâce à la chirurgie
+                        esthétique pratiquée par l’équipe médicale expérimentée de ServiHealth. Ils soulignent
+                        l’attention personnalisée, les soins attentionnés et le professionnalisme exemplaire dont ils
+                        ont bénéficié tout au long de leur parcours. Ces témoignages vidéos sont une source
+                        d’inspiration pour ceux qui envisagent une chirurgie esthétique, offrant une vision concrète des
+                        résultats spectaculaires et de la satisfaction des patients traités par <a
+                            class="link-paragraph"
+                            href="https://servihealth.net/agence-chirurgie-esthetique-tunisie/">ServiHealth</a> .
+                    </p>
+                </div>
+                <div class="all-testimonials-patients">
+                    <div class="testimonials-opinion">
+                        <div class="space-testimonials main-container">
+                            <div class="testimony-details">
+                                <div class="picture-patient-testimony">
+                                    <a href=""><img class="image-patient" src="./assets/img/Cover-Eleo.webp" alt=""></a>
+                                </div>
+                                <div class="testimony-patient">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="35" viewBox="0 0 43 35"
+                                        fill="none">
+                                        <path
+                                            d="M16.4348 3.94266C14.4769 6.25668 11.3361 9.96879 10.6499 14.4356C10.3829 16.174 10.1158 19.2453 13.9141 19.9407C17.3878 20.5767 21.3327 26.315 16.5848 32.3997C14.2437 35.3999 5.19865 37.6151 1.15411 28.3433C-1.12093 23.1279 -1.57593 10.2633 14.8043 0.527909C16.559 -0.515068 19.2884 -0.0514715 17.7718 2.26637C17.4944 2.69028 17.0169 3.25468 16.4348 3.94266Z"
+                                            fill="#013186" />
+                                        <path
+                                            d="M40.6601 3.94265C38.7023 6.25668 35.5615 9.96878 34.8753 14.4356C34.6082 16.174 34.3411 19.2453 38.1395 19.9407C41.6132 20.5767 45.5581 26.315 40.8102 32.3997C38.4691 35.3999 29.424 37.6151 25.3795 28.3433C23.1044 23.1279 22.6494 10.2633 39.0297 0.527909C40.7844 -0.515068 43.5138 -0.0514715 41.9971 2.26637C41.7198 2.69028 41.2422 3.25468 40.6601 3.94265Z"
+                                            fill="#013186" />
+                                    </svg>
+                                    <h2 class="text-type-patient">Patiente Italienne</h2>
+                                    <p class="opinion-patient">Cette patiente a subi un lifting mammaire avec implant
+                                        pour
+                                        améliorer la taille et la forme de ses seins. Cette intervention de chirurgie
+                                        esthétique
+                                        a permis de rehausser et de redéfinir ses seins, lui offrant ainsi une apparence
+                                        plus
+                                        équilibrée et esthétiquement plaisante.
+                                    </p>
+                                    <a class="free-estimate-WhatsApp hover-btn" href="https://wa.me/0021699623631">Devis Rapide
+                                        Par WhatsApp</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img class="img-style-testimony" src="./assets/img/ellipse-20.svg" alt="">
+                    </div>
+
+
+
+
+                    <div class="testimonials-opinion">
+                        <div class="space-testimonials main-container">
+                            <div class="testimony-details section-direction">
+                                <div class="picture-patient-testimony">
+                                    <a href=""><img class="image-patient" src="./assets/img/Cover-Meli.webp" alt=""></a>
+                                </div>
+                                <div class="testimony-patient">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="35" viewBox="0 0 43 35"
+                                        fill="none">
+                                        <path
+                                            d="M16.4348 3.94266C14.4769 6.25668 11.3361 9.96879 10.6499 14.4356C10.3829 16.174 10.1158 19.2453 13.9141 19.9407C17.3878 20.5767 21.3327 26.315 16.5848 32.3997C14.2437 35.3999 5.19865 37.6151 1.15411 28.3433C-1.12093 23.1279 -1.57593 10.2633 14.8043 0.527909C16.559 -0.515068 19.2884 -0.0514715 17.7718 2.26637C17.4944 2.69028 17.0169 3.25468 16.4348 3.94266Z"
+                                            fill="#013186" />
+                                        <path
+                                            d="M40.6601 3.94265C38.7023 6.25668 35.5615 9.96878 34.8753 14.4356C34.6082 16.174 34.3411 19.2453 38.1395 19.9407C41.6132 20.5767 45.5581 26.315 40.8102 32.3997C38.4691 35.3999 29.424 37.6151 25.3795 28.3433C23.1044 23.1279 22.6494 10.2633 39.0297 0.527909C40.7844 -0.515068 43.5138 -0.0514715 41.9971 2.26637C41.7198 2.69028 41.2422 3.25468 40.6601 3.94265Z"
+                                            fill="#013186" />
+                                    </svg>
+                                    <h2 class="text-type-patient">Patiente Gabonaise</h2>
+                                    <p class="opinion-patient">Cette patiente a subi une liposuccion et BBL (Brazilian
+                                        Butt Lift). Ces procédures de chirurgie esthétique ont permis de remodeler son
+                                        abdomen, d’éliminer l’excès de graisse et de sculpter ses courbes pour obtenir
+                                        une silhouette plus harmonieuse et attrayante.
+
+
+                                    </p>
+                                    <a class="free-estimate-WhatsApp hover-btn" href="https://wa.me/0021699623631">Devis Rapide
+                                        Par WhatsApp</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img class="img-style-testimony img-direction" src="./assets/img/ellipse-20.svg" alt="">
+                    </div>
+
+                    <div class="testimonials-opinion">
+                        <div class="space-testimonials main-container">
+                            <div class="testimony-details">
+                                <div class="picture-patient-testimony">
+                                    <a href=""><img class="image-patient" src="./assets/img/Cover-Ouat.webp" alt=""></a>
+                                </div>
+                                <div class="testimony-patient">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="35" viewBox="0 0 43 35"
+                                        fill="none">
+                                        <path
+                                            d="M16.4348 3.94266C14.4769 6.25668 11.3361 9.96879 10.6499 14.4356C10.3829 16.174 10.1158 19.2453 13.9141 19.9407C17.3878 20.5767 21.3327 26.315 16.5848 32.3997C14.2437 35.3999 5.19865 37.6151 1.15411 28.3433C-1.12093 23.1279 -1.57593 10.2633 14.8043 0.527909C16.559 -0.515068 19.2884 -0.0514715 17.7718 2.26637C17.4944 2.69028 17.0169 3.25468 16.4348 3.94266Z"
+                                            fill="#013186" />
+                                        <path
+                                            d="M40.6601 3.94265C38.7023 6.25668 35.5615 9.96878 34.8753 14.4356C34.6082 16.174 34.3411 19.2453 38.1395 19.9407C41.6132 20.5767 45.5581 26.315 40.8102 32.3997C38.4691 35.3999 29.424 37.6151 25.3795 28.3433C23.1044 23.1279 22.6494 10.2633 39.0297 0.527909C40.7844 -0.515068 43.5138 -0.0514715 41.9971 2.26637C41.7198 2.69028 41.2422 3.25468 40.6601 3.94265Z"
+                                            fill="#013186" />
+                                    </svg>
+                                    <h2 class="text-type-patient">Patiente Ivoirienne</h2>
+                                    <p class="opinion-patient">Cette patiente a subi une liposuccion et BBL (Brazilian Butt Lift). Ces procédures de chirurgie esthétique ont permis de remodeler son abdomen, d’éliminer l’excès de graisse et de sculpter ses courbes pour obtenir une silhouette plus harmonieuse et attrayante.
+
+
+                                    </p>
+                                    <a class="free-estimate-WhatsApp hover-btn" href="https://wa.me/0021699623631">Devis Rapide
+                                        Par WhatsApp</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img class="img-style-testimony" src="./assets/img/ellipse-20.svg" alt="">
+                    </div>
+
+
+                    <div class="testimonials-opinion">
+                        <div class="space-testimonials main-container">
+                            <div class="testimony-details section-direction">
+                                <div class="picture-patient-testimony">
+                                    <a href=""><img class="image-patient" src="./assets/img/cover-patient-senegalaise-lipo-abdo-bbl.webp" alt=""></a>
+                                </div>
+                                <div class="testimony-patient">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="35" viewBox="0 0 43 35"
+                                        fill="none">
+                                        <path
+                                            d="M16.4348 3.94266C14.4769 6.25668 11.3361 9.96879 10.6499 14.4356C10.3829 16.174 10.1158 19.2453 13.9141 19.9407C17.3878 20.5767 21.3327 26.315 16.5848 32.3997C14.2437 35.3999 5.19865 37.6151 1.15411 28.3433C-1.12093 23.1279 -1.57593 10.2633 14.8043 0.527909C16.559 -0.515068 19.2884 -0.0514715 17.7718 2.26637C17.4944 2.69028 17.0169 3.25468 16.4348 3.94266Z"
+                                            fill="#013186" />
+                                        <path
+                                            d="M40.6601 3.94265C38.7023 6.25668 35.5615 9.96878 34.8753 14.4356C34.6082 16.174 34.3411 19.2453 38.1395 19.9407C41.6132 20.5767 45.5581 26.315 40.8102 32.3997C38.4691 35.3999 29.424 37.6151 25.3795 28.3433C23.1044 23.1279 22.6494 10.2633 39.0297 0.527909C40.7844 -0.515068 43.5138 -0.0514715 41.9971 2.26637C41.7198 2.69028 41.2422 3.25468 40.6601 3.94265Z"
+                                            fill="#013186" />
+                                    </svg>
+                                    <h2 class="text-type-patient">Patiente Sénégalaise</h2>
+                                    <p class="opinion-patient">Cette patiente a subi une abdominoplastie avec liposuccion et BBL (Brazilian Butt Lift). Ces procédures de chirurgie esthétique ont permis de remodeler son abdomen, d’éliminer l’excès de graisse et de sculpter ses courbes pour obtenir une silhouette plus harmonieuse et attrayante.
+                                    </p>
+                                    <a class="free-estimate-WhatsApp hover-btn" href="https://wa.me/0021699623631">Devis Rapide
+                                        Par WhatsApp</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img class="img-style-testimony img-direction" src="./assets/img/ellipse-20.svg" alt="">
+                    </div>
+                    <div class="testimonials-opinion">
+                        <div class="space-testimonials main-container">
+                            <div class="testimony-details">
+                                <div class="picture-patient-testimony">
+                                    <a href=""><img class="image-patient" src="./assets/img/cover-patiente-guineenne-lipo-bbl-lifting-mammaire.webp" alt=""></a>
+                                </div>
+                                <div class="testimony-patient">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="35" viewBox="0 0 43 35"
+                                        fill="none">
+                                        <path
+                                            d="M16.4348 3.94266C14.4769 6.25668 11.3361 9.96879 10.6499 14.4356C10.3829 16.174 10.1158 19.2453 13.9141 19.9407C17.3878 20.5767 21.3327 26.315 16.5848 32.3997C14.2437 35.3999 5.19865 37.6151 1.15411 28.3433C-1.12093 23.1279 -1.57593 10.2633 14.8043 0.527909C16.559 -0.515068 19.2884 -0.0514715 17.7718 2.26637C17.4944 2.69028 17.0169 3.25468 16.4348 3.94266Z"
+                                            fill="#013186" />
+                                        <path
+                                            d="M40.6601 3.94265C38.7023 6.25668 35.5615 9.96878 34.8753 14.4356C34.6082 16.174 34.3411 19.2453 38.1395 19.9407C41.6132 20.5767 45.5581 26.315 40.8102 32.3997C38.4691 35.3999 29.424 37.6151 25.3795 28.3433C23.1044 23.1279 22.6494 10.2633 39.0297 0.527909C40.7844 -0.515068 43.5138 -0.0514715 41.9971 2.26637C41.7198 2.69028 41.2422 3.25468 40.6601 3.94265Z"
+                                            fill="#013186" />
+                                    </svg>
+                                    <h2 class="text-type-patient">Patiente Guinéenne</h2>
+                                    <p class="opinion-patient">Cette patiente a subi une BBL (Brazilian Butt Lift) et lifting mammaire. Ces procédures de chirurgie esthétique ont permis de remodeler son abdomen, d’éliminer l’excès de graisse et de sculpter ses courbes pour obtenir une silhouette plus harmonieuse et attrayante.
+
+
+                                    </p>
+                                    <a class="free-estimate-WhatsApp hover-btn" href="https://wa.me/0021699623631">Devis Rapide
+                                        Par WhatsApp</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img class="img-style-testimony" src="./assets/img/ellipse-20.svg" alt="">
+                    </div>
+
+
+
+
+                    <div class="testimonials-opinion">
+                        <div class="space-testimonials main-container">
+                            <div class="testimony-details section-direction">
+                                <div class="picture-patient-testimony">
+                                    <a href=""><img class="image-patient" src="./assets/img/cover-patiente-malienne-sleeve.webp" alt=""></a>
+                                </div>
+                                <div class="testimony-patient">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="35" viewBox="0 0 43 35"
+                                        fill="none">
+                                        <path
+                                            d="M16.4348 3.94266C14.4769 6.25668 11.3361 9.96879 10.6499 14.4356C10.3829 16.174 10.1158 19.2453 13.9141 19.9407C17.3878 20.5767 21.3327 26.315 16.5848 32.3997C14.2437 35.3999 5.19865 37.6151 1.15411 28.3433C-1.12093 23.1279 -1.57593 10.2633 14.8043 0.527909C16.559 -0.515068 19.2884 -0.0514715 17.7718 2.26637C17.4944 2.69028 17.0169 3.25468 16.4348 3.94266Z"
+                                            fill="#013186" />
+                                        <path
+                                            d="M40.6601 3.94265C38.7023 6.25668 35.5615 9.96878 34.8753 14.4356C34.6082 16.174 34.3411 19.2453 38.1395 19.9407C41.6132 20.5767 45.5581 26.315 40.8102 32.3997C38.4691 35.3999 29.424 37.6151 25.3795 28.3433C23.1044 23.1279 22.6494 10.2633 39.0297 0.527909C40.7844 -0.515068 43.5138 -0.0514715 41.9971 2.26637C41.7198 2.69028 41.2422 3.25468 40.6601 3.94265Z"
+                                            fill="#013186" />
+                                    </svg>
+                                    <h2 class="text-type-patient">Patiente Malienne</h2>
+                                    <p class="opinion-patient">Cette patiente a subi une sleeve gastrectomie, une intervention de chirurgie bariatrique qui lui a permis de perdre du poids de manière significative et de retrouver une meilleure santé.
+
+
+
+
+                                    </p>
+                                    <a class="free-estimate-WhatsApp hover-btn" href="https://wa.me/0021699623631">Devis Rapide
+                                        Par WhatsApp</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img class="img-style-testimony img-direction" src="./assets/img/ellipse-20.svg" alt="">
+                    </div>
+
+
+                    <div class="testimonials-opinion">
+                        <div class="space-testimonials main-container">
+                            <div class="testimony-details">
+                                <div class="picture-patient-testimony">
+                                    <a href=""><img class="image-patient" src="./assets/img/cover-patiente-guineenne-rhinoplastie.webp" alt=""></a>
+                                </div>
+                                <div class="testimony-patient">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="35" viewBox="0 0 43 35"
+                                        fill="none">
+                                        <path
+                                            d="M16.4348 3.94266C14.4769 6.25668 11.3361 9.96879 10.6499 14.4356C10.3829 16.174 10.1158 19.2453 13.9141 19.9407C17.3878 20.5767 21.3327 26.315 16.5848 32.3997C14.2437 35.3999 5.19865 37.6151 1.15411 28.3433C-1.12093 23.1279 -1.57593 10.2633 14.8043 0.527909C16.559 -0.515068 19.2884 -0.0514715 17.7718 2.26637C17.4944 2.69028 17.0169 3.25468 16.4348 3.94266Z"
+                                            fill="#013186" />
+                                        <path
+                                            d="M40.6601 3.94265C38.7023 6.25668 35.5615 9.96878 34.8753 14.4356C34.6082 16.174 34.3411 19.2453 38.1395 19.9407C41.6132 20.5767 45.5581 26.315 40.8102 32.3997C38.4691 35.3999 29.424 37.6151 25.3795 28.3433C23.1044 23.1279 22.6494 10.2633 39.0297 0.527909C40.7844 -0.515068 43.5138 -0.0514715 41.9971 2.26637C41.7198 2.69028 41.2422 3.25468 40.6601 3.94265Z"
+                                            fill="#013186" />
+                                    </svg>
+                                    <h2 class="text-type-patient">Patiente Guinéenne</h2>
+                                    <p class="opinion-patient">Cette patiente a récemment subi une rhinoplastie ethnique, une intervention chirurgicale spécifique visant à harmoniser et à améliorer les traits du nez en fonction de ses caractéristiques ethniques.
+
+
+                                    </p>
+                                    <a class="free-estimate-WhatsApp hover-btn" href="https://wa.me/0021699623631">Devis Rapide
+                                        Par WhatsApp</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img class="img-style-testimony" src="./assets/img/ellipse-20.svg" alt="">
+                    </div>
+
+                    <div class="testimonials-opinion">
+                        <div class="space-testimonials main-container">
+                            <div class="testimony-details section-direction">
+                                <div class="picture-patient-testimony">
+                                    <a href=""><img class="image-patient" src="./assets/img/cover-patiente-congolaise-lipo-complete.webp" alt=""></a>
+                                </div>
+                                <div class="testimony-patient">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="35" viewBox="0 0 43 35"
+                                        fill="none">
+                                        <path
+                                            d="M16.4348 3.94266C14.4769 6.25668 11.3361 9.96879 10.6499 14.4356C10.3829 16.174 10.1158 19.2453 13.9141 19.9407C17.3878 20.5767 21.3327 26.315 16.5848 32.3997C14.2437 35.3999 5.19865 37.6151 1.15411 28.3433C-1.12093 23.1279 -1.57593 10.2633 14.8043 0.527909C16.559 -0.515068 19.2884 -0.0514715 17.7718 2.26637C17.4944 2.69028 17.0169 3.25468 16.4348 3.94266Z"
+                                            fill="#013186" />
+                                        <path
+                                            d="M40.6601 3.94265C38.7023 6.25668 35.5615 9.96878 34.8753 14.4356C34.6082 16.174 34.3411 19.2453 38.1395 19.9407C41.6132 20.5767 45.5581 26.315 40.8102 32.3997C38.4691 35.3999 29.424 37.6151 25.3795 28.3433C23.1044 23.1279 22.6494 10.2633 39.0297 0.527909C40.7844 -0.515068 43.5138 -0.0514715 41.9971 2.26637C41.7198 2.69028 41.2422 3.25468 40.6601 3.94265Z"
+                                            fill="#013186" />
+                                    </svg>
+                                    <h2 class="text-type-patient">Patiente Congolaise</h2>
+                                    <p class="opinion-patient">Cette patiente a récemment subi une transformation esthétique complète, comprenant une liposuccion complète, une rhinoplastie et une greffe de cheveux.
+
+
+
+
+                                    </p>
+                                    <a class="free-estimate-WhatsApp hover-btn" href="https://wa.me/0021699623631">Devis Rapide
+                                        Par WhatsApp</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img class="img-style-testimony img-direction" src="./assets/img/ellipse-20.svg" alt="">
+                    </div>
+
+
+                    <div class="testimonials-opinion">
+                        <div class="space-testimonials main-container">
+                            <div class="testimony-details">
+                                <div class="picture-patient-testimony">
+                                    <a href=""><img class="image-patient" src="./assets/img/cover-patient-ivoirien-blanchiment-dentaire.webp" alt=""></a>
+                                </div>
+                                <div class="testimony-patient">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="35" viewBox="0 0 43 35"
+                                        fill="none">
+                                        <path
+                                            d="M16.4348 3.94266C14.4769 6.25668 11.3361 9.96879 10.6499 14.4356C10.3829 16.174 10.1158 19.2453 13.9141 19.9407C17.3878 20.5767 21.3327 26.315 16.5848 32.3997C14.2437 35.3999 5.19865 37.6151 1.15411 28.3433C-1.12093 23.1279 -1.57593 10.2633 14.8043 0.527909C16.559 -0.515068 19.2884 -0.0514715 17.7718 2.26637C17.4944 2.69028 17.0169 3.25468 16.4348 3.94266Z"
+                                            fill="#013186" />
+                                        <path
+                                            d="M40.6601 3.94265C38.7023 6.25668 35.5615 9.96878 34.8753 14.4356C34.6082 16.174 34.3411 19.2453 38.1395 19.9407C41.6132 20.5767 45.5581 26.315 40.8102 32.3997C38.4691 35.3999 29.424 37.6151 25.3795 28.3433C23.1044 23.1279 22.6494 10.2633 39.0297 0.527909C40.7844 -0.515068 43.5138 -0.0514715 41.9971 2.26637C41.7198 2.69028 41.2422 3.25468 40.6601 3.94265Z"
+                                            fill="#013186" />
+                                    </svg>
+                                    <h2 class="text-type-patient">Patiente Ivoirien</h2>
+                                    <p class="opinion-patient">Ce patient a récemment bénéficié d’un blanchiment dentaire pour améliorer l’éclat et la blancheur de ses dents. Le patient est ravie des résultats obtenus, avec des dents visiblement plus lumineuses et un sourire éclatant.
+                                    </p>
+                                    <a class="free-estimate-WhatsApp hover-btn" href="https://wa.me/0021699623631">Devis Rapide
+                                        Par WhatsApp</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img class="img-style-testimony" src="./assets/img/ellipse-20.svg" alt="">
+                    </div>
+
+
+                    <div class="testimonials-opinion">
+                        <div class="space-testimonials main-container">
+                            <div class="testimony-details section-direction">
+                                <div class="picture-patient-testimony">
+                                    <a href=""><img class="image-patient" src="./assets/img/cover-patiente-guineenne-sleeve.webp" alt=""></a>
+                                </div>
+                                <div class="testimony-patient">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="35" viewBox="0 0 43 35"
+                                        fill="none">
+                                        <path
+                                            d="M16.4348 3.94266C14.4769 6.25668 11.3361 9.96879 10.6499 14.4356C10.3829 16.174 10.1158 19.2453 13.9141 19.9407C17.3878 20.5767 21.3327 26.315 16.5848 32.3997C14.2437 35.3999 5.19865 37.6151 1.15411 28.3433C-1.12093 23.1279 -1.57593 10.2633 14.8043 0.527909C16.559 -0.515068 19.2884 -0.0514715 17.7718 2.26637C17.4944 2.69028 17.0169 3.25468 16.4348 3.94266Z"
+                                            fill="#013186" />
+                                        <path
+                                            d="M40.6601 3.94265C38.7023 6.25668 35.5615 9.96878 34.8753 14.4356C34.6082 16.174 34.3411 19.2453 38.1395 19.9407C41.6132 20.5767 45.5581 26.315 40.8102 32.3997C38.4691 35.3999 29.424 37.6151 25.3795 28.3433C23.1044 23.1279 22.6494 10.2633 39.0297 0.527909C40.7844 -0.515068 43.5138 -0.0514715 41.9971 2.26637C41.7198 2.69028 41.2422 3.25468 40.6601 3.94265Z"
+                                            fill="#013186" />
+                                    </svg>
+                                    <h2 class="text-type-patient">Patiente Guinéenne</h2>
+                                    <p class="opinion-patient">Cette patiente a subi une sleeve gastrectomie, une intervention de chirurgie bariatrique qui lui a permis de perdre du poids de manière significative et de retrouver une meilleure santé.
+
+
+
+
+                                    </p>
+                                    <a class="free-estimate-WhatsApp hover-btn" href="https://wa.me/0021699623631">Devis Rapide
+                                        Par WhatsApp</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img class="img-style-testimony img-direction" src="./assets/img/ellipse-20.svg" alt="">
+                    </div>
+
+
+
+
+                    <div class="testimonials-opinion">
+                        <div class="space-testimonials main-container">
+                            <div class="testimony-details">
+                                <div class="picture-patient-testimony">
+                                    <a href=""><img class="image-patient" src="./assets/img/cover-patiente-guineenne-equatoriale-abdo-lipo.webp" alt=""></a>
+                                </div>
+                                <div class="testimony-patient">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="35" viewBox="0 0 43 35"
+                                        fill="none">
+                                        <path
+                                            d="M16.4348 3.94266C14.4769 6.25668 11.3361 9.96879 10.6499 14.4356C10.3829 16.174 10.1158 19.2453 13.9141 19.9407C17.3878 20.5767 21.3327 26.315 16.5848 32.3997C14.2437 35.3999 5.19865 37.6151 1.15411 28.3433C-1.12093 23.1279 -1.57593 10.2633 14.8043 0.527909C16.559 -0.515068 19.2884 -0.0514715 17.7718 2.26637C17.4944 2.69028 17.0169 3.25468 16.4348 3.94266Z"
+                                            fill="#013186" />
+                                        <path
+                                            d="M40.6601 3.94265C38.7023 6.25668 35.5615 9.96878 34.8753 14.4356C34.6082 16.174 34.3411 19.2453 38.1395 19.9407C41.6132 20.5767 45.5581 26.315 40.8102 32.3997C38.4691 35.3999 29.424 37.6151 25.3795 28.3433C23.1044 23.1279 22.6494 10.2633 39.0297 0.527909C40.7844 -0.515068 43.5138 -0.0514715 41.9971 2.26637C41.7198 2.69028 41.2422 3.25468 40.6601 3.94265Z"
+                                            fill="#013186" />
+                                    </svg>
+                                    <h2 class="text-type-patient">Patiente Guinéenne</h2>
+                                    <p class="opinion-patient">Cette patiente a récemment subi une abdominoplastie combinée à une liposuccion pour obtenir une silhouette plus harmonieuse.
+
+
+                                    </p>
+                                    <a class="free-estimate-WhatsApp hover-btn" href="https://wa.me/0021699623631">Devis Rapide
+                                        Par WhatsApp</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img class="img-style-testimony" src="./assets/img/ellipse-20.svg" alt="">
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <!-- ======= End Section Thirty ======= -->
+        <!-- ======= Section Thirty One ======= -->
+        <section id="31">
+            <div class="estimate-loacation">
+                <div class="address-estimate main-container">
+                    <div class="require-estimate">
+                        <h2 class="free-estimate">Obtenez un Devis Gratuit</h2>
+                        <p class="description-free-estimate">Si vous envisagez une chirurgie esthétique en Tunisie, il
+                            est important de faire une demande
+                            de
+                            devis gratuit pour obtenir des informations détaillées sur les chirurgies et les coûts
+                            associés.
+                        </p>
+                        <form action="post">
+                            <div class="inputs">
+                                <div class="input-name-email ">
+                                    <input class="style-input-contact" type="text" placeholder="Nom et Prénom *">
+                                    <input class="style-input-contact " type="email" placeholder="E-mail *">
+                                </div>
+
+                                <div class="input-country-phone ">
+                                    <div class="form-item">
+                                        <input class="style-input-phone" id="country_selector" type="text">
+
+                                    </div>
+                                    <div class="contry-number-selected">
+                                        <input class="style-input-phone" type="number" name="" id="phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <textarea class="message-content" placeholder="Votre Demande *" name="" id="" cols="30"
+                                rows="10"></textarea>
+                            <button class="btn-submit hover-btn btn-width">Obtenez un Devis Gratuit</button>
+                        </form>
+                    </div>
+                    <div id="map" class="map"></div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= End Section Thirty One ======= -->
+    </main>
+    <!-- ======= End Main Web Site ======= -->
+          <!-- ======= Footer Website ======= -->
+    <footer class="footer-website position-footer">
+        <div class="top-footer main-container ">
+            <div class="footer-widget">
+                <a href="#"> <img class="logo-footer" src="./assets/img/Logo-Servihealth.png" alt="Servihealth.net"></a>
+            </div>
+            <div class="footer-widget">
+                <p class="title-widget">À propos Servihealth</p>
+                <div class="link-widget">
+                    <a class="link-website" href="">À propos</a>
+                    <a class="link-website" href=""> Interventions</a>
+                    <a class="link-website" href=""> Chirurgiens</a>
+                    <a class="link-website" href=""> Cliniques </a>
+                    <a class="link-website" href=""> Séjour </a>
+                    <a class="link-website" href=""> Processus </a>
+                </div>
+            </div>
+            <div class="footer-widget">
+                <p class="title-widget">Partenaire</p>
+                <div class="link-widget">
+                    <a href=""><img src="./assets/img/Logo-Clinique-Myron-Servihealth.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-widget">
+                <p class="title-widget">Réseaux Sociaux</p>
+                <div class="link-widget">
+                    <p class="description-widget">Visitez Servihealth sur ces liens sociaux.</p>
+                    <div class="social-media" bis_skin_checked="1">
+                        <a href="https://www.facebook.com/servihealth.tn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path
+                                    d="M0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16Z"
+                                    fill="#1877F2"></path>
+                                <path
+                                    d="M24 16C24 11.6 20.4 8 16 8C11.6 8 8 11.6 8 16C8 20 10.9 23.3 14.7 23.9V18.3H12.7V16H14.7V14.2C14.7 12.2 15.9 11.1 17.7 11.1C18.6 11.1 19.5 11.3 19.5 11.3V13.3H18.5C17.5 13.3 17.2 13.9 17.2 14.5V16H19.4L19 18.3H17.1V24C21.1 23.4 24 20 24 16Z"
+                                    fill="white"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCxdxtGDgLl9LHMCJ9e3hTyw"> <svg
+                                xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path
+                                    d="M0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16Z"
+                                    fill="#FF0000"></path>
+                                <path
+                                    d="M23.6 12.1C23.4 11.4 22.9 10.9 22.2 10.7C21 10.4 15.9 10.4 15.9 10.4C15.9 10.4 10.9 10.4 9.60001 10.7C8.90001 10.9 8.4 11.4 8.2 12.1C8 13.4 8 16 8 16C8 16 8 18.6 8.3 19.9C8.5 20.6 9 21.1 9.7 21.3C10.9 21.6 16 21.6 16 21.6C16 21.6 21 21.6 22.3 21.3C23 21.1 23.5 20.6 23.7 19.9C24 18.6 24 16 24 16C24 16 24 13.4 23.6 12.1ZM14.4 18.4V13.6L18.6 16L14.4 18.4Z"
+                                    fill="white"></path>
+                            </svg></a>
+                        <a href="https://www.instagram.com/servihealth_tunisie/"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path
+                                    d="M0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16Z"
+                                    fill="#F00073"></path>
+                                <path
+                                    d="M16 9.19995C18.2 9.19995 18.5 9.19995 19.4 9.19995C20.2 9.19995 20.6 9.39995 20.9 9.49995C21.3 9.69995 21.6 9.79995 21.9 10.1C22.2 10.4 22.4 10.7 22.5 11.1C22.6 11.4 22.7 11.8 22.8 12.6C22.8 13.5 22.8 13.7 22.8 16C22.8 18.3 22.8 18.5 22.8 19.4C22.8 20.2 22.6 20.6 22.5 20.9C22.3 21.3 22.2 21.6 21.9 21.9C21.6 22.2 21.3 22.4 20.9 22.5C20.6 22.6 20.2 22.7 19.4 22.8C18.5 22.8 18.3 22.8 16 22.8C13.7 22.8 13.5 22.8 12.6 22.8C11.8 22.8 11.4 22.6 11.1 22.5C10.7 22.3 10.4 22.2 10.1 21.9C9.79995 21.6 9.59995 21.3 9.49995 20.9C9.39995 20.6 9.29995 20.2 9.19995 19.4C9.19995 18.5 9.19995 18.3 9.19995 16C9.19995 13.7 9.19995 13.5 9.19995 12.6C9.19995 11.8 9.39995 11.4 9.49995 11.1C9.69995 10.7 9.79995 10.4 10.1 10.1C10.4 9.79995 10.7 9.59995 11.1 9.49995C11.4 9.39995 11.8 9.29995 12.6 9.19995C13.5 9.19995 13.8 9.19995 16 9.19995ZM16 7.69995C13.7 7.69995 13.5 7.69995 12.6 7.69995C11.7 7.69995 11.1 7.89995 10.6 8.09995C10.1 8.29995 9.59995 8.59995 9.09995 9.09995C8.59995 9.59995 8.39995 9.99995 8.09995 10.6C7.89995 11.1 7.79995 11.7 7.69995 12.6C7.69995 13.5 7.69995 13.8 7.69995 16C7.69995 18.3 7.69995 18.5 7.69995 19.4C7.69995 20.3 7.89995 20.9 8.09995 21.4C8.29995 21.9 8.59995 22.4 9.09995 22.9C9.59995 23.4 9.99995 23.6 10.6 23.9C11.1 24.1 11.7 24.1999 12.6 24.2999C13.5 24.2999 13.8 24.2999 16 24.2999C18.2 24.2999 18.5 24.2999 19.4 24.2999C20.3 24.2999 20.9 24.1 21.4 23.9C21.9 23.7 22.4 23.4 22.9 22.9C23.4 22.4 23.6 22 23.9 21.4C24.1 20.9 24.1999 20.3 24.2999 19.4C24.2999 18.5 24.2999 18.2 24.2999 16C24.2999 13.8 24.2999 13.5 24.2999 12.6C24.2999 11.7 24.1 11.1 23.9 10.6C23.7 10.1 23.4 9.59995 22.9 9.09995C22.4 8.59995 22 8.39995 21.4 8.09995C20.9 7.89995 20.3 7.79995 19.4 7.69995C18.5 7.69995 18.3 7.69995 16 7.69995Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M16 11.7C13.6 11.7 11.7 13.6 11.7 16C11.7 18.4 13.6 20.3 16 20.3C18.4 20.3 20.3 18.4 20.3 16C20.3 13.6 18.4 11.7 16 11.7ZM16 18.8C14.5 18.8 13.2 17.6 13.2 16C13.2 14.5 14.4 13.2 16 13.2C17.5 13.2 18.8 14.4 18.8 16C18.8 17.5 17.5 18.8 16 18.8Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M20.4 12.6C20.9522 12.6 21.4 12.1522 21.4 11.6C21.4 11.0477 20.9522 10.6 20.4 10.6C19.8477 10.6 19.4 11.0477 19.4 11.6C19.4 12.1522 19.8477 12.6 20.4 12.6Z"
+                                    fill="white"></path>
+                            </svg></a>
+                        <a href="https://www.tiktok.com/@servihealth.net"> <svg xmlns="http://www.w3.org/2000/svg"
+                                width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path
+                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                                    fill="black"></path>
+                                <path
+                                    d="M14.4984 14.3001V13.6772C14.285 13.6487 14.068 13.6309 13.844 13.6309C11.173 13.6274 9 15.8022 9 18.4789C9 20.1199 9.818 21.5722 11.0699 22.4514C10.2626 21.5864 9.76821 20.4224 9.76821 19.1481C9.76821 16.5105 11.8808 14.3606 14.4984 14.3001Z"
+                                    fill="#25F4EE"></path>
+                                <path
+                                    d="M14.6157 21.3624C15.8072 21.3624 16.7816 20.412 16.8243 19.2303L16.8279 8.66919H18.7555C18.7164 8.45206 18.695 8.22781 18.695 8H16.0632L16.0597 18.5611C16.017 19.7428 15.0425 20.6932 13.8511 20.6932C13.4812 20.6932 13.1327 20.6007 12.8232 20.4369C13.2216 20.9958 13.876 21.3624 14.6157 21.3624Z"
+                                    fill="#25F4EE"></path>
+                                <path
+                                    d="M22.3585 12.2535V11.6662C21.6223 11.6662 20.9394 11.4491 20.3633 11.0718C20.8754 11.6591 21.5689 12.0863 22.3585 12.2535Z"
+                                    fill="#25F4EE"></path>
+                                <path
+                                    d="M20.3632 11.0716C19.8013 10.4273 19.4634 9.5873 19.4634 8.66895H18.7593C18.9406 9.67273 19.5382 10.5341 20.3632 11.0716Z"
+                                    fill="#FE2C55"></path>
+                                <path
+                                    d="M13.8474 16.2616C12.6275 16.2616 11.6353 17.2547 11.6353 18.4756C11.6353 19.3264 12.1189 20.0667 12.8231 20.4369C12.5599 20.0739 12.4035 19.6289 12.4035 19.1448C12.4035 17.9239 13.3957 16.9308 14.6156 16.9308C14.8432 16.9308 15.0637 16.9699 15.27 17.034V14.3431C15.0566 14.3146 14.8397 14.2968 14.6156 14.2968C14.5765 14.2968 14.5409 14.3003 14.5018 14.3003V16.3648C14.292 16.3008 14.075 16.2616 13.8474 16.2616Z"
+                                    fill="#FE2C55"></path>
+                                <path
+                                    d="M22.3582 12.2537V14.3004C20.9925 14.3004 19.7264 13.8626 18.695 13.1222V18.4793C18.695 21.1524 16.522 23.3309 13.8475 23.3309C12.8161 23.3309 11.8558 23.0034 11.0698 22.4517C11.9554 23.402 13.218 24.0001 14.6157 24.0001C17.2866 24.0001 19.4632 21.8252 19.4632 19.1484V13.7914C20.4946 14.5318 21.7607 14.9696 23.1264 14.9696V12.3356C22.8596 12.3356 22.6036 12.3071 22.3582 12.2537Z"
+                                    fill="#FE2C55"></path>
+                                <path
+                                    d="M18.6949 18.4789V13.1219C19.7263 13.8623 20.9924 14.3001 22.3581 14.3001V12.2534C21.5686 12.0861 20.8751 11.6589 20.3629 11.0716C19.5378 10.5341 18.9439 9.67273 18.7554 8.66895H16.8277L16.8242 19.23C16.7815 20.4117 15.807 21.3621 14.6156 21.3621C13.8758 21.3621 13.225 20.9955 12.8196 20.4402C12.1154 20.0665 11.6317 19.3297 11.6317 18.4789C11.6317 17.258 12.6239 16.2649 13.8438 16.2649C14.0714 16.2649 14.2919 16.3041 14.4982 16.3681V14.3036C11.8806 14.3606 9.76807 16.5105 9.76807 19.1481C9.76807 20.4224 10.2624 21.5829 11.0697 22.4514C11.8557 23.0031 12.816 23.3306 13.8474 23.3306C16.5183 23.3306 18.6949 21.1521 18.6949 18.4789Z"
+                                    fill="white"></path>
+                            </svg></a>
+                        <a href="https://www.snapchat.com/add/servihealth"> <svg xmlns="http://www.w3.org/2000/svg"
+                                width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <g clip-path="url(#clip0_29_66)">
+                                    <path
+                                        d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+                                        fill="#FFC91B"></path>
+                                    <path
+                                        d="M26.0001 20.7564C25.9959 21.1988 25.7812 21.6127 25.4219 21.871C25.2078 22.0292 24.9696 22.152 24.7165 22.2346C24.3189 22.3593 23.9131 22.456 23.5019 22.5236C23.4841 22.6693 23.4549 22.8134 23.4147 22.9546C23.2995 23.4083 22.9806 23.783 22.5511 23.9691C22.3106 24.0618 22.0541 24.1057 21.7965 24.0982C21.6147 24.0982 21.4129 24.0836 21.2037 24.0691C20.9947 24.0546 20.7474 24.0346 20.5165 24.0346C20.2414 24.0216 19.9666 24.0655 19.7092 24.1636C19.4511 24.2836 19.1747 24.4455 18.8838 24.6146C18.0747 25.091 17.1584 25.6364 16.0002 25.6364C14.842 25.6364 13.9256 25.091 13.1166 24.62C12.8256 24.451 12.5493 24.2891 12.2911 24.1691C12.0338 24.071 11.7589 24.027 11.4839 24.04C11.2529 24.04 11.0221 24.0564 10.7966 24.0746C10.5712 24.0928 10.3894 24.1036 10.2039 24.1036C9.94631 24.1111 9.68981 24.0672 9.44931 23.9746C9.01949 23.7889 8.70037 23.414 8.58568 22.96C8.54549 22.8188 8.51631 22.6748 8.49843 22.5291C8.08724 22.4616 7.68137 22.365 7.28387 22.24C7.03074 22.1575 6.79256 22.0346 6.57843 21.8764C6.21768 21.617 6.00274 21.2007 6.00024 20.7564C6.00587 20.2697 6.29618 19.8315 6.74206 19.6364C6.91881 19.5556 7.10106 19.4876 7.28749 19.4328C8.06206 19.1837 9.20568 18.8182 9.81843 16.9091L8.88937 16.5455C8.09987 16.2516 7.64768 15.4208 7.82937 14.5983C7.90443 14.2529 8.09731 13.9444 8.37481 13.7255C8.64537 13.5156 8.97781 13.4012 9.32024 13.4001C9.43906 13.4003 9.55743 13.4143 9.67299 13.4419L9.98574 13.5146C10.0003 13.151 10.0076 12.7674 10.0076 12.3746C10.0091 11.5764 10.1717 10.7867 10.4857 10.0528C11.0967 8.6159 12.2374 7.4694 13.6712 6.85102C14.4064 6.53302 15.1992 6.37021 16.0002 6.37283C16.7956 6.37383 17.5824 6.53652 18.313 6.85102C19.7449 7.46846 20.8865 8.61002 21.5039 10.042C21.8192 10.7755 21.9825 11.5653 21.9839 12.3638C21.9839 12.7565 21.9839 13.1383 22.0057 13.5038L22.3185 13.431C22.7718 13.3228 23.2498 13.4272 23.6167 13.7146C23.8976 13.932 24.0937 14.2407 24.1712 14.5874C24.3591 15.4136 23.9057 16.2511 23.1112 16.5456L22.1822 16.9092C22.8022 18.8146 23.9458 19.1783 24.7167 19.4238C24.9031 19.4789 25.0853 19.547 25.2622 19.6274C25.7097 19.8245 25.9991 20.2671 26.0001 20.7564Z"
+                                        fill="white"></path>
+                                    <path
+                                        d="M25.9967 20.7569C25.9925 21.1993 25.7778 21.6132 25.4185 21.8714C25.2044 22.0297 24.9662 22.1525 24.7131 22.2351C24.3155 22.3598 23.9096 22.4564 23.4985 22.5241C23.4806 22.6698 23.4515 22.8139 23.4113 22.9551C23.2961 23.4088 22.9771 23.7834 22.5476 23.9696C22.3072 24.0623 22.0507 24.1062 21.7931 24.0987C21.6113 24.0987 21.4095 24.0841 21.2003 24.0696C20.9912 24.0551 20.744 24.0351 20.5131 24.0351C20.238 24.0221 19.9631 24.066 19.7058 24.1641C19.4476 24.2841 19.1713 24.4459 18.8804 24.6151C18.0713 25.0914 17.155 25.6369 15.9968 25.6369C14.8386 25.6369 13.9222 25.0914 13.1131 24.6205C12.8222 24.4514 12.5459 24.2896 12.2877 24.1696C12.0304 24.0714 11.7555 24.0274 11.4805 24.0405C11.2495 24.0405 11.0186 24.0569 10.7932 24.0751C10.5678 24.0933 10.386 24.1041 10.2005 24.1041C9.94289 24.1116 9.68639 24.0677 9.44589 23.9751C9.01608 23.7894 8.69695 23.4145 8.58226 22.9605C8.54208 22.8194 8.51289 22.6753 8.49501 22.5296C8.08383 22.4621 7.67795 22.3654 7.28045 22.2405C7.02733 22.1579 6.78914 22.0351 6.57501 21.8769C6.21426 21.6175 5.99933 21.2012 5.99683 20.7569C6.00245 20.2702 6.29276 19.8319 6.73864 19.6369C6.91539 19.5561 7.09764 19.4881 7.28408 19.4333C8.05864 19.1842 9.20226 18.8187 9.81501 16.9096L8.88595 16.546C8.09645 16.2521 7.64426 15.4213 7.82595 14.5988C7.90101 14.2534 8.09389 13.9449 8.37139 13.726C8.64195 13.5161 8.97439 13.4017 9.31683 13.4006C9.43564 13.4008 9.55401 13.4148 9.66958 13.4424L9.98233 13.5151C9.99689 13.1515 10.0041 12.7679 10.0041 12.3751C10.0056 11.5769 10.1683 10.7872 10.4823 10.0533C11.0933 8.61639 12.234 7.46988 13.6678 6.85151C14.403 6.53351 15.1958 6.3707 15.9968 6.37332C16.7922 6.37432 17.579 6.53701 18.3096 6.85151C19.7415 7.46895 20.8831 8.61051 21.5005 10.0424C21.8158 10.776 21.9791 11.5658 21.9805 12.3643C21.9805 12.757 21.9805 13.1388 22.0023 13.5043L22.3151 13.4315C22.7684 13.3233 23.2464 13.4277 23.6133 13.7151C23.8942 13.9325 24.0903 14.2412 24.1678 14.5879C24.3556 15.4141 23.9023 16.2516 23.1078 16.5461L22.1788 16.9097C22.7988 18.8151 23.9424 19.1788 24.7133 19.4243C24.8996 19.4794 25.0819 19.5474 25.2588 19.6279C25.7063 19.8249 25.9957 20.2676 25.9967 20.7569Z"
+                                        stroke="black" stroke-miterlimit="10"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_29_66">
+                                        <rect width="32" height="32" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="bottom-footer main-container">
+            <p class="right-reserved">© 2023 ServiHealth I Tous les droits sont réservés</p>
+            <div class="other-link">
+                <a class="style-other-links" href="">Mentions Légales</a>
+                <a class="style-other-links" href="">CGV</a>
+                <a class="style-other-links" href="">Politique de confidentialité</a>
+                <a class="style-other-links" href="">FAQ</a>
+            </div>
+        </div>
+    </footer>
+    <!-- ======= End Footer Website ======= -->
+ -->
+    <!-- ======= Scripts ======= -->
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Script Country Picker Flags -->
+    <script src="./assets/plugin/country-picker-flags/build/js/countrySelect.min.js"></script>
+    <!-- Script Javascript -->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/maps.js"></script>
+</body>
+
+</html>

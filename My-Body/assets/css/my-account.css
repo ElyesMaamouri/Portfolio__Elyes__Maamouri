@@ -1,0 +1,1087 @@
+/*------------------------------------
+	Google Fonts
+------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*------------------------------------------------------------*/
+
+
+* {
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    margin: 0
+}
+
+#app__diets .container-diets {
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    gap: 4px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+#app__diets .left-dashboard {
+    width: 94px;
+    background: #2E2474;
+    color: #ffff;
+    padding: 21px 20px 21px 20px;
+    height: 898px;
+    box-shadow: 0px 18px 34px rgba(46, 36, 116, 0.3);
+    border-radius: 20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#app__diets .image-dietitian {
+    border: 2px solid #ffff;
+    border-radius: 50%;
+    background-color: #2E2474;
+    padding: 2px;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+#app__diets .access-home {
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+#app__diets .dietitian,
+
+.control-patient,
+.account-management,
+.access-notifications {
+    margin-bottom: 62px;
+    text-align: center;
+}
+
+#app__diets .dietitian-deconnect {
+    text-align: center;
+}
+
+#app__diets .left-icons {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-bottom: 30px;
+
+}
+
+#app__diets .active-page-icon {
+    filter: invert(20%) sepia(57%) saturate(522%) hue-rotate(95deg) brightness(95%) contrast(86%);
+}
+#app__diets .active-page {
+    color: #9AE8B8 !important;
+}
+
+
+#app__diets .badge {
+    background-color: #FF4D4D;
+    border-radius: 50%;
+    color: #FFFFFF;
+    padding: 0px 5px;
+    font-size: 8px;
+    position: absolute;
+    top: -5px;
+    right: -3px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+#app__diets .message {
+    display: inline-block;
+    position: relative;
+    padding: 2px 5px;
+}
+
+#app__diets .evaluation {
+    width: 65%;
+    margin-top: 25px;
+}
+
+#app__diets .meal-patient {
+    margin-top: 26px;
+}
+
+#app__diets .name-patient {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #2E2474;
+    margin: 0;
+}
+
+#app__diets .note {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #04021D;
+}
+
+#app__diets .patient-details {
+    display: flex;
+    gap: 11px;
+    margin-top: 54px;
+    margin-bottom: -38px;
+}
+
+#app__diets .image-patient {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+}
+
+#app__diets .name-of-patient {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #04021D;
+    margin: 0;
+}
+
+#app__diets .date-tracking {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #04021D;
+}
+
+#app__diets .message-folder {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+#app__diets .send-message {
+    display: flex;
+    text-decoration: none;
+    border-radius: 12px;
+    gap: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 34px rgb(46 36 116 / 15%);
+}
+
+#app__diets .show-folder-patient {
+    display: flex;
+    text-decoration: none;
+    border-radius: 12px;
+    gap: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 34px rgb(46 36 116 / 15%);
+}
+
+#app__diets hr {
+    border-top: 1px solid #04021D;
+}
+
+#app__diets .text-utilis {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #2E2474;
+    margin: 0;
+}
+
+#app__diets .icons-utilis {
+    width: 19px;
+    height: 15px;
+    margin-top: 2px;
+    filter: invert(50%) sepia(64%) saturate(2344%) hue-rotate(311deg) brightness(102%) contrast(101%);
+}
+
+#app__diets .deatils-account-dietitian {
+    width: 65%;
+}
+
+#app__diets .dietitian-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+#app__diets .dietitian-name {
+    display: flex;
+    gap: 11px;
+    margin-top: 34px;
+    margin-bottom: -38px;
+}
+
+#app__diets .image-of-dietitian {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: 2px solid #EEEDFE;
+    object-fit: cover;
+}
+
+#app__diets .input-camera {
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999999;
+    top: 30px;
+    width: 26px;
+    height: 30px;
+    right: 0px;
+    cursor: pointer;
+}
+
+#app__diets .input-camera+label {
+    cursor: pointer;
+}
+
+#app__diets .input-camera+label {
+    fill: #fff;
+}
+
+#app__diets .profile-image {
+    position: relative;
+}
+
+#app__diets .upload-image {
+    background: white;
+    border-radius: 50%;
+}
+
+#app__diets .take-picture {
+    position: absolute;
+    right: 0px;
+    top: 34px;
+    background-color: white;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+#app__diets .name-of-dietitian {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #04021D;
+    margin: 0;
+}
+
+
+#app__diets .date-inscription {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #04021D;
+}
+
+#app__diets .contact-mybody {
+    display: flex;
+    text-decoration: none;
+    border-radius: 12px;
+    gap: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 34px rgb(46 36 116 / 15%);
+    margin-top: 54px;
+}
+
+#app__diets .forward-message {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #2E2474;
+    margin: 0;
+}
+
+#app__diets .icon-message {
+    width: 19px;
+    height: 15px;
+    margin-top: 2px;
+    filter: invert(50%) sepia(64%) saturate(2344%) hue-rotate(311deg) brightness(102%) contrast(101%);
+}
+
+
+#app__diets .all-details-dietitian {
+    display: flex;
+    gap: 16px
+}
+
+#app__diets .general-information,
+.specialties,
+.presentation-video {
+    width: 31%;
+}
+
+#app__diets .general-specialties-video {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #2E2474;
+
+}
+
+#app__diets .first-name-dietitian,
+.last-name-dietitian,
+.phone-dietitian,
+.email-dietitian,
+.adresss-dietitian {
+    margin-bottom: 30px;
+}
+
+#app__diets .general-label {
+    width: 100%;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #827CAC;
+    margin: 0;
+}
+
+#app__diets .input-first-name,
+.input-last-name,
+.input-phone,
+.input-email,
+.input-adress {
+    width: 100%;
+    height: 40px;
+    padding-left: 12px;
+    background-color: #ffff;
+    border: 0.5px solid #EAE9F1;
+    box-shadow: inset 0px -0.5px 0px #E2E3E4;
+
+}
+
+#app__diets .input-first-name::placeholder {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2E2474;
+
+}
+
+#app__diets .input-last-name::placeholder {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2E2474;
+
+}
+
+#app__diets .input-phone::placeholder {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #04021D;
+
+}
+
+#app__diets .input-email::placeholder {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #04021D;
+
+}
+
+#app__diets .input-adress::placeholder {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #04021D;
+
+}
+
+#app__diets .phone-dietitian,
+.email-dietitian,
+.adress-dietitian {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+
+}
+
+
+
+#app__diets .required-field {
+    color: red;
+}
+
+
+#app__diets .btn-edit {
+    position: absolute;
+    width: 35px;
+    right: 0;
+    bottom: 8px;
+    border: none;
+    background-color: #ffff;
+}
+
+#app__diets .image-edit {
+    width: 20px;
+    height: 20px;
+}
+/*------------------------------------
+      Custom style intl-tel-input
+------------------------------------*/
+
+#app__diets .iti__country-list {
+    max-width: 390px;
+}
+
+
+#app__diets .iti__arrow {
+    border: none;
+}
+#app__diets .iti--allow-dropdown input {
+    padding-left: 36px;
+}
+
+
+#app__diets  .iti--allow-dropdown {
+    width: 100%;
+  }
+/* #app__diets .intl-tel-input .flag-container {
+    position: static;
+  
+  }
+  
+  #app__diets .intl-tel-input .selected-flag {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+  }
+  
+  #app__diets .intl-tel-input .country-list {
+    width: 100%;
+    top: 100%;
+  } */
+/*------------------------------------
+            Custom Modal
+------------------------------------*/
+  .modal-open {
+    overflow: initial !important;
+}
+#app__diets .modal-header {
+    border-bottom: none !important;
+    padding: 20px 10px 0px 10px;
+}
+
+
+#app__diets .modal-body {
+    padding: 6px 54px;
+}
+
+#app__diets .form-edit-number {
+    text-align: center;
+}
+
+#app__diets .positon-content {
+    text-align: initial;
+}
+
+#app__diets .text-edit-phone {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #2E2474;
+}
+
+#app__diets .btn-save {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border: none;
+    background-color: #FF598B;
+    width: 260px;
+    height: 53px;
+    border-radius: 12px;
+    margin-bottom: 43px;
+    margin-top: 10px;
+}
+
+#app__diets .modal-content {
+    background: #F8F8FA;
+    box-shadow: 0px 18px 34px rgba(46, 36, 116, 0.1);
+    border-radius: 12px;
+}
+
+#app__diets .close {
+    color: #2E2474;
+    font-size: 35px;
+    font-weight: 400;
+    margin: -2rem -1rem -1rem auto;
+}
+
+ 
+#app__diets .modal-backdrop {
+    background: #2E2474;
+    opacity: 0.5;
+}
+
+
+#app__diets .select-specialty {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #827CAC;
+}
+
+#app__diets .select-specialty span {
+    color: red;
+}
+
+#app__diets .all-specialties {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+#app__diets .type-specialty {
+    display: flex;
+    gap: 8px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+#app__diets .name-specialty {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #2E2474;
+    margin: 0;
+    padding: 4px 0px 4px 6px;
+
+}
+
+#app__diets .add-specialty {
+    padding-right: 6px;
+}
+
+/*------------------------------------
+      Selected Specialty
+------------------------------------*/
+#app__diets .selected-specialty {
+    background: #3DE3A5;
+}
+
+
+#app__diets .selected-name-specialty {
+    color: #FFFFFF;
+}
+
+#app__diets .other-specialty {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-top: 32px;
+
+}
+
+#app__diets .input-specialty {
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    background-color: #ffff;
+    border: 0.5px solid #EAE9F1;
+    box-shadow: inset 0px -0.5px 0px #E2E3E4;
+
+}
+
+#app__diets .input-specialty::placeholder {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2E2474;
+
+}
+
+#app__diets .your-presentation-video {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #2E2474;
+}
+
+#app__diets .media video {
+    width: 100%;
+    height: 213px;
+}
+
+
+#app__diets .presentation {
+    margin-top: 58px;
+}
+
+#app__diets .title-presentation {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #2E2474;
+}
+
+
+#app__diets .resume-presentation {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #04021D;
+}
+
+
+#app__diets .create-note {
+    width: 26%;
+}
+
+#app__diets .add-note {
+    width: 75%;
+    float: right;
+    margin-right: 32px;
+    background: #D5D3E3;
+    border-radius: 20px;
+    padding: 35px 15px;
+    height: 898px;
+    overflow-y: scroll;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#app__diets .name-patient-note {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: #2E2474;
+}
+
+#app__diets .make-note {
+    display: flex;
+    gap: 14px;
+}
+
+#app__diets .image-add {
+    cursor: pointer;
+}
+
+#app__diets .text-make-note {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2E2474;
+    margin: 0;
+}
+
+#app__diets .card-note {
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    padding: 16px 20px 5px 20px;
+    margin-top: 25px;
+}
+
+#app__diets .date-note-patient {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #2E2474;
+    margin-bottom: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#app__diets .type-of-note {
+    display: flex;
+    justify-content: space-between;
+}
+
+#app__diets .btn-delete {
+    background: transparent;
+    border: none;
+    align-items: center;
+}
+
+#app__diets .title-note {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 27px;
+    color: #2E2474;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#app__diets .resume-note {
+    margin-top: 8px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #2E2474;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*------------------------------------
+       Scrollbar Card Note
+------------------------------------*/
+#app__diets .add-note::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    scroll-margin-left: 10px;
+
+}
+
+#app__diets .add-note::-webkit-scrollbar-thumb {
+    background: #827CAC;
+    border-radius: 10px;
+    margin-left: 50px;
+    height: 50%;
+}
+
+#app__diets .add-note::-webkit-scrollbar-track {
+    box-shadow: inset 0 124px 0px transparent;
+    border-radius: 10px;
+}
+
+
+#app__diets .add-note::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+}
+
+#app__diets .add-note::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 38px;
+    margin-right: 20px;
+
+}
+
+#app__diets .add-note::-webkit-scrollbar-corner {
+    display: none;
+}
+
+/*------------------------------------
+           Main Menu Responsive
+------------------------------------*/
+#app__diets  .bg-light {
+    background-color: #2E2474 !important;
+    color: #FFFFFF;
+}
+
+#app__diets  .nav-link {
+    padding: 0;
+}
+
+#app__diets  .position-navs {
+    margin-top: 0;
+}
+
+#app__diets .icon-space-bottom {
+    margin-bottom: 0;
+}
+
+#app__diets .nav-space-bottom {
+    margin-bottom: 22px;
+}
+
+#app__diets .btn-toggler-dietitian {
+    margin-top: -60px;
+}
+
+#app__diets .navbar-light .navbar-toggler {
+    border-color: #FFFFFF;
+}
+
+#app__diets .navbar-light .navbar-toggler-icon {
+    filter: invert(100%) sepia(0%) saturate(7431%) hue-rotate(143deg) brightness(95%) contrast(114%) !important;
+
+}
+
+#app__diets .position-badge {
+    left: 25px;
+    bottom: 36px;
+    top: auto;
+    right: auto;
+}
+
+#app__diets .name-dietitian {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-top: 12px;
+}
+
+#app__diets .access-to-home,
+.access-patients-menu,
+.folder-patients-menu {
+    display: flex;
+    gap: 13px;
+
+}
+
+#app__diets .home-nav {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+#app__diets .home-nav-link {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#app__diets.active-page {
+    color: #9AE8B8 !important;
+}
+
+#app__diets .position-badge-message {
+    left: auto;
+    bottom: auto;
+    top: -16px;
+    right: 126px;
+    position: relative;
+    margin: 10px;
+}
+
+#app__diets .position-badge-notifications {
+    left: auto;
+    bottom: auto;
+    top: -22px;
+    right: 150px;
+    position: relative;
+    margin: 16px;
+}
+
+/*------------------------------------
+            Media Query
+------------------------------------*/
+@media(max-width: 1250px) {
+    #app__diets .add-note {
+        width: 95%;
+        float: right;
+        margin-right: 0;
+    }
+}
+
+@media(min-width: 992px) {
+    #app__diets .left-dashboard {
+        display: initial;
+    }
+
+    #app__diets .main-menu {
+        display: none;
+
+    }
+}
+
+@media(max-width: 991px) {
+    #app__diets .left-dashboard {
+        display: none;
+    }
+    #app__diets .container-diets {
+        display: block;
+    }
+    #app__diets .deatils-account-dietitian {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #app__diets .all-details-dietitian {
+        flex-direction: column;
+    }
+
+  #app__diets .general-information , .specialties, .presentation-video {
+    width: 100%;
+  }
+  #app__diets .create-note {
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+#app__diets  .add-note {
+    position: initial;
+    top: 0;
+    transform: none;
+    float: inherit;
+    width: 97%;
+    margin: 0 auto;
+}
+}
+
+@media screen and (max-height: 910px) {
+
+    #app__diets .left-dashboard {
+        height: 690px;
+    }
+
+    #app__diets .dietitian,
+    .control-patient,
+    .account-management,
+    .access-notifications {
+        margin-bottom: 12px;
+    }
+
+    #app__diets .add-note {
+        height: 690px;
+    }
+}
+
+@media(max-width: 768px) {
+    #app__diets .dietitian-details {
+       flex-direction: column;
+    }
+
+    #app__diets .contact-mybody {
+        justify-content: space-between;
+    }
+    #app__diets .btn-save {
+        width: 100%;
+    }
+
+    #app__diets .modal-body {
+    padding: 0 18px;
+    }
+}
+
+@media(min-width: 992px) {
+    #app__diets .left-dashboard {
+        display: initial;
+    }
+
+    #app__diets .main-menu {
+        display: none;
+
+    }
+}
+
+
+@media screen and (max-height: 696px) {
+
+    #app__diets .left-dashboard {
+        height: 530px;
+    }
+
+    #app__diets .left-icons {
+        margin-bottom: 10px;
+    }
+
+    #app__diets .access-home {
+        margin-bottom: 4px;
+    }
+
+    #app__diets .dietitian,
+    .control-patient,
+    .account-management,
+    .access-notifications {
+        margin-bottom: 30px;
+    }
+
+    #app__diets .add-note {
+        height: 530px;
+    }
+}

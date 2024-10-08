@@ -1,0 +1,2428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <title>Accueil</title>
+</head>
+
+<body>
+     <!-- ======= Section Navigation ======= -->
+     <section id="navigation">
+        <div class="top-navigation">
+            <div class=" main-navigation main-container">
+                <div class="left-top-navigation">
+                    <img class="logo-zanimo" src="./assets/img/logo-zanimo.svg" alt="">
+                    <form action="" class="search">
+                        <input class="input-search" placeholder="Rechercher sur Z'animo" type="text" name="search">
+                        <button class="btn-search">
+                            <img class="icon-search" src="./assets/img/search.svg" alt="">
+                        </button>
+                    </form>
+
+                </div>
+                <div class="right-top-navigation">
+                    <div class="cart">
+                        <button class="cart-details">
+                            <img src="./assets/img/icon-cart.svg" alt="">
+                            <p class="cart-number">2</p>
+                        </button>
+                    </div>
+                    <button class="customer">
+                        <img src="./assets/img/customer.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="menu-zanimo">
+            <div class="bottom-navigation" id="style-naviagtion">
+                <div class="item-navigation">
+                    <ul class="menu">
+                        <li class="item-menu">
+                            <a href="">Accueil</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="">Z'Conseil</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="">Chats</a>
+                        </li>
+                        <li class="dropdown item-menu">
+                            <a onclick="dropDownMenu('menu-dropdown-1','polygone-menu-1')" class="dropbtn">Chiens</a>
+                            <img src="./assets/img/arrow-down.svg" alt="">
+
+                            <svg class="icon-polygone" id="polygone-menu-1" width="65" height="33" viewBox="0 0 75 33"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M35.4528 12.1122C36.253 11.053 37.8441 11.053 38.6443 12.1122L47.6591 24.0444C48.6545 25.362 47.7147 27.25 46.0633 27.25H28.0337C26.3824 27.25 25.4425 25.362 26.438 24.0444L35.4528 12.1122Z"
+                                    fill="white" />
+                            </svg>
+
+
+                        </li>
+                        <li class="dropdown item-menu">
+                            <a onclick="dropDownMenu('menu-dropdown-2','polygone-menu-2')" class="dropbtn">Rongeurs</a>
+                            <img src="./assets/img/arrow-down.svg" alt="">
+
+
+                            <svg class="icon-polygone" id="polygone-menu-2" width="65" height="33" viewBox="0 0 75 33"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M35.4528 12.1122C36.253 11.053 37.8441 11.053 38.6443 12.1122L47.6591 24.0444C48.6545 25.362 47.7147 27.25 46.0633 27.25H28.0337C26.3824 27.25 25.4425 25.362 26.438 24.0444L35.4528 12.1122Z"
+                                    fill="white" />
+                            </svg>
+
+
+                        </li>
+                        <li class="item-menu">
+                            <a onclick="dropDownMenu('menu-dropdown-3','polygone-menu-3')" class="dropbtn">Oiseaux</a>
+                            <img src="./assets/img/arrow-down.svg" alt="">
+
+                            <svg class="icon-polygone" id="polygone-menu-3" width="65" height="33" viewBox="0 0 75 33"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M35.4528 12.1122C36.253 11.053 37.8441 11.053 38.6443 12.1122L47.6591 24.0444C48.6545 25.362 47.7147 27.25 46.0633 27.25H28.0337C26.3824 27.25 25.4425 25.362 26.438 24.0444L35.4528 12.1122Z"
+                                    fill="white" />
+                            </svg>
+
+
+                        </li>
+                        <li class="item-menu">
+                            <a>Poissons</a>
+                            <img src="./assets/img/arrow-down.svg" alt="">
+                        </li>
+                        <li class="item-menu">
+                            <a href="">Contact</a>
+                        </li>
+
+
+                        <div class="dropdown-content main-category " id="menu-dropdown-2">
+                            <div class="category-item-1">
+                                <a class="menu-category" href="">
+                                    <p>Alimentation roug</p>
+                                </a>
+
+                                <div class="sub-menu">
+                                    <a class="sub-menu-category" href="">
+                                        <p>Complements alimentaires chiens</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Recompenses Chiens</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Jouets Chiens</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Croquette Chien</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Humides chiens</p>
+                                    </a>
+                                </div>
+                                <a class="menu-category" href="">
+                                    <p>Accessoires</p>
+                                </a>
+
+                                <div class="sub-menu style-sub-menu">
+                                    <a class="sub-menu-category" href="">
+                                        <p>Gamelles & distributeurs</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Hygienes</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Mode</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Harnais</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Jouets Chiens</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Muselieres</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Niches</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="category-item-2">
+                                <a class="sub-menu-category" href="">
+                                    <p>Sacs</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Couchage</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Toilettage</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Laisses</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Colliers Chiens</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Box De Transport</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Pour La Voiture</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Pratique</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Dressage</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Containers</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Anti Puces</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Shampoing</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Parfums</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Parrure Chiens</p>
+                                </a>
+                                <a class="sub-menu-category" href="">
+                                    <p>Colliers Metalique Chien</p>
+                                </a>
+
+                            </div>
+                            <div class="category-picture">
+                                <div class="image-1">
+                                    <img class="category-image-1" src="./assets/img/category-1.svg" alt="">
+                                </div>
+                                <div class="image-2">
+                                    <img class="category-image-2" src="./assets/img/category-details.svg" alt="">
+                                    <div class="promotion">
+                                        <p>Promo -<span>20</span>%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" main-category dropdown-content" id="menu-dropdown-3">
+                            <div class="category-item-1">
+                                <a class="menu-category" href="">
+                                    <p>Alimentation ois</p>
+                                </a>
+
+                                <div class="sub-menu">
+                                    <a class="sub-menu-category" href="">
+                                        <p>Complements alimentaires chiens</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Recompenses Chiens</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Jouets Chiens</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Croquette Chien</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Humides chiens</p>
+                                    </a>
+                                </div>
+                                <a class="menu-category" href="">
+                                    <p>Accessoires</p>
+                                </a>
+
+                                <div class="sub-menu style-sub-menu">
+                                    <a class="sub-menu-category" href="">
+                                        <p>Gamelles & distributeurs</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Hygienes</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Mode</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Harnais</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Jouets Chiens</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Muselieres</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Niches</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="category-item-2">
+                                <a class="sub-menu-category" href="">
+                                    <p>Sacs</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Couchage</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Toilettage</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Laisses</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Colliers Chiens</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Box De Transport</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Pour La Voiture</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Pratique</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Dressage</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Containers</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Anti Puces</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Shampoing</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Parfums</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Parrure Chiens</p>
+                                </a>
+                                <a class="sub-menu-category" href="">
+                                    <p>Colliers Metalique Chien</p>
+                                </a>
+
+                            </div>
+                            <div class="category-picture">
+                                <div class="image-1">
+                                    <img class="category-image-1" src="./assets/img/category-1.svg" alt="">
+                                </div>
+                                <div class="image-2">
+                                    <img class="category-image-2" src="./assets/img/category-details.svg" alt="">
+                                    <div class="promotion">
+                                        <p>Promo -<span>20</span>%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-category dropdown-content" id="menu-dropdown-1">
+                            <div class="category-item-1">
+                                <a class="menu-category" href="">
+                                    <p>Alimentation 1</p>
+                                </a>
+
+                                <div class="sub-menu">
+                                    <a class="sub-menu-category" href="">
+                                        <p>Complements alimentaires chiens</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Recompenses Chiens</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Jouets Chiens</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Croquette Chien</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Humides chiens</p>
+                                    </a>
+                                </div>
+                                <a class="menu-category" href="">
+                                    <p>Accessoires</p>
+                                </a>
+
+                                <div class="sub-menu style-sub-menu">
+                                    <a class="sub-menu-category" href="">
+                                        <p>Gamelles & distributeurs</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Hygienes</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Mode</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Harnais</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Jouets Chiens</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Muselieres</p>
+                                    </a>
+
+                                    <a class="sub-menu-category" href="">
+                                        <p>Niches</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="category-item-2">
+                                <a class="sub-menu-category" href="">
+                                    <p>Sacs</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Couchage</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Toilettage</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Laisses</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Colliers Chiens</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Box De Transport</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Pour La Voiture</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Pratique</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Dressage</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Containers</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Anti Puces</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Shampoing</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Parfums</p>
+                                </a>
+
+                                <a class="sub-menu-category" href="">
+                                    <p>Parrure Chiens</p>
+                                </a>
+                                <a class="sub-menu-category" href="">
+                                    <p>Colliers Metalique Chien</p>
+                                </a>
+
+                            </div>
+                            <div class="category-picture">
+                                <div class="image-1">
+                                    <img class="category-image-1" src="./assets/img/category-1.svg" alt="">
+                                </div>
+                                <div class="image-2">
+                                    <img class="category-image-2" src="./assets/img/category-details.svg" alt="">
+                                    <div class="promotion">
+                                        <p>Promo -<span>20</span>%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+         <!-- ======= Mobile Navigation ======= -->
+         <div class="mobile-navigation">
+            <div class="top-navigation-mobile">
+                <button onclick="openNav()" class="show-menu-mobile"><img src="./assets/img/more-menu.svg" /></button>
+                <img class="logo-mobile" src="./assets/img/logo-zanimo.svg" alt="">
+                <button class="customer customer-menu-mobile">
+                    <img src="./assets/img/customer.svg" alt="">
+                </button>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <div class="content-menu-mobile">
+                    <button class="close-btn-menu" onclick="closeNav()"> <img src="./assets/img/arrow-left.svg"
+                            alt=""></button>
+                    <div class="card-favorite">
+                        <form class="search search-mobile">
+                            <input class="input-search input-search-mobile" placeholder="Rechercher sur Z'animo"
+                                type="text" name="search">
+                            <button class="btn-search btn-search-mobile">
+                                <img class="icon-search" src="./assets/img/search.svg" alt="">
+                            </button>
+                        </form>
+                        <div class="top-side-nav">
+                            <div class="item-board">
+                                <img src="./assets/img/icon-cart.svg" alt="">
+                                <p>Card</p>
+                            </div>
+                            <p class="text-number">3</p>
+                        </div>
+
+                        <div class="top-side-nav">
+                            <div class="item-board">
+                                <img src="./assets/img/favorite.svg" alt="">
+                                <p>Favorite</p>
+                            </div>
+                            <p class="text-number">12</p>
+                        </div>
+                    </div>
+                    <div class="menu-mobile">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link item-menu-mobile" aria-current="page" href="#">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link item-menu-mobile" href="#">Z'Conseil</a>
+                            </li>
+                            <li class="sub-category" data-bs-toggle="collapse" href="#collapse-1" role="button"
+                                aria-expanded="false" aria-controls="collapse-1" id="rotateImgArrow-1">
+                                <a onclick="rotateImgArrow('rotateImgArrow-1');" class=" nav-link item-menu-mobile "
+                                    href="">Chats</a>       
+
+                                <img onclick="rotateImgArrow('rotateImgArrow-1')" class="position-arrow"
+                                    src="./assets/img/arrow-down.svg" alt=""></li>
+                                <div class="collapse" id="collapse-1">
+                                    <div class="menu-item">
+                                        <ul class="card card-body item-mobile">
+                                            <li class="name-sub-menu-mobile" id="rotateImgArrow-5"><a
+                                                    class="nav-link title-menu-mobile"
+                                                    onclick="rotateImgArrow('rotateImgArrow-5')"
+                                                    data-bs-toggle="collapse" href="#collapse-11" role="button"
+                                                    aria-expanded="false" aria-controls="collapse-11">Alimentation</a>
+                                                <img onclick="rotateImgArrow('rotateImgArrow-5')" class="position-arrow"
+                                                    src="./assets/img/arrow-down.svg">
+                                            </li>
+                                            <div class="collapse" id="collapse-11">
+                                                <li><a class="nav-link item-menu-mobile" href="#">Complements
+                                                        alimentaires
+                                                        chiens</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="#">Recompenses Chiens</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="#">Jouets Chiens</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="#">Croquette Chien</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="#">Humides chiens</a></li>
+                                            </div>
+                                        </ul>
+                                        <ul class="card card-body item-mobile">
+
+                                            <li class="name-sub-menu-mobile" id="rotateImgArrow-6"><a
+                                                    class="nav-link title-menu-mobile" data-bs-toggle="collapse"
+                                                    href="#collapse-12" role="button"
+                                                    onclick="rotateImgArrow('rotateImgArrow-6')" aria-expanded="false"
+                                                    aria-controls="collapse-12">Accessoires</a>
+                                                <img onclick="rotateImgArrow('rotateImgArrow-6')" class="position-arrow"
+                                                    src="./assets/img/arrow-down.svg">
+                                            </li>
+
+                                            <div class="collapse" id="collapse-12">
+                                                <li><a class="nav-link item-menu-mobile" href="">Gamelles &
+                                                        distributeurs</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Hygienes</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Mode</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Harnais</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Muselieres</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Niches</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Sacs</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Couchage</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Toilettage</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Laisses</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Colliers Chiens</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Box De Transport</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Pour La Voiture</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Pratique</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Containers</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Anti Puces</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Shampoing</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Parfums</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Parrure Chiens</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Colliers Metalique
+                                                        Chien</a></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                     
+
+
+                            <li class="sub-category" data-bs-toggle="collapse" href="#collapse-2" role="button"
+                                aria-expanded="false" aria-controls="collapse-2" id="rotateImgArrow-2">
+                                <a onclick="rotateImgArrow('rotateImgArrow-2')" class=" nav-link item-menu-mobile "
+                                    href="">Chiens</a> 
+                                <img onclick="rotateImgArrow('rotateImgArrow-2')" class="position-arrow"
+                                    src="./assets/img/arrow-down.svg" alt=""></li>
+                                <div class="collapse" id="collapse-2">
+                                    <div class="menu-item">
+                                        <ul class="card card-body item-mobile" id="rotateImgArrow-7">
+                                            <li class="name-sub-menu-mobile"><a class="nav-link title-menu-mobile"
+                                                    onclick="rotateImgArrow('rotateImgArrow-7')"
+                                                    data-bs-toggle="collapse" href="#collapse-21" role="button"
+                                                    aria-expanded="false" aria-controls="collapse-21">Alimentation</a>
+                                                <img onclick="rotateImgArrow('rotateImgArrow-7')" class="position-arrow"
+                                                    src="./assets/img/arrow-down.svg">
+                                            </li>
+                                            <div class="collapse" id="collapse-21">
+                                                <li><a class="nav-link item-menu-mobile" href="">Complements
+                                                        alimentaires
+                                                        chiens</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Recompenses Chiens</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Jouets Chiens</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Croquette Chien</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Humides chiens</a></li>
+                                            </div>
+                                        </ul>
+                                        <ul class="card card-body item-mobile">
+
+                                            <li class="name-sub-menu-mobile" id="rotateImgArrow-8"><a
+                                                    class="nav-link title-menu-mobile"
+                                                    onclick="rotateImgArrow('rotateImgArrow-8')"
+                                                    data-bs-toggle="collapse" href="#collapse-22" role="button"
+                                                    aria-expanded="false" aria-controls="collapse-22">Accessoires</a>
+                                                <img onclick="rotateImgArrow('rotateImgArrow-8')" class="position-arrow"
+                                                    src="./assets/img/arrow-down.svg">
+                                            </li>
+
+
+
+                                            <div class="collapse" id="collapse-22">
+
+                                                <li><a class="nav-link item-menu-mobile" href="">Gamelles &
+                                                        distributeurs</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Hygienes</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Mode</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Harnais</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Muselieres</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Niches</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Sacs</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Couchage</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Toilettage</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Laisses</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Colliers Chiens</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Box De Transport</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Pour La Voiture</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Pratique</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Containers</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Anti Puces</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Shampoing</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Parfums</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Parrure Chiens</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Colliers Metalique
+                                                        Chien</a></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                          
+
+                            <li class="sub-category" data-bs-toggle="collapse" href="#collapse-3" role="button"
+                                aria-expanded="false" aria-controls="collapse-3" id="rotateImgArrow-3">
+                                <a onclick="rotateImgArrow('rotateImgArrow-3')" class=" nav-link item-menu-mobile "
+                                    href="">Rongeurs</a>
+                                <img onclick="rotateImgArrow('rotateImgArrow-3')" class="position-arrow"
+                                    src="./assets/img/arrow-down.svg" alt=""></li>
+                                <div class="collapse" id="collapse-3">
+                                    <div class="menu-item">
+                                        <ul class="card card-body item-mobile">
+                                            <li class="name-sub-menu-mobile" id="rotateImgArrow-9"><a
+                                                    class="nav-link title-menu-mobile" data-bs-toggle="collapse"
+                                                    href="#collapse-31" role="button"
+                                                    onclick="rotateImgArrow('rotateImgArrow-9')" aria-expanded="false"
+                                                    aria-controls="collapse-31">Alimentation</a>
+                                                <img onclick="rotateImgArrow('rotateImgArrow-9')" class="position-arrow"
+                                                    src="./assets/img/arrow-down.svg">
+                                            </li>
+                                            <div class="collapse" id="collapse-31">
+                                                <li><a class="nav-link item-menu-mobile" href="">Complements
+                                                        alimentaires
+                                                        chiens</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Recompenses Chiens</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Jouets Chiens</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Croquette Chien</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Humides chiens</a></li>
+                                            </div>
+                                        </ul>
+                                        <ul class="card card-body item-mobile">
+
+                                            <li class="name-sub-menu-mobile" id="rotateImgArrow-10"><a
+                                                    class="nav-link title-menu-mobile" data-bs-toggle="collapse"
+                                                    href="#collapse-32" role="button"
+                                                    onclick="rotateImgArrow('rotateImgArrow-10')" aria-expanded="false"
+                                                    aria-controls="collapse-32">Accessoires</a>
+                                                <img onclick="rotateImgArrow('rotateImgArrow-10')"
+                                                    class="position-arrow" src="./assets/img/arrow-down.svg">
+                                            </li>
+
+
+
+                                            <div class="collapse" id="collapse-32">
+
+                                                <li><a class="nav-link item-menu-mobile" href="">Gamelles &
+                                                        distributeurs</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Hygienes</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Mode</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Harnais</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Muselieres</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Niches</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Sacs</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Couchage</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Toilettage</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Laisses</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Colliers Chiens</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Box De Transport</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Pour La Voiture</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Pratique</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Containers</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Anti Puces</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Shampoing</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Parfums</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Parrure Chiens</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Colliers Metalique
+                                                        Chien</a></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                           
+
+                            <li class="sub-category" data-bs-toggle="collapse" href="#collapse-4" role="button"
+                                aria-expanded="false" aria-controls="collapse-4" id="rotateImgArrow-4">
+                                <a onclick="rotateImgArrow('rotateImgArrow-4')" class=" nav-link item-menu-mobile "
+                                    href="">Oiseaux</a>
+                                <img onclick="rotateImgArrow('rotateImgArrow-4')" class="position-arrow"
+                                    src="./assets/img/arrow-down.svg" alt=""></li>
+                                <div class="collapse" id="collapse-4">
+                                    <div class="menu-item">
+                                        <ul class="card card-body item-mobile">
+                                            <li class="name-sub-menu-mobile" id="rotateImgArrow-11"><a
+                                                    class="nav-link title-menu-mobile" data-bs-toggle="collapse"
+                                                    href="#collapse-41" role="button"
+                                                    onclick="rotateImgArrow('rotateImgArrow-11')" aria-expanded="false"
+                                                    aria-controls="collapse-41">Alimentation</a>
+                                                <img onclick="rotateImgArrow('rotateImgArrow-11')"
+                                                    class="position-arrow" src="./assets/img/arrow-down.svg">
+                                            </li>
+                                            <div class="collapse" id="collapse-41">
+                                                <li><a class="nav-link item-menu-mobile" href="">Complements
+                                                        alimentaires
+                                                        chiens</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Recompenses Chiens</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Jouets Chiens</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Croquette Chien</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Humides chiens</a></li>
+                                            </div>
+                                        </ul>
+                                        <ul class="card card-body item-mobile">
+
+                                            <li class="name-sub-menu-mobile" id="rotateImgArrow-12"><a
+                                                    class="nav-link title-menu-mobile" data-bs-toggle="collapse"
+                                                    href="#collapse-42" role="button"
+                                                    onclick="rotateImgArrow('rotateImgArrow-12')" aria-expanded="false"
+                                                    aria-controls="collapse-42">Accessoires</a>
+                                                <img onclick="rotateImgArrow('rotateImgArrow-12')"
+                                                    class="position-arrow" src="./assets/img/arrow-down.svg">
+                                            </li>
+                                            <div class="collapse" id="collapse-42">
+                                                <li><a class="nav-link item-menu-mobile" href="">Gamelles &
+                                                        distributeurs</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Hygienes</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Mode</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Harnais</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Muselieres</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Niches</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Sacs</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Couchage</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Toilettage</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Laisses</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Colliers Chiens</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Box De Transport</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Pour La Voiture</a>
+                                                </li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Pratique</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Containers</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Anti Puces</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Shampoing</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Parfums</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Parrure Chiens</a></li>
+                                                <li><a class="nav-link item-menu-mobile" href="">Colliers Metalique
+                                                        Chien</a></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                         
+
+
+                            <li class="nav-item">
+                                <a class="nav-link item-menu-mobile" href="#">Contact</a>
+                            </li>
+
+                    </div>
+                </div>
+            </div>
+            <div id="backdrop" class="modal-backdrop-mobile fade-mobile showMobile" onclick="closeNav()"></div>
+        </div>
+    </section>
+    <!-- ======= End Section Navigation ======= -->
+
+
+    <div class="zanimo-website">
+        <!-- ======= Section 2 ======= -->
+        <section id="section-2" class="website">
+            <div class="main-site main-container">
+                <div class="left-column">
+
+                    <div class="owl-carousel owl-theme" id="carousel-promo-mobile">
+                        <div class="item">
+                            <img class="image-slide" src="./assets/img/carousel-img-1.png" alt="">
+                        </div>
+
+                        <div class="item">
+                            <img class="image-slide" src="./assets/img/carousel-img-1.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="image-slide" src="./assets/img/carousel-img-1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="promotion-product" id="promotion-product-mobile">
+                        <div class="top-promotion">
+                            <p class="text-promotion">Promos</p>
+                        </div>
+                        <div>
+                            <article>
+                                <div class="product">
+                                    <div class="product-image">
+                                        <p class="value-promotion">-<span>20</span>%</p>
+                                        <img class="product-picture" src="./assets/img/product-1.jpg" alt="">
+                                    </div>
+                                    <div class="details-product">
+                                        <h2 class="name-product">JosiCat Sterilised Classic Promos chat avec livraison
+                                        </h2>
+                                        <p class="category-product">Humides Chat</p>
+                                        <div class="price">
+                                            <p class="new-price">6,150 <span>DT</span></p>
+                                            <p class="old-price">18,900 <span>DT</span></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <hr class="divider">
+                            </article>
+                            <article>
+                                <div class="product">
+                                    <div class="product-image">
+                                        <p class="value-promotion">-<span>45</span>%</p>
+                                        <img class="product-picture" src="./assets/img/product-1.jpg" alt="">
+                                    </div>
+                                    <div class="details-product">
+                                        <h2 class="name-product">JosiCat Sterilised Classic Promos chat avec livraison
+                                        </h2>
+                                        <p class="category-product">Humides Chat</p>
+                                        <div class="price">
+                                            <p class="new-price">6,150 <span>DT</span></p>
+                                            <p class="old-price">18,900 <span>DT</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="divider">
+                            </article>
+
+                            <article>
+                                <div class="product">
+                                    <div class="product-image">
+                                        <p class="value-promotion">-<span>12</span>%</p>
+                                        <img class="product-picture" src="./assets/img/product-1.jpg" alt="">
+                                    </div>
+                                    <div class="details-product">
+                                        <h2 class="name-product">JosiCat Sterilised Classic Promos chat avec livraison
+                                        </h2>
+                                        <p class="category-product">Humides Chat</p>
+                                        <div class="price">
+                                            <p class="new-price">6,150 <span>DT</span></p>
+                                            <p class="old-price">18,900 <span>DT</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="divider">
+                            </article>
+
+                            <article>
+                                <div class="product">
+                                    <div class="product-image">
+                                        <p class="value-promotion">-<span>8</span>%</p>
+                                        <img class="product-picture" src="./assets/img/product-1.jpg" alt="">
+                                    </div>
+                                    <div class="details-product">
+                                        <h2 class="name-product">JosiCat Sterilised Classic Promos chat avec livraison
+                                        </h2>
+                                        <p class="category-product">Humides Chat</p>
+                                        <div class="price">
+                                            <p class="new-price">6,150 <span>DT</span></p>
+                                            <p class="old-price">18,900 <span>DT</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="top-promotion hide-top">
+                        <p class="text-promotion">Promos</p>
+                    </div>
+                    <div class="owl-carousel owl-theme" id="carousel-promotion-product-mobile">
+                        <div class="item">
+                            <div class="card-product style-card">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-1.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">1-Beaphar CatComfort Diffuseur Et Recharge</p>
+                                <p class="categorization-product">Toilettage et Hygiène</p>
+                                <div class="price-note">
+                                    <p class="price-product">13,800 DT</p>
+                                    <div class="note">
+                                        <p class="old-price">18,900 <span>DT</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product style-card">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-1.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">1-Beaphar CatComfort Diffuseur Et Recharge</p>
+                                <p class="categorization-product">Toilettage et Hygiène</p>
+                                <div class="price-note">
+                                    <p class="price-product">10,000 DT</p>
+                                    <div class="note">
+
+                                        <p class="old-price">18,900 <span>DT</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product style-card">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">111,700 DT</p>
+                                    <div class="note">
+                                        <p class="old-price">218,900 <span>DT</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product style-card">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">89,900 DT</p>
+                                    <div class="note">
+                                        <p class="old-price">189,900 <span>DT</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product style-card">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">13,700 DT</p>
+                                    <div class="note">
+                                        <p class="old-price">18,900 <span>DT</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product style-card">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">8,500 DT</p>
+                                    <div class="note">
+                                        <p class="old-price">18,900 <span>DT</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="card-product style-card">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">8,500 DT</p>
+                                    <div class="note">
+                                        <p class="old-price">18,900 <span>DT</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product style-card">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">18,500 DT</p>
+                                    <div class="note">
+                                        <p class="old-price">28,900 <span>DT</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product style-card">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">3,700 DT</p>
+                                    <div class="note">
+                                        <p class="old-price">18,900 <span>DT</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img class="image-promo" src="./assets/img/pub-2.png" alt="">
+                    <img class="image-promo" src="./assets/img/pub-1.webp" alt="">
+                    <img class="image-promo" src="./assets/img/pub-3.png" alt="">
+
+                </div>
+
+                <div class="right-column">
+                    <div class="owl-carousel owl-theme style-owl" id="carousel-promo">
+                        <div class="item">
+                            <img class="image-slide" src="./assets/img/carousel-img-1.png" alt="">
+                        </div>
+
+                        <div class="item">
+                            <img class="image-slide" src="./assets/img/carousel-img-1.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="image-slide" src="./assets/img/carousel-img-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-carousel owl-theme" id="carousel-animal">
+                        <div class="item">
+                            <div class="item-slide">
+                                <div class="first-animal">
+                                    <p class="slide-text">Chat heureux, alimentation saine !</p>
+                                    <div class="animal-picture"> <img class="animal-img" src="./assets/img/animal-4.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="second-animal">
+                                    <p class="slide-text">Oiseau heureux, alimentation saine !</p>
+                                    <div class="animal-picture"> <img class="animal-img" src="./assets/img/animal-1.png"
+                                            alt=""></div>
+                                </div>
+
+                                <div class="third-animal">
+                                    <p class="slide-text ">Produits chien, qualité supérieure !</p>
+                                    <div class="animal-picture"> <img class="animal-img" src="./assets/img/animal-3.png"
+                                            alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-slide">
+                                <div class="first-animal">
+                                    <p class="slide-text">Oiseau heureux, alimentation saine !</p>
+                                    <div class="animal-picture"> <img class="animal-img" src="./assets/img/animal-1.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="second-animal">
+                                    <p class="slide-text">Rongeur heureux, alimentation saine !</p>
+                                    <div class="animal-picture"> <img class="animal-img" src="./assets/img/animal-2.png"
+                                            alt=""></div>
+                                </div>
+
+                                <div class="third-animal">
+                                    <p class="slide-text ">Produits poissons, qualité supérieure !</p>
+                                    <div class="animal-picture"> <img class="animal-img"
+                                            src="./assets/img/product-zanimo.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="owl-carousel owl-theme" id="carousel-animal-mobile">
+                        <div class="item">
+                            <div class="first-animal border-card-animal">
+                                <p class="slide-text">Mobile Chat heureux, alimentation saine !</p>
+                                <div class="animal-picture"> <img class="animal-img" src="./assets/img/animal-4.png"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="second-animal border-card-animal">
+                                <p class="slide-text">Oiseau heureux, alimentation saine !</p>
+                                <div class="animal-picture"> <img class="animal-img" src="./assets/img/animal-1.png"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="third-animal border-card-animal">
+                                <p class="slide-text ">Produits chien, qualité supérieure !</p>
+                                <div class="animal-picture"> <img class="animal-img" src="./assets/img/animal-3.png"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="first-animal border-card-animal">
+                                <p class="slide-text">Oiseau heureux, alimentation saine !</p>
+                                <div class="animal-picture"> <img class="animal-img" src="./assets/img/animal-1.png"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="second-animal border-card-animal">
+                                <p class="slide-text">Rongeur heureux, alimentation saine !</p>
+                                <div class="animal-picture"> <img class="animal-img" src="./assets/img/animal-2.png"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="third-animal border-card-animal">
+                                <p class="slide-text ">Produits poissons, qualité supérieure !</p>
+                                <div class="animal-picture"> <img class="animal-img"
+                                        src="./assets/img/product-zanimo.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-wrapper">
+                        <h1 class="title-wrapper">Meilleures Ventes</h1>
+                        <a class="btn-view-plus" href="#">
+                            <p class="text-view-plus">Voir Plus</p> <img src="./assets/img/arrow-right.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- ======= Carosuel top sales ======= -->
+                    <div class="owl-carousel owl-theme" id="carousel-1">
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-1.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">1-Beaphar CatComfort Diffuseur Et Recharge</p>
+                                <p class="categorization-product">Toilettage et Hygiène</p>
+                                <div class="price-note">
+                                    <p class="price-product">76,000 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">4.9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">28,500 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">2.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">28,500 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">2.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">28,500 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">2.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ======= End Carosuel top sales ======= -->
+                    <div class="main-wrapper">
+                        <h1 class="title-wrapper">Catégorie en vedette</h1>
+                    </div>
+                    <!-- =======   Carosuel category ======= -->
+                    <div class="owl-carousel owl-theme" id="carousel-2">
+                        <div class="item">
+                            <div class="product-category">
+                                <a href="">
+                                    <p class="title-category">Couchage chien</p>
+                                </a>
+                                <div class="picture-category">
+                                    <img class="category-img" src="./assets/img/category-product-1.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-category">
+                                <a href="">
+                                    <p class="title-category">Cage Oiseaux</p>
+                                </a>
+                                <div class="picture-category">
+                                    <img class="category-img" src="./assets/img/category-product-2.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-category">
+                                <a href="">
+                                    <p class="title-category">Poissons aquarium</p>
+                                </a>
+                                <div class="picture-category">
+                                    <img class="category-img" src="./assets/img/category-product-3.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-category">
+                                <a href="">
+                                    <p class="title-category">Couchage chien</p>
+                                </a>
+                                <div class="picture-category">
+                                    <img class="category-img" src="./assets/img/category-product-1.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-category">
+                                <a href="">
+                                    <p class="title-category">Poissons aquarium</p>
+                                </a>
+                                <div class="picture-category">
+                                    <img class="category-img" src="./assets/img/category-product-3.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-category">
+                                <a href="">
+                                    <p class="title-category">Poissons aquarium</p>
+                                </a>
+                                <div class="picture-category">
+                                    <img class="category-img" src="./assets/img/category-product-1.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- =======  End Carosuel category ======= -->
+
+                    <div class="main-wrapper">
+                        <h1 class="title-wrapper">Promotions</h1>
+                        <a class="btn-view-plus" href="#">
+                            <p class="text-view-plus">Voir Plus</p> <img src="./assets/img/arrow-right.svg" alt="">
+                        </a>
+                    </div>
+
+                    <!-- ======= Carosuel top sales ======= -->
+                    <div class="owl-carousel owl-theme" id="carousel-3">
+                        <div class="item">
+                            <div class="card-product">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-1.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">1-Beaphar CatComfort Diffuseur Et Recharge</p>
+                                <p class="categorization-product">Toilettage et Hygiène</p>
+                                <div class="price-note">
+                                    <p class="price-product">76,000 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">4.9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-1.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">1-Beaphar CatComfort Diffuseur Et Recharge</p>
+                                <p class="categorization-product">Toilettage et Hygiène</p>
+                                <div class="price-note">
+                                    <p class="price-product">76,000 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">4.9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">28,500 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">2.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">28,500 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">2.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">28,500 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">2.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <div class="promotion text-discounts">
+                                    <p>Promo -<span>20</span>%</p>
+                                </div>
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ======= End Carosuel top sales ======= -->
+                    <div class="main-wrapper">
+                        <h1 class="title-wrapper">Top Produits</h1>
+                        <a class="btn-view-plus" href="#">
+                            <p class="text-view-plus">Voir Plus</p> <img src="./assets/img/arrow-right.svg" alt="">
+                        </a>
+                    </div>
+
+
+                    <!-- ======= Carosuel top products ======= -->
+                    <div class="owl-carousel owl-theme" id="carousel-4">
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-1.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">1-Beaphar CatComfort Diffuseur Et Recharge</p>
+                                <p class="categorization-product">Toilettage et Hygiène</p>
+                                <div class="price-note">
+                                    <p class="price-product">76,000 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">4.9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-1.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">1-Beaphar CatComfort Diffuseur Et Recharge</p>
+                                <p class="categorization-product">Toilettage et Hygiène</p>
+                                <div class="price-note">
+                                    <p class="price-product">76,000 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">4.9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">28,500 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">2.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">28,500 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">2.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">28,500 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">2.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ======= End Carosuel top products ======= -->
+
+
+                    <img class="pub-image" src="./assets/img/pub.png" alt="">
+                    <div class="main-wrapper">
+                        <h1 class="title-wrapper">Nouveautés</h1>
+                        <a class="btn-view-plus" href="#">
+                            <p class="text-view-plus">Voir Plus</p> <img src="./assets/img/arrow-right.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- ======= Carosuel new products ======= -->
+                    <div class="owl-carousel owl-theme" id="carousel-5">
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-1.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">1-Beaphar CatComfort Diffuseur Et Recharge</p>
+                                <p class="categorization-product">Toilettage et Hygiène</p>
+                                <div class="price-note">
+                                    <p class="price-product">76,000 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">4.9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-1.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">1-Beaphar CatComfort Diffuseur Et Recharge</p>
+                                <p class="categorization-product">Toilettage et Hygiène</p>
+                                <div class="price-note">
+                                    <p class="price-product">76,000 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">4.9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">28,500 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">2.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">28,500 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">2.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-4.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Felican Jouet Dentaire ROLITO 14 Cm
+                                </p>
+                                <p class="categorization-product">Jouets</p>
+                                <div class="price-note">
+                                    <p class="price-product">28,500 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">2.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-product">
+                                <button class="btn-favoris"><img src="./assets/img/favoris.svg"></button>
+                                <div class="card-image">
+                                    <a href=""><img class="image-product" src="./assets/img/product-img-2.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="title-product">Royal Canin CHIEN Maxi Puppy</p>
+                                <p class="categorization-product">Croquette Chien</p>
+                                <div class="price-note">
+                                    <p class="price-product">323,700 DT</p>
+                                    <div class="note">
+                                        <img src="./assets/img/star.svg" alt="">
+                                        <p class="text-note">3.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ======= End Carosuel new products ======= -->
+
+                    <div class="all-product">
+                        <div class="list-product-1">
+                            <div class="item-zanimo">
+                                <h1 class="item-wrapper">Articles en vedette</h1>
+                                <div class="container-btn-1"></div>
+                            </div>
+                            <div class="owl-carousel owl-theme" id="carousel-6">
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="item-image">
+                                            <a href=""><img class="pciture-item" src="./assets/img/product-img-5.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="item-details">
+                                            <p class="name-item">1-Barquette plaisir pate saumon 100 gr</p>
+                                            <p class="category-item">Humides Chat</p>
+                                            <div class="item-price">
+                                                <p>76,000 DT</p>
+                                                <div class="item-note">
+                                                    <p>3.9</p>
+                                                    <img class="note-image" src="./assets/img/star.svg" alt="">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="item-image">
+                                            <a href=""><img class="pciture-item" src="./assets/img/product-1.jpg"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="item-details">
+                                            <p class="name-item">Barquette plaisir pate saumon 100 gr</p>
+                                            <p class="category-item">Humides Chat</p>
+                                            <div class="item-price">
+                                                <p>76,000 DT</p>
+                                                <div class="item-note">
+                                                    <p>3.9</p>
+                                                    <img class="note-image" src="./assets/img/star.svg" alt="">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="item-image">
+                                            <a href=""><img class="pciture-item" src="./assets/img/product-img-5.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="item-details">
+                                            <p class="name-item">2-Barquette plaisir pate saumon 100 gr</p>
+                                            <p class="category-item">Humides Chat</p>
+                                            <div class="item-price">
+                                                <p>76,000 DT</p>
+                                                <div class="item-note">
+                                                    <p>3.9</p>
+                                                    <img class="note-image" src="./assets/img/star.svg" alt="">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="item-image">
+                                            <a href=""><img class="pciture-item" src="./assets/img/product-1.jpg"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="item-details">
+                                            <p class="name-item">Barquette plaisir pate saumon 100 gr</p>
+                                            <p class="category-item">Humides Chat</p>
+                                            <div class="item-price">
+                                                <p>76,000 DT</p>
+                                                <div class="item-note">
+                                                    <p>3.9</p>
+                                                    <img class="note-image" src="./assets/img/star.svg" alt="">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-product-2">
+                            <div class="item-zanimo">
+                                <h1 class="item-wrapper">Nouveaux articles</h1>
+                                <div class="container-btn-2"></div>
+                            </div>
+                            <div class="owl-carousel owl-theme" id="carousel-7">
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="item-image">
+                                            <a href=""><img class="pciture-item" src="./assets/img/product-img-5.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="item-details">
+                                            <p class="name-item">Barquette plaisir pate saumon 100 gr</p>
+                                            <p class="category-item">Humides Chat</p>
+                                            <div class="item-price">
+                                                <p>76,000 DT</p>
+                                                <div class="item-note">
+                                                    <p>3.9</p>
+                                                    <img class="note-image" src="./assets/img/star.svg" alt="">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="item-image">
+                                            <a href=""><img class="pciture-item" src="./assets/img/product-1.jpg"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="item-details">
+                                            <p class="name-item">Barquette plaisir pate saumon 100 gr</p>
+                                            <p class="category-item">Humides Chat</p>
+                                            <div class="item-price">
+                                                <p>76,000 DT</p>
+                                                <div class="item-note">
+                                                    <p>3.9</p>
+                                                    <img class="note-image" src="./assets/img/star.svg" alt="">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="item-image">
+                                            <a href=""><img class="pciture-item" src="./assets/img/product-img-5.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="item-details">
+                                            <p class="name-item">Barquette plaisir pate saumon 100 gr</p>
+                                            <p class="category-item">Humides Chat</p>
+                                            <div class="item-price">
+                                                <p>76,000 DT</p>
+                                                <div class="item-note">
+                                                    <p>3.9</p>
+                                                    <img class="note-image" src="./assets/img/star.svg" alt="">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="item-image">
+                                            <a href=""><img class="pciture-item" src="./assets/img/product-1.jpg"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="item-details">
+                                            <p class="name-item">Barquette plaisir pate saumon 100 gr</p>
+                                            <p class="category-item">Humides Chat</p>
+                                            <div class="item-price">
+                                                <p>76,000 DT</p>
+                                                <div class="item-note">
+                                                    <p>3.9</p>
+                                                    <img class="note-image" src="./assets/img/star.svg" alt="">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-product-3">
+                            <div class="item-zanimo">
+                                <h1 class="item-wrapper">Meilleurs articles</h1>
+                                <div class="container-btn-3"></div>
+                            </div>
+                            <div class="owl-carousel owl-theme" id="carousel-8">
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="item-image">
+                                            <a href=""><img class="pciture-item" src="./assets/img/product-img-5.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="item-details">
+                                            <p class="name-item">Barquette plaisir pate saumon 100 gr</p>
+                                            <p class="category-item">Humides Chat</p>
+                                            <div class="item-price">
+                                                <p>76,000 DT</p>
+                                                <div class="item-note">
+                                                    <p>3.9</p>
+                                                    <img class="note-image" src="./assets/img/star.svg" alt="">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="item-image">
+                                            <a href=""><img class="pciture-item" src="./assets/img/product-1.jpg"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="item-details">
+                                            <p class="name-item">Barquette plaisir pate saumon 100 gr</p>
+                                            <p class="category-item">Humides Chat</p>
+                                            <div class="item-price">
+                                                <p>76,000 DT</p>
+                                                <div class="item-note">
+                                                    <p>3.9</p>
+                                                    <img class="note-image" src="./assets/img/star.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="item-image">
+                                            <a href=""><img class="pciture-item" src="./assets/img/product-img-5.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="item-details">
+                                            <p class="name-item">Barquette plaisir pate saumon 100 gr</p>
+                                            <p class="category-item">Humides Chat</p>
+                                            <div class="item-price">
+                                                <p>76,000 DT</p>
+                                                <div class="item-note">
+                                                    <p>3.9</p>
+                                                    <img class="note-image" src="./assets/img/star.svg" alt="">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="item-image">
+                                            <a href=""><img class="pciture-item" src="./assets/img/product-1.jpg"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="item-details">
+                                            <p class="name-item">Barquette plaisir pate saumon 100 gr</p>
+                                            <p class="category-item">Humides Chat</p>
+                                            <div class="item-price">
+                                                <p>76,000 DT</p>
+                                                <div class="item-note">
+                                                    <p>3.9</p>
+                                                    <img class="note-image" src="./assets/img/star.svg" alt="">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advantages">
+                        <h1 class="title-wrapper">Nos avantages</h1>
+                        <div class="all-services">
+                            <div class="service">
+                                <img src="./assets/img/img-service-1.svg" alt="">
+                                <p class="title-service">Livraison gratuite</p>
+
+
+                                <p class="description-service">L’expédition de votre commande est offerte dès 300 DT</p>
+                            </div>
+
+                            <div class="service">
+                                <img src="./assets/img/img-service-2.svg" alt="">
+                                <p class="title-service">24/7 Support</p>
+                                <p class="description-service">Ouvert tous les jours de 7h30 à 15h30</p>
+                            </div>
+
+                            <div class="service">
+                                <img src="./assets/img/img-service-3.svg" alt="">
+                                <p class="title-service">Paiement à la livraison ou par carte bancaire</p>
+
+                                <p class="description-service">Paiement par carte bancaire</p>
+                            </div>
+
+                            <div class="service">
+                                <img src="./assets/img/img-service-4.svg" alt="">
+                                <p class="title-service">Points fidélité</p>
+                                <p class="description-service">Découvrez notre programme de fidélité</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="zanimo-website">
+        <div class="footer-container">
+            <div class="newsletter">
+                <div class="register-newsletter">
+                    <p>Inscrivez-vous maintenant pour ne pas manquer nos promos</p>
+                </div>
+                <form class="form-newsletter" action="">
+
+                    <input class="input-newsletter" placeholder="Entrer votre email" type="text">
+
+                    <div class="subcribe-action">
+                        <button class="btn-subscribe">Abonnez-vous</button>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-navigation">
+                <div class="footer-menu">
+                    <a href="">
+                        <p>Accueil</p>
+                    </a>
+                    <a href="">
+                        <p>Z'Conseil</p>
+                    </a>
+                    <a href="">
+                        <p>Chats</p>
+                    </a>
+                    <a href="">
+                        <p>Chiens</p>
+                    </a>
+                    <a href="">
+                        <p>Rongeurs</p>
+                    </a>
+                    <a href="">
+                        <p>Oiseaux</p>
+                    </a>
+                    <a href="">
+                        <p>Poissons</p>
+                    </a>
+                    <a href="">
+                        <p>Contact</p>
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href=""> <img class="img-social-media" src="./assets/img/Facebook.svg" alt=""></a>
+                    <a href=""> <img class="img-social-media" src="./assets/img/Twitter.svg" alt=""></a>
+                    <a href=""> <img class="img-social-media" src="./assets/img/Instagram.svg" alt=""></a>
+                    <a href=""> <img class="img-social-media" src="./assets/img/YouTube.svg" alt=""></a>
+                </div>
+
+            </div>
+            <hr class="divider-footer">
+            <div class="bottom-footer">
+                <div class="bottom-footer-left">
+                    <p class="text-bottom-footer">© 2023 Z'animo. Tous les droits sont réservés</p>
+
+                </div>
+                <div class="center-bottom-footer"> <img class="logo-zanimo-footer" src="./assets/img/Logo_Z_animo.svg"
+                        alt=""></div>
+                <div class="bottom-footer-right">
+                    <a href="">
+                        <p class="text-bottom-footer">Conditions d'utilisation</p>
+                    </a>
+                    <a href="">
+                        <p class="text-bottom-footer">Politique de confidentialité</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script>
+ 
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    let polygones = document.getElementsByClassName('icon-polygone');
+    for (let i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        let polygone = polygones[i];
+      if (openDropdown.classList.contains('show-menu')) {
+        openDropdown.classList.remove('show-menu');
+
+      }
+      if (polygone.classList.contains('show-polygone')) {
+          polygone.classList.remove('show-polygone');
+        }
+    }
+  }
+};
+    </script>
+</body>
+
+</html>

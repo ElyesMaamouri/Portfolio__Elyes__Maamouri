@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/search-people.css" type="text/css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery-flexdatalist/2.3.0/jquery.flexdatalist.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <title>Search </title>
+</head>
+
+<body style="background-color: #f9faff">
+  <!-- Section Navbar -->
+  <section id="home__navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid menu">
+        <div>
+          <img class="logo" src="./img/logo.svg" />
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active-page" href="/LabHub/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/LabHub/universities.html">Universities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/LabHub/labs.html">Labs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/LabHub/jobs.html">Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">People</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Solution</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- End Section Navbar -->
+  <!-- Section Search People  -->
+  <section id="search__people">
+    <img class="icons-left" src="./img/left.svg" />
+    <img class="icons-right" src="./img/right.svg" />
+    <div class="searching">
+      <div class="form-search">
+        <p class="title-people">Search People</p>
+        <form class="form-searching" action="" method="post">
+          <div class="location">
+            <div class="input-location">
+              <input class="input-search" type="search" placeholder="New Clothier 16 Lab" id="example-search-input">
+            </div>
+            <button type="submit" class="btn dropdown-toggle btn-search" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Search
+              <img src="./img/search-arrow.svg">
+            </button>
+          </div>
+          <div class="all-filtres">
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle btn-discipline-location collapsed"
+                data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false">
+                <img src="./img/star.svg" class="btn-icon-left">
+                Interests
+                <img src="./img/arrow-down.svg" class="btn-icon-arrow">
+              </button>
+              <ul class="dropdown-menu menu-discipline collapse" id="collapseExample">
+                <div class="form-check">
+                  <li>
+                    <input type="checkbox" id="history" class="form-check-input">
+                    <label for="history" class="form-check-label form-check-label-history">ML4SE</label>
+                  </li>
+                </div>
+                <li>
+                  <div class="form-check">
+                    <input type="checkbox" id="science" class="form-check-input">
+                    <label for="science" class="form-check-label ">Model-Driven</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input type="checkbox" id="geo" class="form-check-input">
+                    <label for="geo" class="form-check-label">Engineering</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle btn-discipline-location collapsed"
+                data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false">
+                <img src="./img/labs__people.svg" class="btn-icon-left">
+                Labs
+                <img src="./img/arrow-down.svg" class="btn-icon-arrow btn-icon-arrow-labs">
+              </button>
+              <ul class="dropdown-menu menu-discipline collapse" id="collapseExample1" style="">
+                <div class="form-check">
+                  <li>
+                    <input type="checkbox" id="Clothier" class="form-check-input">
+                    <label for="Clothier" class="form-check-label form-check-label-history">New Clothier</label>
+                  </li>
+                </div>
+                <li>
+                  <div class="form-check">
+                    <input type="checkbox" id="FatLabs" class="form-check-input">
+                    <label for="FatLabs" class="form-check-label ">16 FatLabs</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input type="checkbox" id="BigLabs" class="form-check-input">
+                    <label for="BigLabs" class="form-check-label">32 BigLabs</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle btn-discipline-location collapsed"
+                data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false">
+                <img src="./img/position__people.svg" class="btn-icon-left">
+                Position
+                <img src="./img/arrow-down.svg" class="btn-icon-arrow">
+              </button>
+              <ul class="dropdown-menu menu-discipline collapse" id="collapseExample2" style="">
+                <div class="form-check">
+                  <li>
+                    <input type="checkbox" id="Phd" class="form-check-input">
+                    <label for="Phd" class="form-check-label form-check-label-history">Phd</label>
+                  </li>
+                </div>
+                <li>
+                  <div class="form-check">
+                    <input type="checkbox" id="Master" class="form-check-input">
+                    <label for="Master" class="form-check-label ">Master</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input type="checkbox" id="Professor" class="form-check-input">
+                    <label for="Professor" class="form-check-label">Professor</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-group custom-width">
+              <input class="input-contry flexdatalist" type="text" placeholder="Paris, France" id="example-search-input"
+                autocomplete="off" list='location-list' data-min-length='1' name='contrys' />
+              <datalist id="location-list" role="listbox">
+                <option value="Dijon">Dijon</option>
+                <option value="Rennes">Rennes</option>
+                <option value="Orléans">Orléans</option>
+                <option value="Ajaccio">Ajaccio</option>
+                <option value="Strasbourg">Strasbourg</option>
+                <option value="Côte d'Azur">Côte d'Azur</option>
+                <option value="Paris">Paris</option>
+                <option value="Bordeaux">Bordeaux</option>
+                <option value="Bordas">Bordas</option>
+                <option value="Bordas-1">Bordas-1</option>
+                <option value="Toulouse">Toulouse</option>
+                <option value="Nantes">Nantes</option>
+                <option value="Marseille">Marseille</option>
+              </datalist>
+            </div>
+
+            <div class="btn-group custom-width  ">
+              <input class="input-university flexdatalist" type="text" placeholder="University"
+                id="example-search-input" autocomplete="off" list='university-list' data-min-length='1'
+                name='university' />
+              <datalist id="university-list" role="listbox">
+                <option value="Adams State University">Adams State University</option>
+                <option value="University of Advancing Technology">University of Advancing Technology</option>
+                <option value="Adventist University of Health Sciences">Adventist University of Health Sciences</option>
+                <option value="University of Alabama">University of Alabama</option>
+                <option value="Amridge University">Amridge University</option>
+                <option value="Clemson">Clemson</option>
+                <option value="Corban University">Corban University</option>
+                <option value="Eastern Arizona College">Eastern Arizona College</option>
+                <option value="Griggs University">Griggs University</option>
+                <option value="Georgia State University">Georgia State University</option>
+                <option value="Illinois State University">Illinois State University</option>
+                <option value="Kalamazoo College">Kalamazoo College</option>
+              </datalist>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- End Section Search People  -->
+ <!--  Section List People  -->
+  <section id="list__people">
+      <div class="listed-people">
+        <p class="title-of-peoples">List of peoples</p>
+        <p class="number-of-peoples">( 24 )</p>
+      </div>
+    <div class="all-people">
+      <div class="card-people">
+        <img class="img-student" src="./img/student-1.jpg">
+        <p class="name-people">Walsh Herrera</p>
+        <div class="details-people">
+          <div class="resume">
+            <img  src="./img/position__people.svg">
+            <p class="title">Phd</p>
+          </div>
+          <div class="resume">
+            <img src="./img/location__contry.svg">
+            <p class="title">Paris, France</p>
+          </div>
+          <div class="resume">
+            <img src="./img/university-people.svg">
+            <p class="title">Stanford university, CA, USA</p>
+          </div>
+          <div class="resume">
+            <img class="image-specialty" src="./img/XMLID_468_.svg">
+            <p class="title">Artificial Intelligence Lab</p>
+          </div>
+          <div class="tags">
+            <a class="tags-job" style="background-color: #ffe6d2">
+              <img width="14px" class="tag-img" src="./img/cercle-or.svg" alt="">
+              <p class="name-tag">ML4SE</p>
+          </a>
+          <a class="tags-job" style="background-color: #feffd0">
+              <img width="14px" class="tag-img" src="./img/cercle-ye.svg" alt="">
+              <p class="name-tag">Model-Driven</p>
+          </a> 
+          <a class="tags-job" style="background-color: #daf0ff">
+              <img width="14px" class="tag-img" src="./img/cercle-blue.svg" alt="">
+              <p class="name-tag">Microservices</p>
+          </a> 
+          <a class="tags-job" style="background-color: #ece6f5">
+              <img width="14px" class="tag-img" src="./img/cercle-pink.svg" alt="">
+              <p class="name-tag">Engineering</p>
+          </a>
+        </div>
+        </div>
+       
+      </div>
+
+      <div class="card-people">
+        <img class="img-student" src="./img/student-1.jpg">
+        <p class="name-people">Walsh Herrera</p>
+        <div class="details-people">
+          <div class="resume">
+            <img  src="./img/position__people.svg">
+            <p class="title">Phd</p>
+          </div>
+          <div class="resume">
+            <img src="./img/location__contry.svg">
+            <p class="title">Paris, France</p>
+          </div>
+          <div class="resume">
+            <img src="./img/university-people.svg">
+            <p class="title">Stanford university, CA, USA</p>
+          </div>
+          <div class="resume">
+            <img class="image-specialty" src="./img/XMLID_468_.svg">
+            <p class="title">Artificial Intelligence Lab</p>
+          </div>
+          <div class="tags">
+            <a class="tags-job" style="background-color: #ffe6d2">
+              <img width="14px" class="tag-img" src="./img/cercle-or.svg" alt="">
+              <p class="name-tag">ML4SE</p>
+          </a>
+          <a class="tags-job" style="background-color: #feffd0">
+              <img width="14px" class="tag-img" src="./img/cercle-ye.svg" alt="">
+              <p class="name-tag">Model-Driven</p>
+          </a> 
+          <a class="tags-job" style="background-color: #daf0ff">
+              <img width="14px" class="tag-img" src="./img/cercle-blue.svg" alt="">
+              <p class="name-tag">Microservices</p>
+          </a> 
+          <a class="tags-job" style="background-color: #ece6f5">
+              <img width="14px" class="tag-img" src="./img/cercle-pink.svg" alt="">
+              <p class="name-tag">Engineering</p>
+          </a>
+        </div>
+        </div>
+       
+      </div>
+      <div class="card-people">
+        <img class="img-student" src="./img/student-1.jpg">
+        <p class="name-people">Walsh Herrera</p>
+        <div class="details-people">
+          <div class="resume">
+            <img  class="i" src="./img/position__people.svg">
+            <p class="title">Phd</p>
+          </div>
+          <div class="resume">
+            <img src="./img/location__contry.svg">
+            <p class="title">Paris, France</p>
+          </div>
+          <div class="resume">
+            <img src="./img/university-people.svg">
+            <p class="title">Stanford university, CA, USA</p>
+          </div>
+          <div class="resume">
+            <img class="image-specialty" src="./img/XMLID_468_.svg">
+            <p class="title">Artificial Intelligence Lab</p>
+          </div>
+          <div class="tags">
+            <a class="tags-job" style="background-color: #ffe6d2">
+              <img width="14px" class="tag-img" src="./img/cercle-or.svg" alt="">
+              <p class="name-tag">ML4SE</p>
+          </a>
+          <a class="tags-job" style="background-color: #feffd0">
+              <img width="14px" class="tag-img" src="./img/cercle-ye.svg" alt="">
+              <p class="name-tag">Model-Driven</p>
+          </a> 
+          <a class="tags-job" style="background-color: #daf0ff">
+              <img width="14px" class="tag-img" src="./img/cercle-blue.svg" alt="">
+              <p class="name-tag">Microservices</p>
+          </a> 
+          <a class="tags-job" style="background-color: #ece6f5">
+              <img width="14px" class="tag-img" src="./img/cercle-pink.svg" alt="">
+              <p class="name-tag">Engineering</p>
+          </a>
+        </div>
+        </div>
+       
+      </div>
+      <div class="card-people">
+        <img class="img-student" src="./img/student-1.jpg">
+        <p class="name-people">Walsh Herrera</p>
+        <div class="details-people">
+          <div class="resume">
+            <img  class="i" src="./img/position__people.svg">
+            <p class="title">Phd</p>
+          </div>
+          <div class="resume">
+            <img src="./img/location__contry.svg">
+            <p class="title">Paris, France</p>
+          </div>
+          <div class="resume">
+            <img src="./img/university-people.svg">
+            <p class="title">Stanford university, CA, USA</p>
+          </div>
+          <div class="resume">
+            <img class="image-specialty" src="./img/XMLID_468_.svg">
+            <p class="title">Artificial Intelligence Lab</p>
+          </div>
+          <div class="tags">
+            <a class="tags-job" style="background-color: #ffe6d2">
+              <img width="14px" class="tag-img" src="./img/cercle-or.svg" alt="">
+              <p class="name-tag">ML4SE</p>
+          </a>
+          <a class="tags-job" style="background-color: #feffd0">
+              <img width="14px" class="tag-img" src="./img/cercle-ye.svg" alt="">
+              <p class="name-tag">Model-Driven</p>
+          </a> 
+          <a class="tags-job" style="background-color: #daf0ff">
+              <img width="14px" class="tag-img" src="./img/cercle-blue.svg" alt="">
+              <p class="name-tag">Microservices</p>
+          </a> 
+          <a class="tags-job" style="background-color: #ece6f5">
+              <img width="14px" class="tag-img" src="./img/cercle-pink.svg" alt="">
+              <p class="name-tag">Engineering</p>
+          </a>
+        </div>
+        </div>
+       
+      </div>
+      <div class="card-people">
+        <img class="img-student" src="./img/student-1.jpg">
+        <p class="name-people">Walsh Herrera</p>
+        <div class="details-people">
+          <div class="resume">
+            <img  class="i" src="./img/position__people.svg">
+            <p class="title">Phd</p>
+          </div>
+          <div class="resume">
+            <img src="./img/location__contry.svg">
+            <p class="title">Paris, France</p>
+          </div>
+          <div class="resume">
+            <img src="./img/university-people.svg">
+            <p class="title">Stanford university, CA, USA</p>
+          </div>
+          <div class="resume">
+            <img class="image-specialty" src="./img/XMLID_468_.svg">
+            <p class="title">Artificial Intelligence Lab</p>
+          </div>
+          <div class="tags">
+            <a class="tags-job" style="background-color: #ffe6d2">
+              <img width="14px" class="tag-img" src="./img/cercle-or.svg" alt="">
+              <p class="name-tag">ML4SE</p>
+          </a>
+          <a class="tags-job" style="background-color: #feffd0">
+              <img width="14px" class="tag-img" src="./img/cercle-ye.svg" alt="">
+              <p class="name-tag">Model-Driven</p>
+          </a> 
+          <a class="tags-job" style="background-color: #daf0ff">
+              <img width="14px" class="tag-img" src="./img/cercle-blue.svg" alt="">
+              <p class="name-tag">Microservices</p>
+          </a> 
+          <a class="tags-job" style="background-color: #ece6f5">
+              <img width="14px" class="tag-img" src="./img/cercle-pink.svg" alt="">
+              <p class="name-tag">Engineering</p>
+          </a>
+        </div>
+        </div>
+       
+      </div>
+      <div class="card-people">
+        <img class="img-student" src="./img/student-1.jpg">
+        <p class="name-people">Walsh Herrera</p>
+        <div class="details-people">
+          <div class="resume">
+            <img  class="i" src="./img/position__people.svg">
+            <p class="title">Phd</p>
+          </div>
+          <div class="resume">
+            <img src="./img/location__contry.svg">
+            <p class="title">Paris, France</p>
+          </div>
+          <div class="resume">
+            <img src="./img/university-people.svg">
+            <p class="title">Stanford university, CA, USA</p>
+          </div>
+          <div class="resume">
+            <img class="image-specialty" src="./img/XMLID_468_.svg">
+            <p class="title">Artificial Intelligence Lab</p>
+          </div>
+          <div class="tags">
+            <a class="tags-job" style="background-color: #ffe6d2">
+              <img width="14px" class="tag-img" src="./img/cercle-or.svg" alt="">
+              <p class="name-tag">ML4SE</p>
+          </a>
+          <a class="tags-job" style="background-color: #feffd0">
+              <img width="14px" class="tag-img" src="./img/cercle-ye.svg" alt="">
+              <p class="name-tag">Model-Driven</p>
+          </a> 
+          <a class="tags-job" style="background-color: #daf0ff">
+              <img width="14px" class="tag-img" src="./img/cercle-blue.svg" alt="">
+              <p class="name-tag">Microservices</p>
+          </a> 
+          <a class="tags-job" style="background-color: #ece6f5">
+              <img width="14px" class="tag-img" src="./img/cercle-pink.svg" alt="">
+              <p class="name-tag">Engineering</p>
+          </a>
+        </div>
+        </div>
+       
+      </div>
+      <div class="card-people">
+        <img class="img-student" src="./img/student-1.jpg">
+        <p class="name-people">Walsh Herrera</p>
+        <div class="details-people">
+          <div class="resume">
+            <img  src="./img/position__people.svg">
+            <p class="title">Phd</p>
+          </div>
+          <div class="resume">
+            <img src="./img/location__contry.svg">
+            <p class="title">Paris, France</p>
+          </div>
+          <div class="resume">
+            <img src="./img/university-people.svg">
+            <p class="title">Stanford university, CA, USA</p>
+          </div>
+          <div class="resume">
+            <img class="image-specialty" src="./img/XMLID_468_.svg">
+            <p class="title">Artificial Intelligence Lab</p>
+          </div>
+          <div class="tags">
+            <a class="tags-job" style="background-color: #ffe6d2">
+              <img width="14px" class="tag-img" src="./img/cercle-or.svg" alt="">
+              <p class="name-tag">ML4SE</p>
+          </a>
+          <a class="tags-job" style="background-color: #feffd0">
+              <img width="14px" class="tag-img" src="./img/cercle-ye.svg" alt="">
+              <p class="name-tag">Model-Driven</p>
+          </a> 
+          <a class="tags-job" style="background-color: #daf0ff">
+              <img width="14px" class="tag-img" src="./img/cercle-blue.svg" alt="">
+              <p class="name-tag">Microservices</p>
+          </a> 
+          <a class="tags-job" style="background-color: #ece6f5">
+              <img width="14px" class="tag-img" src="./img/cercle-pink.svg" alt="">
+              <p class="name-tag">Engineering</p>
+          </a>
+        </div>
+        </div>
+       
+      </div>
+
+      <div class="card-people">
+        <img class="img-student" src="./img/student-1.jpg">
+        <p class="name-people">Walsh Herrera</p>
+        <div class="details-people">
+          <div class="resume">
+            <img  src="./img/position__people.svg">
+            <p class="title">Phd</p>
+          </div>
+          <div class="resume">
+            <img src="./img/location__contry.svg">
+            <p class="title">Paris, France</p>
+          </div>
+          <div class="resume">
+            <img src="./img/university-people.svg">
+            <p class="title">Stanford university, CA, USA</p>
+          </div>
+          <div class="resume">
+            <img  class="image-specialty" src="./img/XMLID_468_.svg">
+            <p class="title">Artificial Intelligence Lab</p>
+          </div>
+          <div class="tags">
+            <a class="tags-job" style="background-color: #ffe6d2">
+              <img width="14px" class="tag-img" src="./img/cercle-or.svg" alt="">
+              <p class="name-tag">ML4SE</p>
+          </a>
+          <a class="tags-job" style="background-color: #feffd0">
+              <img width="14px" class="tag-img" src="./img/cercle-ye.svg" alt="">
+              <p class="name-tag">Model-Driven</p>
+          </a> 
+          <a class="tags-job" style="background-color: #daf0ff">
+              <img width="14px" class="tag-img" src="./img/cercle-blue.svg" alt="">
+              <p class="name-tag">Microservices</p>
+          </a> 
+          <a class="tags-job" style="background-color: #ece6f5">
+              <img width="14px" class="tag-img" src="./img/cercle-pink.svg" alt="">
+              <p class="name-tag">Engineering</p>
+          </a>
+        </div>
+        </div>
+      
+      </div>
+
+      <div class="card-people">
+        <img class="img-student" src="./img/student-1.jpg">
+        <p class="name-people">Walsh Herrera</p>
+        <div class="details-people">
+          <div class="resume">
+            <img  src="./img/position__people.svg">
+            <p class="title">Phd</p>
+          </div>
+          <div class="resume">
+            <img src="./img/location__contry.svg">
+            <p class="title">Paris, France</p>
+          </div>
+          <div class="resume">
+            <img src="./img/university-people.svg">
+            <p class="title">Stanford university, CA, USA</p>
+          </div>
+          <div class="resume">
+            <img class="image-specialty" src="./img/XMLID_468_.svg">
+            <p class="title">Artificial Intelligence Lab</p>
+          </div>
+          <div class="tags">
+            <a class="tags-job" style="background-color: #ffe6d2">
+                <img width="14px" class="tag-img" src="./img/cercle-or.svg" alt="">
+                <p class="name-tag">ML4SE</p>
+            </a>
+            <a class="tags-job" style="background-color: #feffd0">
+                <img width="14px" class="tag-img" src="./img/cercle-ye.svg" alt="">
+                <p class="name-tag">Model-Driven</p>
+            </a> 
+            <a class="tags-job" style="background-color: #daf0ff">
+                <img width="14px" class="tag-img" src="./img/cercle-blue.svg" alt="">
+                <p class="name-tag">Microservices</p>
+            </a> 
+            <a class="tags-job" style="background-color: #ece6f5">
+                <img width="14px" class="tag-img" src="./img/cercle-pink.svg" alt="">
+                <p class="name-tag">Engineering</p>
+            </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- End Section List People  -->
+  <!-- Section Pagination -->
+  <section id="labs__pagination__search">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+    <!-- End Pagination -->
+
+    <footer id="home__footer">
+      <div class="our-links">
+        <div class="description-labhub">
+          <p>LabHub</p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry.
+          </p>
+        </div>
+        <div class="details-link">
+          <p>Plan</p>
+          <p class="custom-links">Job Offers</p>
+          <p class="custom-links">News & Blogs</p>
+          <p class="custom-links">Demo Request</p>
+        </div>
+        <div class="details-link">
+          <p>Office</p>
+          <p class="custom-links">Use Cases</p>
+          <p class="custom-links">Who We Are</p>
+          <p class="custom-links">MMM For Agencies</p>
+        </div>
+        <div class="details-link">
+          <p>Office</p>
+          <p class="custom-links">758 Hanworth Road,</p>
+          <p class="custom-links">Hounslow</p>
+          <p class="custom-links">England TW4 5NU, GB</p>
+        </div>
+        <div class="contact-us">
+          <p>Contact Us</p>
+          <div class="number-phone">
+            <img src="./img/phone.svg" />
+            <p>+44 20 8123 2461</p>
+          </div>
+          <div class="email">
+            <img src="./img/phone.svg" />
+            <p>info@labhub.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="social-media">
+        <div class="copyrigt">
+          <p>Copyright © 2022 Labhub. All Rights Reserved.</p>
+        </div>
+        <div class="social-media-img">
+          <img src="./img/logo-twitter.svg" />
+          <img src="./img/logo-facebook.svg" />
+          <img src="./img/logo-instagram.svg" />
+          <img src="./img/logo-linkedin.svg" />
+        </div>
+        <button id="scrollToTopBtn"></button>
+      </div>
+  
+    </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-flexdatalist/2.2.4/jquery.flexdatalist.min.js"></script>
+  <script>
+    $('.flexdatalist').flexdatalist({
+      minLength: 1,
+      noResultsText: "No Result",
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="js/home.js"></script>
+  <script src="js/scrolltotop.js"></script>
+
+</body>
+
+</html>

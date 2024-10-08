@@ -1,0 +1,3036 @@
+html, body{
+    background-color: #F3F3F7 !important;
+}
+
+
+/* Navbar */
+
+.navbar{
+    background-color: #3B3B3B;
+    padding: 15px 0px !important;
+}
+.navbar-brand{
+    margin-left: 50px !important;
+}
+.nav-link {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-left: 35px;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active, .nav-link:visited, .nav-link:link {
+    background: none !important;
+    outline: none !important;
+    border: none !important;
+}
+
+
+.nav-link:hover{
+    
+    transform: scale(1.03);
+}
+.navbar-nav {
+    margin-right: 40px;
+}
+.nav-link:hover{
+    text-decoration: none;
+    color: white;
+}
+.navbar-toggler{
+    color: white !important;
+    outline: none !important;
+    margin-right: 20px !important;
+    font-size: 25px !important;
+}
+
+@media (max-width: 520px){
+    .navbar-brand{
+        margin-left: 17px !important;
+    }
+    .nav-link {
+        margin-left: 20px !important;
+    }
+}
+@media (max-width: 991px){
+    .nav-link {
+        margin-top: 5px;
+        margin-left: 60px;
+    }
+    .navbar-nav{
+        margin-top: 15px;
+    }
+    .nav-link:hover{
+        transform: none !important;
+    }
+}
+
+
+/* CSS ADD FOR SIGN IN LINKS */
+
+.minSize {
+    display: none;
+}
+
+.fa-user, .fa-sign-out-alt {
+    padding-right: 10px !important;
+    color: #E3B038;
+}
+
+.dropdown-item {
+    font-weight: 500;
+}
+
+@media (max-width: 991px){
+   
+    .minSize {
+        display: unset;
+    }
+    .dropdown {
+        display: none;
+    }
+
+}
+
+/* Left Content CSS Fix */
+
+
+.reservation, .privateOffice, .events, .subscription{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px !important;
+    margin-left: 30%;
+    background-color: white;
+    padding: 30px 40px;
+    box-shadow: 0 20px 20px rgba(0,0,0,.03);
+    width: 180px;
+    border-radius: 10px;
+    
+}
+
+.reservation:hover, .privateOffice:hover, .events:hover, .subscription:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+
+}
+
+#content p {
+    color: #707070;
+}
+
+.subscription img {
+    margin-left: 12px !important;
+ 
+    justify-content: center !important;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.reservation img {
+    margin-left: 15px !important;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.privateOffice img {
+    margin-left: 16px !important;
+    margin-bottom: 12px;
+}
+.privateOffice p, .events p, .reservation p, .subscription p {
+    text-align: center !important;
+  
+}
+
+.events img {
+    margin-left: 25px !important;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+
+
+/* Active Page CSS */
+
+.activePage {
+    background-color: #E3B038 !important;
+}
+
+.activePage img, .activePage p{
+    -webkit-filter: brightness(0) invert(1) !important;  
+    -moz-filter : brightness(0) invert(1) !important;  
+    -o-filter : brightness(0) invert(1) !important;  
+    -ms-filter : brightness(0) invert(1) !important;  
+    filter : brightness(0) invert(1) !important;  
+    font-weight: bold;
+    color: white !important;
+}
+
+@media (max-width: 1340px){
+    .reservation, .privateOffice, .events, .subscription{
+        margin-left: 12% !important;
+    }
+
+}
+
+@media (max-width: 1588px){
+    .reservation, .privateOffice, .events, .subscription{
+        margin-left: 20%;
+        min-width: 165px;
+
+    }
+
+}
+
+@media (max-width: 1198px){
+    .reservation, .privateOffice, .events, .subscription{
+        padding: 30px 35px;
+        margin-left: 5% !important;
+    }
+    .elements{
+        margin-left: 5% !important;
+    }
+
+}
+
+@media (max-width: 1028px){
+    .reservation, .privateOffice, .events, .subscription{
+        padding: 30px 30px;
+        width: 155px !important;
+    }
+    .elements{
+        margin-left: 1% !important;
+    }
+}
+
+@media(max-width: 991px){
+    .reservation, .privateOffice, .events, .subscription{
+        height: 140px !important;
+        padding: 15px 32px;
+       
+    
+    }
+    .elements{
+       justify-content: center;
+        margin-left: 0% !important;
+        margin-right: 2% !important;
+       
+    }
+
+    .elements div{
+
+         font-size: 14px !important;
+     }
+
+}
+
+@media(max-width:1217px){
+    .privateOffice{
+        height: 180px;
+    }
+}
+
+/* Sign In */
+
+.modal-body h1{
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-body img{
+   
+    margin-top: 20px;
+}
+
+.modal-body form{
+
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.modal-body form input{
+    background-color: #EBEAE9;
+    height: 45px !important;
+    border-radius: 40px;
+    padding-left: 30px;
+    color: #707070 !important;
+ }
+
+ .modal-body form input:hover{
+    background-color: #EBEAE9 !important;
+ }
+
+ .form-group {
+     text-align: right !important;
+ }
+ input[type=password]{
+     margin-bottom: 10px;
+     margin-top: 20px;
+ }
+ .form-group a{
+   color: #707070;
+   font-weight: 600;
+   text-decoration: none;
+}
+
+.register{
+    color: #707070;
+    font-weight: 600;
+    text-decoration: none;
+   
+ }
+
+ .modal-content  {
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    border-radius: 20px !important; 
+}
+
+.fa-times {
+    margin-right: 30px !important;
+    margin-top: 20px !important;
+    font-size: 30px !important;
+    color: #E3B038;
+   
+}
+
+.close {
+    outline: none !important;
+    color: #E3B038;
+}
+
+ .register:hover{
+    color: #707070;
+    text-decoration: none;
+   
+ }
+
+ .nav-item button{
+     box-shadow: none !important;
+ }
+
+.signInBtn {
+    background-color: #E3B038;
+    outline: none;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+    
+}
+.signInBtn:hover {
+    background-color: #E3B038;
+    transform: scale(1.03);
+   
+}
+
+@media(max-width: 991px){
+
+    .modal-body form{
+        width: 80%;
+    }
+
+}
+
+@media(max-width: 400px){
+
+    .modal-body form{
+        width: 95%;
+    }
+
+}
+
+@media(max-width: 350px){
+
+    .fa-times {
+        margin-right: 10px !important;
+        font-size: 25px !important;
+        margin-top: 33px !important;
+       
+    }
+
+}
+
+/* Subscription : Right Content */
+
+#subscription select {
+    border-radius: 15px !important;
+    min-height: 50px;
+    color: #E3B038 !important;
+    width: 250px !important;
+    font-weight: 500 !important;
+    background: url(../img/Dropdown.png) no-repeat right #ddd;
+    background-position-x: 95%;
+    background-color: white !important;
+    -webkit-appearance: none;
+    font-family: 'Poppins', sans-serif;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+#subscription select option{
+    color:black !important;
+    border-radius: 15px !important;
+}
+
+#subscription .filterSubscription {
+    margin-top: 40px;
+  
+}
+
+#subscription .rightContent {
+    margin-top: 60px;
+    
+}
+#subscription .filterSubscription p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-right: 40px;
+    color: black !important;
+}
+
+
+#subscription .card {
+    margin-top: 30px;
+    width: 31% !important;
+    border: none !important;
+    box-shadow: 0 20px 20px rgba(0,0,0,.05);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 28px !important;
+ }
+ #subscription .card-body{
+     background: url('../img/line.png') no-repeat center top ;
+     background-position: 50% 12%;
+     background-size: 110px;
+ }
+ #subscription .card-body h5 {
+     font-size: 18px;
+     color: black !important;
+ }
+ 
+ #subscription .card-text {
+     font-size: 50px;
+     font-weight: bold;
+     color: #E3B038 !important;
+     padding-top: 30px;
+     margin-right: 7%;
+     
+ }
+ #subscription .card-text sup{
+    color: black !important;
+     font-size: 32px !important;
+  
+ }
+
+ #subscription .card-body p:nth-child(3) {
+     margin-top: -18px;
+     margin-bottom: 25px;
+     color: black !important;
+ }
+
+ #subscription .card-body p:nth-child(6) {
+   font-weight: 600;
+   margin-top: 30px;
+   color: black !important;
+   font-family: 'Poppins', sans-serif;
+   
+}
+
+#subscription .card-body img {
+    margin-bottom: 20px;
+}
+
+#subscription .card-body button {
+    outline: none;
+    text-decoration: none;
+    border: none;
+    background-color: #E3B038 ;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+#subscription .card-body button:hover {
+    transform: scale(1.05);
+}
+#subscription .subscriptionCards {
+    margin-top: 50px;
+}
+
+@media(max-width: 510px){
+
+    #subscription .filterSubscription p {
+        margin-right: 10px;
+    }
+
+}
+
+@media(max-width: 445px){
+
+    #subscription .filterSubscription p {
+        margin-top: 0px;
+    }
+
+}
+
+
+@media(max-width: 1100px){
+
+    #subscription .card-body h5 {
+        font-size: 16px;
+    }
+
+    #subscription  .card-text {
+        font-size: 40px;
+     
+       
+        padding-top: 30px;
+        margin-right: 7%;
+    }
+
+    #subscription .card-body button {
+      
+        font-size: 14px;
+ 
+    }
+
+}
+
+@media(max-width: 1018px){
+
+    #subscription .card-body button {
+        padding: 10px 20px;
+    }
+}
+
+
+@media(max-width: 991px){
+    #subscription .card-body button {
+        padding: 10px 25px;
+    }
+
+    #subscription .subscriptionCards {
+        margin-top: 10px;
+    }
+
+    #subscription  .filterSubscription {
+        margin-top: 10px;
+    }
+}
+@media(max-width: 848px){
+
+    
+    #subscription .card {
+    width: 300px !important;
+ }
+
+}
+
+
+@media(max-width:635px){
+
+    #subscription .card {
+        width: 320px !important;
+     }
+}   
+
+
+
+/* Blog */
+
+.content {
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.blogHeader p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #3B3B3B !important;
+}
+
+
+
+#blog .card {
+    margin-top: 30px;
+    width: 25% !important;
+    border: none !important;
+    box-shadow: 0 20px 20px rgba(0,0,0,.05);
+    font-family: 'Poppins', sans-serif;
+    height: 550px;
+    border-radius: 30px !important;
+  
+   
+ }
+ 
+
+ #blog .card-img-top{
+   height: 60%;
+    border-radius: 30px 30px 0 0;
+}
+
+#blog .priceReservation{
+    font-size: 18px;
+    color: #E3B038 !important;
+    font-weight: 600;
+}
+
+#blog .cardReservation-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#blog .card-body p {
+    margin-top: 10px;
+}
+#blog .card-body button {
+    outline: none;
+    text-decoration: none;
+    border: none;
+    background-color: #E3B038 !important;
+    color: white;
+    padding: 8px 55px;
+    border-radius: 30px;
+    font-size: 17px;
+    margin-top: 20px;
+
+}
+
+#blog .card-body button:hover {
+    transform: scale(1.05);
+}
+#blog .blogCards {
+    margin-top: 10px;
+}
+
+
+
+
+@media(max-width: 1018px){
+
+    #blog .card-body button {
+        padding: 10px 20px;
+    }
+}
+
+
+@media(max-width: 991px){
+    #blog  .card-body button {
+        padding: 10px 25px;
+    }
+
+    #blog .blogCards {
+        margin-top: 8px;
+    }
+    
+}
+
+
+
+@media(max-width:1500px){
+    #blog  .card {
+       
+        width: 28% !important;
+ 
+      
+       
+     }
+}
+@media(max-width:1300px){
+    #blog .card {
+       
+        width: 29% !important;
+ 
+    
+     }
+}
+@media(max-width:1200px){
+    #blog .card {
+        width: 30% !important;
+     }
+}
+@media(max-width:1154px){
+    #blog  .card {
+        width: 31% !important;
+     }
+     #blog  .card-img-top{
+        height: 55%;
+         border-radius: 30px 30px 0 0;
+     }
+}
+
+@media(max-width:1035px){
+    #blog .card-body button {
+        margin-top: 0px;
+    }
+}
+
+
+@media(max-width:900px){
+    #blog  .card {
+        width: 43% !important;
+     }
+     #blog .card-body button {
+            margin-top: 20px;
+        }
+}
+
+@media(max-width:750px){
+    #blog .card {
+        width: 46% !important;
+     }
+
+     #blog  .card-body button {
+        margin-top: 0px;
+    }
+   
+}
+
+@media(max-width:650px){
+    #blog .card {
+        width: 60% !important;
+     }
+    
+}
+
+@media(max-width:550px){
+    #blog .card {
+        width: 70% !important;
+     }
+   
+}
+
+
+@media(max-width:450px){
+    #blog  .card {
+        width: 80% !important;
+     }
+   
+}
+@media(max-width:350px){
+    #blog .card {
+        width: 100% !important;
+     }
+   
+}
+
+/* Branches */
+
+#branch {
+    min-height:100% !important;
+  
+}
+.branch {
+    background: url('../img/bgBranches.jpg') no-repeat center center;
+    min-height:100% !important;
+    background-size: cover;
+
+  
+ 
+}
+#branches .branchesHeader p {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: white !important;
+    margin-top: 100px;
+    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+ 
+
+}
+#branches .lineBg {
+    text-align: center;
+    margin-bottom: 100px;
+}
+#branches .card{
+    width: 20%;
+    border-radius: 30px;
+}
+
+#branches .card-title{
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#branches .card-body img{
+    margin-bottom: 40px;
+}
+
+#branches .card-body button{
+    outline: none;
+    border: none;
+    background: none;
+    background-color: #E3B038;
+    color: white;
+    padding: 8px 40px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+#branches .card-body button:hover {
+    transform: scale(1.05);
+}
+#branches .branchesCards {
+    margin-bottom: 100px;
+}
+#branches .art{
+    margin-top: 14px;
+}
+
+#branches .cafe{
+    margin-top: 9px;
+}
+
+#branches .about{
+    margin-top: 20px;
+}
+
+
+@media(max-width:1200px){
+
+    #branches .card{
+        width: 23%;
+        
+    }
+
+}
+
+@media(max-width:991px){
+    #branches .card{
+        width: 31%;
+    }
+    #branches .branchesHeader p {
+       
+        margin-top: 60px;
+    }
+    #branches .lineBg {
+        margin-bottom: 60px;
+    }
+    #branches .branchesCards {
+        margin-bottom: 60px;
+    }
+}
+@media(max-width:750px){
+    #branches .card{
+        width: 45%;
+    }
+    #branches .branchesHeader p {
+        font-size: 30px;
+      
+    }
+}
+
+@media(max-width:520px){
+    #branches .card{
+        width: 65%;
+    }
+}
+@media(max-width:400px){
+    #branches .card{
+        width: 75%;
+    }
+}
+@media(max-width:320px){
+    #branches .card{
+        width: 92%;
+    }
+}
+
+/* Events */
+
+
+#event .eventDate {
+    color: #FC9700;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+#event .rightContent{
+    margin-top: 50px !important;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#event .imgEvents {
+    max-width: 250px !important;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    
+}
+
+#event .txtEvent {
+    padding-top: 30px;
+    
+    
+}
+
+#event .btnBookNow:hover{
+    transform: scale(1.03);
+}
+#event .txtEvent h1{
+    font-size: 21px !important;        
+}
+
+@media(max-width: 1440px){
+    #event .txtEvent h1{
+            font-size: 18px !important;        
+    }
+}
+
+#event .txtEvent h1{
+    font-family: 'Poppins', sans-serif;
+    color: #202124;
+   
+}
+#event  .txtEvent p, .txtEvent a {
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+}
+
+#event .txtEvent p {
+    color: rgb(133, 139, 145);
+    font-size: 18px;
+}
+
+#event .txtEvent h1,  .txtEvent a {
+    font-weight: bold;
+}
+
+
+#event .btnBookNow a{
+    background-color: #E3B038;
+    color: white;
+    padding: 10px 40px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+   
+}
+
+#event .btnBookNow {
+    margin-top: 10px !important;
+}
+
+#event .btnEvent {
+    text-align: right;
+   
+}
+#event .btnBookNow a:hover {
+    color: white;
+    text-decoration: none !important;
+}
+
+#event .filterEvents {
+    margin-top: 10px;
+    
+}
+#event .event:nth-of-type(1){
+    margin-bottom: -30px;
+
+}
+
+#event .event:nth-of-type(3){
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+#event .eventPrice{
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+#event select {
+    border-radius: 15px !important;
+    min-height: 50px;
+   margin-right: 20px !important;
+    width: 250px !important;
+    font-weight: 500 !important;
+    background: url(../img/Dropdown.png) no-repeat right #ddd;
+    background-position-x: 95%;
+    background-color: white !important;
+    -webkit-appearance: none;
+    font-family: 'Poppins', sans-serif;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+#event select option{
+    
+    color: black !important;
+    border-radius: 15px !important;
+}
+
+
+
+@media(max-width: 1580px){
+    #event .imgEvents {
+        max-width: 230px;
+        margin-top: 20px;
+       
+    }
+}
+
+@media(max-width: 1300px){
+
+    #event .imgEvents {
+        max-width: 230px;
+      
+    }
+    #event  .txtEvent p {
+        font-size: 17px;
+    }
+    #event .btnBookNow a{
+        padding: 8px 35px;
+        font-size: 15px !important;
+    }
+}
+
+@media(max-width: 1170px){
+
+    #event .eventsImgs{
+        margin-right: 5% !important;
+    }
+
+    #event .imgEvents {
+        max-width: 230px;
+       
+    }
+
+    #event .event:nth-of-type(3) {
+        margin-top: -20px;
+   
+    }
+
+    #event .blog .carousel-indicators {
+        bottom: -40px !important;
+       
+    }
+
+}
+
+
+@media(max-width: 1060px){
+
+
+    #event  .event:nth-of-type(1){
+        margin-top: 10px;
+    }
+  
+}
+
+@media(max-width: 991px){
+
+    #event .blog .carousel-indicators {
+        bottom: -15px !important;
+        margin-bottom: 20px !important;
+    }
+
+    #event .eventsImgs{
+        text-align: center;
+        margin-top: -80px;
+        margin-right: 0% !important;
+    }
+
+    #event .imgEvents {
+        max-width: 230px;
+        margin-top: 85px;
+    }
+
+    #event .txtEvent {
+        text-align: center;
+        margin-top: -50px;
+    }
+
+    #event .btnEvent {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #event .btnBookNow {
+        margin-bottom: 30px !important;
+    }
+
+    #event  .filterEvents {
+       
+        margin-bottom: 0px;
+       margin-left: 9px;
+        text-align: center !important;
+        justify-content: center !important;
+       
+    }
+    
+    #event .eventPrice{
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media(max-width: 450px){
+
+    #event .imgEvents {
+        max-width: 200px !important;
+    }
+}
+
+#event .blog .carousel-indicators {
+   
+    bottom: -60px;
+    margin-bottom: 20px !important;
+
+}
+
+#event .blog .carousel-indicators li {
+   
+    display: inline-block;
+    width: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 15px;
+    text-indent: -999px;
+    border: 1px solid #E3B038;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#event .blog .carousel-indicators .active {
+    background: #E3B038;
+}
+
+
+#event .carousel-indicators li {
+    
+    display: inline-block;
+    width: 12px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 12px;
+    text-indent: -999px;
+    border: 1px solid #E3B038;
+    border-radius: 10px;
+
+    margin-top: -7%;
+}
+
+#event .carousel-indicators .active {
+    background: #E3B038;
+} 
+
+/* Privet Office */
+
+ 
+#privetOffice .rightContent{
+    box-shadow: 0 0 36px rgba(0,0,0,.07);
+    margin-top: 50px !important;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#privetOffice .imgPrivetOffice {
+    max-width: 370px;
+    border-radius: 30px;
+    margin-top: 80px !important;
+}
+
+#privetOffice .txtPrivetOffice {
+    padding-top: 90px;
+    
+}
+#privetOffice .txtPrivetOffice h1{
+    font-family: 'Poppins', sans-serif;
+    color: #202124;
+    font-size: 32px;
+}
+#privetOffice .txtPrivetOffice p, .txtPrivetOffice a {
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+}
+
+#privetOffice .txtPrivetOffice p {
+    color: rgb(107, 113, 119);
+    font-size: 19px;
+}
+
+#privetOffice .txtPrivetOffice h1,  .txtPrivetOffice a {
+    font-weight: bold;
+}
+
+
+#privetOffice .btnRent a{
+    background-color: #E3B038;
+    color: white;
+    padding: 10px 45px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+    -webkit-box-shadow: 0px 20px 31px -13px rgba(255,200,61,0.44);
+    -moz-box-shadow: 0px 20px 31px -13px rgba(255,200,61,0.44);
+    box-shadow: 0px 20px 31px -13px rgba(255,200,61,0.44);
+}
+
+#privetOffice .btnRent {
+    margin-top: 7px !important;
+}
+
+#privetOffice .btnPrivetOffice {
+    text-align: right;
+   
+}
+#privetOffice .btnRent a:hover {
+    color: white;
+    text-decoration: none !important;
+}
+#privetOffice .privet:nth-of-type(2) {
+    margin-bottom: 30px !important;
+    margin-top: 11px;
+}
+
+
+
+#privetOffice .date {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+#privetOffice .dateTxt {
+    margin-right: 10px;
+    padding-top: 5px;
+    font-weight: 500;
+}
+
+@media(max-width: 1580px){
+    #privetOffice .imgPrivetOffice {
+        max-width: 320px;
+        margin-top: 90px !important;
+    }
+}
+
+@media(max-width: 1300px){
+
+    #privetOffice .imgPrivetOffice {
+        max-width: 290px;
+        margin-top: 90px !important;
+    }
+    #privetOffice .txtPrivetOffice p {
+        font-size: 17px;
+    }
+    #privetOffice .btnRent a{
+        padding: 8px 35px;
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 1170px){
+
+    #privetOffice .imgOffice{
+        margin-right: 5% !important;
+    }
+
+    #privetOffice .imgPrivetOffice {
+        max-width: 250px;
+        margin-top: 110px !important;
+    }
+
+    #privetOffice .privet:nth-of-type(2) {
+        margin-top: -20px;
+    margin-bottom: 10px !important;
+    }
+
+}
+
+
+@media(max-width: 1060px){
+
+    #privetOffice .blog .carousel-indicators {
+        bottom: -15px !important;
+    }
+}
+
+@media(max-width: 991px){
+
+    #privetOffice .imgOffice{
+        text-align: center;
+        margin-top: -80px;
+        margin-right: 0% !important;
+    }
+
+    #privetOffice .imgPrivetOffice {
+        max-width: 350px;
+    }
+
+    #privetOffice .txtPrivetOffice {
+        text-align: center;
+        margin-top: -50px;
+    }
+
+    #privetOffice .btnPrivetOffice {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #privetOffice .btnRent {
+        margin-bottom: 30px !important;
+    }
+
+    #privetOffice .date {
+        
+        margin-bottom: 0px;
+    }
+
+}
+
+
+@media(max-width: 450px){
+
+    #privetOffice .imgPrivetOffice {
+        max-width: 250px;
+    }
+}
+
+@media(max-width: 767px){
+    #privetOffice .input-group{
+        width: 40% !important;
+        margin-bottom: 15px;
+        margin-left: 28%;
+    
+    }
+    #privetOffice .toDate {
+        padding-left: 20px !important;
+        
+    }
+   
+}
+
+@media(max-width: 680px){
+    #privetOffice .input-group{
+        width: 60% !important;
+        margin-left: 17%;
+    
+    }
+}
+
+@media(max-width: 521px){
+    #privetOffice .input-group{
+        width: 80% !important;
+        margin-left: 8%;
+    
+    }
+}
+
+#privetOffice .blog .carousel-indicators {
+   
+    bottom: -55px;
+    margin-bottom: 30px !important;
+
+}
+
+
+#privetOffice .blog .carousel-indicators li {
+    margin-top: -2%;
+    display: inline-block;
+    width: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 15px;
+    text-indent: -999px;
+    border: 1px solid #E3B038;
+    border-radius: 10px;
+}
+
+#privetOffice .blog .carousel-indicators .active {
+    background: #E3B038;
+}
+
+
+
+#privetOffice .carousel-indicators li {
+    margin-top: -2%;
+    display: inline-block;
+    width: 12px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 12px;
+    text-indent: -999px;
+    border: 1px solid #E3B038;
+    border-radius: 10px;
+
+    margin-top: -7%;
+}
+
+#privetOffice .carousel-indicators .active {
+    background: #E3B038;
+}   
+
+/* Profile Informations */
+
+
+#profile .userInformations{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px !important;
+    margin-left: 7%;
+    background-color: white;
+    padding: 10px 40px;
+    box-shadow: 0 20px 20px rgba(0,0,0,.03);
+    width: 100%;
+    border-radius: 10px;
+}
+
+#profile .userImg {
+   width: 100px;
+   border-radius: 50%;
+   margin-top: 30px;
+}
+
+#profile .moreInfo{
+    text-decoration: underline;
+    color: #707070;
+}
+#profile .moreInfo:hover{
+    color: #707070;
+}
+
+#profile .Username {
+    font-size: 19px;
+    padding-top: 10px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: black !important;
+}
+
+#profile .fa-phone-volume, .fa-envelope{
+    color: #E3B038;
+    margin-right: 3px;
+}
+
+#profile .userInformations p {
+    color: #565454;
+}
+
+#profile .rightContent {
+    
+    margin-top: 50px;
+   
+}
+#profile .subInformation{
+    border-radius: 10px !important;
+    background-color: white;
+    padding: 10px 40px;
+    height: 350px;
+
+}
+
+
+#profile .reservInformation{
+    margin-top: 30px;
+    border-radius: 10px !important;
+    background-color: white;
+    padding: 5px 30px;
+    width: 100%;
+    margin-left: 0px;
+   
+
+}
+
+#profile .active{
+    background: #E3B038 !important;
+    color: white !important;
+}
+#profile .page-link {
+    color: black ;
+    font-weight: 500;
+   
+
+}
+
+#profile.page-link {
+    box-shadow: none !important;
+}
+
+#profile .tableReserv {
+    overflow: auto;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: 0.1%;
+    margin-bottom: 10px;
+}
+
+#profile .pagination {
+    width: 99% !important;
+    text-align: right !important;
+}
+#profile td{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+#profile .detailsBtn{
+    background: none;
+    outline: none !important;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    text-decoration: none;
+   font-weight: 500;
+    background-color: #E3B038 ;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+   
+}
+
+#profile .header {
+    font-weight: 500;
+    color: #707070;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0px;
+    font-size: 17px;
+}
+
+#profile .reservInformation .header {
+   
+    margin: 20px 5px;
+ 
+}
+
+#profile .reservPagination {
+    text-align: right !important;
+    justify-content: right !important;
+}
+
+#profile .subImg{
+    
+    width: 100px;
+}
+
+#profile .eventImg{
+   padding-top: 10px;
+    width: 80px;
+}
+
+#profile .sub {
+    margin-bottom: 30px;
+}
+
+#profile .sub p:nth-child(1) {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    padding-top: 20px;
+}
+
+#profile .sub p:nth-child(2) {
+  
+    font-weight: 700;
+   color: #707070;
+}
+
+#profile .event p:nth-child(1) {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    padding-top: 16px;
+}
+
+#profile .event p:nth-child(2) {
+    font-size: 18px;
+    font-weight: 700;
+    color: #E3B038;
+}
+
+#profile .elements{
+    margin-top: 60px;
+}
+
+@media(max-width:1120px){
+
+    #profile .Username {
+        font-size: 18px !important;
+       
+    }
+
+    #profile .userInformations p {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:1024px){
+
+    #profile .userInformations p {
+        font-size: 13px;
+    }
+
+}
+
+@media(max-width:991px){
+
+    #profile .userInformations p {
+        font-size: 16px;
+    }
+
+    #profile .userInformations {  
+        justify-content: center !important;
+        margin: 30px auto !important;
+        width: 80% !important;
+        
+    }
+
+    #profile  .rightContent {
+        margin-top: 10px;
+       
+    }
+
+    #profile .elements{
+        margin-top: 30px;
+    }
+    #profile .sub{
+        text-align: center !important;
+        justify-content: center !important;
+    }
+    #profile .event{
+        text-align: center !important;
+        justify-content: center !important;
+    }
+}
+@media(max-width:991px){
+    #profile .subInformation{
+        height: auto;
+    }
+
+
+}
+
+@media(max-width:650px){
+
+    #profile .eventImg{
+        margin-right: 35px;
+    }
+
+    #profile .event p {
+        margin-right: 30px;
+    }
+}
+
+@media(max-width:650px){
+    #profile .header {
+        margin: 25px 0;
+       text-align: center !important;
+       justify-content: center !important;
+    }
+    #profile .reservInformation .header{
+        width: 80% !important;
+        margin: 30px auto;
+        text-align: center !important;
+       justify-content: center !important;
+    }
+
+
+
+}
+
+@media(max-width:429px){
+    #profile .eventImg{
+        margin-right: 0px;
+    }
+    #profile  .event p {
+        margin-right: 0px;
+    }
+}
+
+/* Reservation */
+
+
+#reservation .reservationHeader {
+    margin-top: 40px;
+}
+
+#reservation .rightContent {
+    margin-top: 60px;
+    
+}
+#reservation .reservationHeader p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 15px;
+    font-size: 25px;
+    margin-right: 40px;
+    color: #4D5560 !important;
+}
+
+#reservation .fa-user-circle {
+    color: #E3B038;
+     font-size: 25px;
+ margin-top: 10px;
+
+ }
+
+ #reservation .card {
+    margin-top: 30px;
+    width: 400px !important;
+    border: none !important;
+    box-shadow: 0 20px 20px rgba(0,0,0,.05);
+    font-family: 'Poppins', sans-serif;
+    height: 550px;
+    border-radius: 30px !important;
+  
+   
+ }
+ 
+
+ #reservation .card-img-top{
+   height: 62%;
+    border-radius: 30px 30px 0 0;
+}
+
+#reservation .priceReservation{
+    font-size: 18px;
+    color: #E3B038 !important;
+    font-weight: 600;
+}
+
+#reservation .cardReservation-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+#reservation .card-body button {
+    outline: none;
+    text-decoration: none;
+    border: none;
+    background-color: #222831 !important;
+    color: white;
+    padding: 8px 40px;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-top: 5px;
+
+}
+
+#reservation .card-body button:hover {
+    transform: scale(1.05);
+}
+#reservation .reservationCards {
+    margin-top: 50px;
+}
+
+@media(max-width: 510px){
+
+    #reservation .reservationHeader p {
+        margin-right: 10px;
+    }
+
+}
+
+@media(max-width: 445px){
+
+    #reservation .reservationHeader p {
+        margin-top: 0px;
+    }
+
+}
+
+
+@media(max-width: 1018px){
+
+    #reservation .card-body button {
+        padding: 10px 20px;
+    }
+}
+
+
+@media(max-width: 991px){
+    #reservation .card-body button {
+        padding: 10px 25px;
+    }
+
+    #reservation .reservationCards {
+        margin-top: 10px;
+    }
+
+    #reservation .reservationHeader {
+        margin-top: 10px;
+    }
+    
+}
+@media(max-width: 848px){
+
+    
+    #reservation .card {
+    width: 300px !important;
+ }
+
+}
+
+
+@media(max-width:635px){
+
+    #reservation .card {
+        width: 320px !important;
+     }
+}   
+
+
+@media(max-width:1800px){
+    #reservation .card {
+        width: 330px !important;
+     }
+}
+
+@media(max-width:1400px){
+    #reservation  .card {  
+        width: 310px !important;
+     }
+}
+
+@media(max-width:1320px){
+    #reservation .card {
+        width: 280px !important;
+     }
+}
+
+@media(max-width:1215px){
+    #reservation  .card {
+        width: 250px !important;
+     }
+}
+
+@media(max-width:1070px){
+    #reservation .card {
+        width: 240px !important;
+     }
+}
+@media(max-width: 991px){
+    #reservation .card{
+      width: 300px !important;
+  }
+}
+
+
+/* Reservation Details */
+
+
+#reservationDetails .reservationHeader {
+    margin-top: 40px;
+}
+
+#reservationDetails .rightContent {
+    margin-top: 60px;
+    
+}
+#reservationDetails .reservationHeader p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 15px;
+    font-size: 25px;
+    margin-right: 40px;
+    color: #4D5560 !important;
+}
+
+#reservationDetails .fa-calendar-alt, .fa-clock, .fa-hourglass-half, .fa-calendar-check, .fa-money-bill-alt, .fa-building, .fa-clipboard {
+    color: #E3B038;
+     font-size: 25px;
+     margin-right: 5px;
+
+
+ }
+ 
+ #reservationDetails select {
+    border-radius: 15px !important;
+    min-height: 40px;
+    color: black !important;
+    background: url(../img/Dropdown.png) no-repeat right #ddd;
+    background-position-x: 95%;
+    -webkit-appearance: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: white !important;
+    -moz-appearance: none;
+    text-indent: 1px;
+    font-size: 16px !important;
+    text-overflow: '';
+}
+#reservationDetails select option{
+    color:black !important;
+    border-radius: 15px !important;
+}
+
+#reservationDetails .fullDay {
+     margin-left: 67px;
+     margin-top: 25px;
+ }
+
+
+
+ #reservationDetails .custom-switch {
+    padding-left: 2.25rem;
+    padding-bottom: 1rem; 
+    margin-top: 26px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  
+  }
+
+
+  #reservationDetails .custom-control-label { 
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    padding-bottom: 0.1rem;
+  }
+
+ 
+  
+  #reservationDetails  .custom-switch .custom-control-label::before {
+    left: -2.25rem;
+    height: 0.8rem;
+    width: 2rem;  
+    pointer-events: all;
+    border-radius: 1rem;
+    border: none;
+    background-color: #DEE2E6;
+  
+  }
+
+  #reservationDetails .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow:none !important;
+}
+  
+#reservationDetails .promoCode{
+    margin-left: -16% !important;
+    margin-bottom: 25px;
+}
+
+#reservationDetails .notes {
+    margin-bottom: 50px;
+}
+
+#reservationDetails .fullDayCenter{
+    margin-bottom: 8px;
+    margin-top: 6px;
+}
+
+#reservationDetails  .custom-switch .custom-control-label::after {
+    top: calc(-0.3rem + 2px);
+     
+    left: calc(-3.25rem + 2px);
+    width: calc(1.8rem - 4px);  
+    height: calc(1.8rem - 4px);  
+    background-color: #E3B038;
+   
+    border-radius: 2rem; 
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #reservationDetails  .custom-switch .custom-control-label::after {
+      transition: none;
+      
+    }
+  }
+
+  #reservationDetails   .custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: rgb(218, 160, 26);
+   
+    }
+  
+    #reservationDetails   .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: #E3B038;
+    -webkit-transform: translateX(2rem); 
+    transform: translateX(2rem); 
+  }
+
+  #reservationDetails  .card-body input[type=date], .card-body input[type=time], .card-body input[type=text]{
+     border-radius: 30px;
+     border: 1px solid rgb(216, 216, 216);
+     padding: 7px 15px;
+     margin-bottom: 15px;
+     color: #222831 !important;
+ }
+
+ #reservationDetails .card-body span{
+    margin-right: 5px;
+    font-size: 18px;
+    color: #222831;
+    text-align: center !important;
+    justify-content: center !important;
+    
+}
+
+
+
+#reservationDetails .range{
+    width: 63%;
+    margin-top: 6px;
+}
+
+#reservationDetails .numberOfHoursSm{
+    display: none;
+}
+#reservationDetails .numberOfHoursLg {
+    margin-top: 4px;
+}
+
+#reservationDetails .duration {
+    margin-top: 15px;
+}
+#reservationDetails .durationImg {
+    margin-right: 2.5%;
+}
+
+
+#reservationDetails .custom-range::-webkit-slider-thumb:hover {
+    background: #E3B038;
+    
+  }
+  
+  #reservationDetails  .custom-range::-moz-range-thumb:hover  {
+    background: #E3B038;
+  }
+  
+  #reservationDetails  .custom-range::-ms-thumb:hover  {
+    background: #E3B038;
+  }
+
+  #reservationDetails .custom-range::-webkit-slider-thumb {
+    background: #E3B038;
+    
+  }
+  
+  #reservationDetails  .custom-range::-moz-range-thumb  {
+    background: #E3B038;
+  }
+  
+  #reservationDetails  .custom-range::-ms-thumb  {
+    background: #E3B038;
+  }
+
+  #reservationDetails .card:nth-of-type(1) {
+    margin-top: 50px;
+    width: 28% !important;
+    border: none !important;
+    box-shadow: 0 20px 20px rgba(0,0,0,.05);
+    font-family: 'Poppins', sans-serif;
+    height: 550px;
+    border-radius: 30px !important;
+  
+   
+ }
+
+ #reservationDetails .card:nth-of-type(2){
+    margin-top: 30px;
+    width: 62% !important;
+    border: none !important;
+    box-shadow: 0 20px 20px rgba(0,0,0,.05);
+    font-family: 'Poppins', sans-serif;
+
+    border-radius: 30px !important;
+ }
+
+
+ 
+
+ #reservationDetails .card-img-top{
+   height: 62%;
+    border-radius: 30px 30px 0 0;
+}
+
+#reservationDetails .priceReservation{
+    font-size: 18px;
+    color: #E3B038 !important;
+    font-weight: 600;
+}
+
+#reservationDetails .cardReservation-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 17px;
+}
+
+
+
+
+#reservationDetails .reservationCards {
+    margin-top: 50px;
+}
+
+#reservationDetails .reserveBtn {
+    outline: none;
+    text-decoration: none;
+    border: none !important;
+    background-color: #E3B038 !important;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: -40px;
+
+}
+
+#reservationDetails .reserveBtn:hover {
+    transform: scale(1.05);
+}
+
+#reservationDetails form{
+    margin-top: 10px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+@media(max-width: 510px){
+
+    #reservationDetails  .reservationHeader p {
+        margin-right: 10px;
+    }
+
+}
+
+@media(max-width: 445px){
+
+    #reservationDetails .reservationHeader p {
+        margin-top: 0px;
+    }
+
+}
+
+@media(max-width:575px){
+    #reservationDetails .promoCode{
+        margin: 0px !important;
+    }
+}
+
+
+@media(max-width: 991px){
+    
+
+    #reservationDetails  .reservationCards {
+        margin-top: 10px;
+    }
+
+    #reservationDetails  .reservationHeader {
+        margin-top: 10px;
+    }
+    
+    #reservationDetails  .reservationHeader p {
+    
+        margin-right: 0px;
+       
+    }
+  
+}
+
+@media(max-width: 1587px){
+
+    #reservationDetails  .card:nth-of-type(1){
+        width: 30% !important;
+    }
+
+    #reservationDetails  .card:nth-of-type(2){
+       
+        width: 65% !important;
+      
+     }
+
+     #reservationDetails  .card-img-top{
+        height: 58%;
+        
+     }
+
+   
+}
+
+@media(max-width: 1412px){
+    #reservationDetails   .card-body span{
+       
+        font-size: 15px;
+       
+    }
+}
+
+@media(max-width: 1160px){
+    #reservationDetails    .card:nth-of-type(1){
+        width: 31% !important;
+    }
+}
+@media(max-width: 1220px){
+    #reservationDetails  .fullDayCenter {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #reservationDetails  .fullDay {
+        margin-left: 3%;
+        margin-top: 20px;
+    }
+
+
+}
+
+@media(max-width: 888px){
+
+    #reservationDetails  .card:nth-of-type(1){
+        width: 50% !important;
+        margin-top: 30px !important;
+    }
+
+    #reservationDetails   .card:nth-of-type(2){
+       
+        width: 95% !important;
+      
+     }
+
+
+  
+
+}
+
+@media(max-width: 720px){
+    #reservationDetails  .card:nth-of-type(1){
+        width: 60% !important;
+    }
+ 
+    
+}
+
+@media(max-width: 646px){
+    #reservationDetails  .card:nth-of-type(1){
+        width: 60% !important;
+    }
+
+
+}
+
+
+
+@media(max-width: 530px){
+    #reservationDetails  .card:nth-of-type(1){
+        width: 70% !important;
+    }
+
+}
+
+@media(max-width: 430px){
+    #reservationDetails  .card:nth-of-type(1){
+        width: 80% !important;
+    }
+
+}
+
+
+@media(max-width: 360px){
+    #reservationDetails  .card:nth-of-type(1){
+        width: 91% !important;
+    }
+
+}
+@media(max-width: 469px){
+    #reservationDetails .numberOfHoursLg{
+       display: none;
+    }
+    #reservationDetails .numberOfHoursSm{
+        display: unset;
+     }
+     #reservationDetails  .range{
+         width: 80%;
+     }
+
+}
+
+@media(max-width: 382px){
+  
+    #reservationDetails .custom-switch {
+       text-align: center;
+        margin-top: 26px;
+        margin-left: 5px;
+      
+      }
+
+      #reservationDetails  .card:nth-of-type(2){
+       
+        width: 99% !important;
+      
+     }
+}
+
+@media(max-width: 333px){
+    #reservationDetails  .custom-switch{
+           width: 80%;
+           margin: 10px;
+           margin-left: 40%;
+   }
+
+
+
+}
+
+@media(max-width:1220px){
+    #reservationDetails   .promoCode{
+        margin-left: 0% !important;
+       
+       
+    }
+
+    #reservationDetails  .card:nth-of-type(1) {
+        margin-top: 80px;
+     }
+}
+
+
+/* Subscription Confirm  */
+
+#subscriptionConfirm select {
+    border-radius: 15px !important;
+    min-height: 50px;
+    color: #E3B038 !important;
+    width: 250px !important;
+    font-weight: 500 !important;
+    background: url(../img/Dropdown.png) no-repeat right #ddd;
+    background-position-x: 95%;
+    -webkit-appearance: none;
+    background-color: white !important;
+    font-family: 'Poppins', sans-serif;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+#subscriptionConfirm select option{
+    color:black !important;
+    border-radius: 15px !important;
+}
+
+#subscriptionConfirm .filterSubscription {
+    margin-top: 40px;
+}
+
+#subscriptionConfirm .rightContent {
+    margin-top: 60px;
+    
+}
+#subscriptionConfirm .filterSubscription p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-right: 40px;
+    color: black !important;
+}
+
+
+#subscriptionConfirm .card:nth-of-type(1) {
+    margin-top: 30px;
+    width: 31% !important;
+    border: none !important;
+    box-shadow: 0 20px 20px rgba(0,0,0,.05);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 28px !important;
+    padding-top: 30px !important;
+ }
+
+ #subscriptionConfirm .card:nth-of-type(2){
+    margin-top: 30px;
+    width: 62% !important;
+    border: none !important;
+    box-shadow: 0 20px 20px rgba(0,0,0,.05);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 28px !important;
+
+ }
+
+
+ #subscriptionConfirm .btnSubConfirm {
+    text-align: center !important;
+    width: 80%;
+    margin: 50px auto;
+ }
+
+ #subscriptionConfirm  .subscriptionConfirm ul {
+     color: #707070;
+     text-align: left;
+     font-size: 17px;
+     font-family: 'Poppins', sans-serif;
+     width: 75%;
+     margin-top: 20px;
+     margin-bottom: -20px;
+    
+  
+ }
+
+ #subscriptionConfirm .subscriptionConfirm .card-title{
+     font-weight: bold;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ #subscriptionConfirm .subscriptionConfirm ul li {
+     margin-bottom: 20px;
+ }
+
+ #subscriptionConfirm  .subscriptionConfirm ul {
+    list-style: none; 
+  }
+  
+  #subscriptionConfirm  .subscriptionConfirm ul li::before {
+    content: "\2022"; 
+    color: #E3B038; 
+    font-weight: bold; 
+    font-size: 30px;
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1rem;
+    
+  }
+
+  #subscriptionConfirm .card:nth-of-type(2) .card-txt{
+     font-size: 17px;
+     margin-top: 30px;
+ }
+
+ #subscriptionConfirm .informationSubConfirm {
+     margin-top: 50px;
+     justify-content: center;
+     
+ }
+
+ #subscriptionConfirm  .card:nth-of-type(1) .card-body{
+     background: url('../img/line.png') no-repeat center top ;
+     background-position: 50% 12%;
+     background-size: 110px;
+ }
+
+
+ #subscriptionConfirm  .card-body h5 {
+     font-size: 18px;
+     color: black !important;
+ }
+ 
+ #subscriptionConfirm  .card-text {
+     font-size: 50px;
+     font-weight: bold;
+     color: #E3B038 !important;
+     padding-top: 30px;
+     margin-right: 7%;
+     
+ }
+ #subscriptionConfirm  .card-text sup{
+    color: black !important;
+     font-size: 32px !important;
+  
+ }
+
+ #subscriptionConfirm  .card-body p:nth-child(3) {
+     margin-top: -18px;
+     margin-bottom: 25px;
+     color: black !important;
+ }
+
+ #subscriptionConfirm  .card-body p:nth-child(6) {
+   font-weight: 600;
+   margin-top: 30px;
+   color: black !important;
+   font-family: 'Poppins', sans-serif;
+   
+}
+
+#subscriptionConfirm  .card-body img {
+    margin-bottom: 20px;
+}
+
+#subscriptionConfirm .backbtn {
+    background: none !important;
+    color: #E3B038 !important;
+    border: 1px solid #E3B038 !important;
+    padding: 10px 40px !important;
+   
+}
+
+#subscriptionConfirm .confirmbtn {
+    padding: 10px 32px !important;
+    
+}
+
+#subscriptionConfirm .card-body button {
+    outline: none;
+    text-decoration: none;
+    border: none;
+    background-color: #E3B038 ;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+#subscriptionConfirm .card-body button:hover {
+    transform: scale(1.05);
+}
+#subscriptionConfirm .subscriptionCards {
+    margin-top: 50px;
+}
+
+@media(max-width: 510px){
+
+    #subscriptionConfirm  .filterSubscription p {
+        margin-right: 10px;
+    }
+
+
+
+}
+
+
+@media(max-width: 445px){
+
+    #subscriptionConfirm  .filterSubscription p {
+        margin-top: 0px;
+    }
+
+}
+
+@media(max-width: 434px){
+
+    #subscriptionConfirm  .filterSubscription p {
+        margin-top: 0px;
+    }
+
+}
+
+
+@media(max-width: 1100px){
+
+    #subscriptionConfirm  .card-body h5 {
+        font-size: 16px;
+    }
+
+    #subscriptionConfirm  .card-text {
+        font-size: 40px;
+     
+       
+        padding-top: 30px;
+        margin-right: 7%;
+    }
+
+    #subscriptionConfirm  .card-body button {
+      
+        font-size: 14px;
+ 
+    }
+
+    #subscriptionConfirm  .card:nth-of-type(1) {
+      
+        padding-top: 50px !important;
+     }
+
+}
+
+@media(max-width: 1018px){
+
+    #subscriptionConfirm .card-body button {
+        padding: 10px 20px;
+    }
+}
+
+
+@media(max-width: 991px){
+    #subscriptionConfirm   .card-body button {
+        padding: 10px 25px;
+    }
+
+    #subscriptionConfirm  .subscriptionCards {
+        margin-top: 10px;
+    }
+
+    #subscriptionConfirm   .filterSubscription {
+        margin-top: 10px;
+    }
+ 
+    #subscriptionConfirm  .subscriptionConfirm ul {
+        width: 100% !important;
+       
+    }
+}
+@media(max-width: 848px){
+
+    
+    #subscriptionConfirm .card:nth-of-type(1) {
+    width: 400px !important;
+    padding-top: 15px !important;
+    padding-bottom: 25px !important;
+ }
+
+ #subscriptionConfirm .card:nth-of-type(2){
+    width: 90% !important;
+   
+       
+    
+ }
+
+ #subscriptionConfirm .subscriptionConfirm ul {
+    width: 80% !important;
+   
+}
+
+
+}
+
+
+@media(max-width:635px){
+
+    #subscriptionConfirm  .card {
+        width: 320px !important;
+     }
+}   
+
+
+@media(max-width:1238px){
+   
+    #subscriptionConfirm   .backbtn {
+     
+        padding: 10px 30px !important;
+    }
+    
+    #subscriptionConfirm   .confirmbtn {
+        padding: 10px 22px !important;
+    }
+}
+
+@media(max-width:1540px){
+    #subscriptionConfirm  .subscriptionConfirm ul {
+        width: 90%;
+    }
+}
+@media(max-width:1300px){
+    #subscriptionConfirm  .subscriptionConfirm ul {
+        width: 100%;
+       
+    }
+    #subscriptionConfirm  .informationSubConfirm {
+ 
+        list-style-position: unset;
+    }
+
+}
+@media(max-width:1238px){
+  
+    #subscriptionConfirm  .informationSubConfirm {
+ 
+        list-style-position: unset;
+    }
+
+}
+
+@media(max-width:580px){
+    #subscriptionConfirm  .subscriptionConfirm ul {
+        width: 100% !important;
+       
+    }
+}
+
+@media(max-width: 1164px){
+    #subscriptionConfirm  .subscriptionConfirm ul {
+       font-size: 16px !important;
+   
+       
+    }
+    #subscriptionConfirm  .card-body {
+        margin-bottom: -10px;
+    }
+}
+
+
+/* Subscription Details */
+
+#subscriptionDetails select {
+    border-radius: 15px !important;
+    min-height: 50px;
+    color: #E3B038 !important;
+    width: 250px !important;
+    font-weight: 500 !important;
+    background: url(../img/Dropdown.png) no-repeat right #ddd;
+    background-position-x: 95%;
+    -webkit-appearance: none;
+    background-color: white !important;
+    font-family: 'Poppins', sans-serif;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+#subscriptionDetails select option{
+    color:black !important;
+    border-radius: 15px !important;
+}
+
+#subscriptionDetails .filterSubscription {
+    margin-top: 40px;
+}
+
+#subscriptionDetails .rightContent {
+    margin-top: 60px;
+    
+}
+#subscriptionDetails .filterSubscription p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-right: 40px;
+    color: black !important;
+}
+
+
+#subscriptionDetails .card:nth-of-type(1) {
+    margin-top: 30px;
+    width: 31% !important;
+    border: none !important;
+    box-shadow: 0 20px 20px rgba(0,0,0,.05);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 28px !important;
+ }
+
+ #subscriptionDetails .card:nth-of-type(2){
+    margin-top: 30px;
+    width: 62% !important;
+    border: none !important;
+    box-shadow: 0 20px 20px rgba(0,0,0,.05);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 28px !important;
+ }
+
+ #subscriptionDetails .range{
+     width: 63%;
+ }
+
+
+ #subscriptionDetails .custom-range::-webkit-slider-thumb:hover {
+    background: #E3B038;
+    
+  }
+  
+  #subscriptionDetails .custom-range::-moz-range-thumb:hover  {
+    background: #E3B038;
+  }
+  
+  #subscriptionDetails  .custom-range::-ms-thumb:hover  {
+    background: #E3B038;
+  }
+
+  #subscriptionDetails  .custom-range::-webkit-slider-thumb {
+    background: #E3B038;
+    
+  }
+  
+  #subscriptionDetails  .custom-range::-moz-range-thumb  {
+    background: #E3B038;
+  }
+  
+  #subscriptionDetails   .custom-range::-ms-thumb  {
+    background: #E3B038;
+  }
+
+  #subscriptionDetails  .detailsSubscription  .card-body {
+    background: none;
+ }
+
+ #subscriptionDetails  .detailsSubscription .card-body .card-txt{
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 80px;
+    margin-bottom: 80px;
+ }
+
+ #subscriptionDetails .btnSubDetails {
+    text-align: center !important;
+    width: 80%;
+    margin: 50px auto;
+ }
+
+ #subscriptionDetails .card-body{
+     background: url('../img/line.png') no-repeat center top ;
+     background-position: 50% 12%;
+     background-size: 110px;
+ }
+
+
+ 
+
+ #subscriptionDetails .card-body h5 {
+     font-size: 18px;
+     color: black !important;
+ }
+ 
+ #subscriptionDetails .card-text {
+     font-size: 50px;
+     font-weight: bold;
+     color: #E3B038 !important;
+     padding-top: 30px;
+     margin-right: 7%;
+     
+ }
+ #subscriptionDetails .card-text sup{
+    color: black !important;
+     font-size: 32px !important;
+  
+ }
+
+ #subscriptionDetails .card-body p:nth-child(3) {
+     margin-top: -18px;
+     margin-bottom: 25px;
+     color: black !important;
+ }
+
+ #subscriptionDetails .card-body p:nth-child(6) {
+   font-weight: 600;
+   margin-top: 30px;
+   color: black !important;
+   font-family: 'Poppins', sans-serif;
+   
+}
+
+#subscriptionDetails  .card-body img {
+    margin-bottom: 20px;
+}
+
+#subscriptionDetails .backbtn {
+    background: none !important;
+    color: #E3B038 !important;
+    border: 1px solid #E3B038 !important;
+    padding: 10px 40px !important;
+}
+
+#subscriptionDetails .nextbtn {
+    padding: 10px 40px !important;
+}
+
+#subscriptionDetails .card-body button {
+    outline: none;
+    text-decoration: none;
+    border: none;
+    background-color: #E3B038 ;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+#subscriptionDetails .card-body button:hover {
+    transform: scale(1.05);
+}
+#subscriptionDetails .subscriptionCards {
+    margin-top: 50px;
+}
+
+@media(max-width: 510px){
+
+    #subscriptionDetails  .filterSubscription p {
+        margin-right: 10px;
+    }
+
+    #subscriptionDetails  .detailsSubscription .card-body .card-txt{
+        font-size: 18px !important;
+        width: 80%;
+        text-align: center !important;
+        margin: 60px auto;
+      }
+
+      #subscriptionDetails  .range{
+          width: 40% !important;
+       
+      }
+
+}
+
+
+@media(max-width: 445px){
+
+    #subscriptionDetails  .filterSubscription p {
+        margin-top: 0px;
+    }
+
+}
+
+@media(max-width: 434px){
+
+    #subscriptionDetails  .filterSubscription p {
+        margin-top: 0px;
+    }
+
+    #subscriptionDetails  .totalMonth {
+        display: none;
+    }
+    #subscriptionDetails  .range{
+        width: 90% !important;
+        margin-bottom: -60px;
+    }
+}
+
+
+@media(max-width: 1100px){
+
+    #subscriptionDetails .card-body h5 {
+        font-size: 16px;
+    }
+
+    #subscriptionDetails  .card-text {
+        font-size: 40px;
+     
+       
+        padding-top: 30px;
+        margin-right: 7%;
+    }
+
+    #subscriptionDetails  .card-body button {
+      
+        font-size: 14px;
+ 
+    }
+
+}
+
+@media(max-width: 1018px){
+
+    #subscriptionDetails .card-body button {
+        padding: 10px 20px;
+    }
+}
+
+
+@media(max-width: 991px){
+    #subscriptionDetails .card-body button {
+        padding: 10px 25px;
+    }
+
+    #subscriptionDetails  .subscriptionCards {
+        margin-top: 10px;
+    }
+
+    #subscriptionDetails .filterSubscription {
+        margin-top: 10px;
+    }
+}
+@media(max-width: 848px){
+
+    
+    #subscriptionDetails .card:nth-of-type(1) {
+    width: 400px !important;
+ }
+
+ #subscriptionDetails .card:nth-of-type(2){
+    width: 90% !important;
+   
+
+ }
+
+}
+
+
+@media(max-width:635px){
+
+    #subscriptionDetails  .card {
+        width: 320px !important;
+     }
+}   
+
+@media(max-width: 1542px){
+
+    #subscriptionDetails  .detailsSubscription .card-body .card-txt{
+
+        margin-top: 93px;
+       
+     }
+
+}
+
+@media(max-width:1270px){
+    #subscriptionDetails  .range{
+        width: 50%;
+    }
+}
+
+@media(max-width:1238px){
+    #subscriptionDetails  .detailsSubscription .card-body .card-txt{
+       font-size: 20px;
+     }
+
+     #subscriptionDetails   .backbtn {
+     
+        padding: 10px 30px !important;
+    }
+    
+    #subscriptionDetails .nextbtn {
+        padding: 10px 30px !important;
+    }
+}
+
+
+@media(max-width:1040px){
+    #subscriptionDetails  .detailsSubscription .card-body .card-txt{
+       font-size: 18px;
+     }
+}
+
+
+/* footer */
+
+#footer{
+    margin-top: 38px !important;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+  
+    display: block;
+    align-items: center;
+   
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.footer p {
+    margin-top: 18px;
+}
+
+.pull-right a i {
+    margin-right: 15px;
+    color: white;
+
+}
+
+.pull-right {
+    margin-right: 3%;
+}
+
+#footer p i {
+    transition: 0.4s;
+    cursor: pointer;
+}
+#footer p i:hover {
+    transform: scale(1.3);
+
+}
+.pull-left {
+    margin-left: 3%;
+}
+
+@media(max-width:458px){
+    .footer {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+}

@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Site Dieteticien</title>
+    <style>
+        /*------------------------------------
+	         Google Fonts
+        ------------------------------------*/
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        /*Sous ligne*/
+        .underline-title {
+            box-shadow: inset 0px -10px #FFDB7E;
+        }
+
+        /*Les images*/
+        .shadow-image {
+            filter: drop-shadow(0px 27px 28px rgba(0, 0, 0, 0.17));
+        }
+
+        .section-image {
+            border-radius: 40px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .section-bg-image {
+            background: url('./assets/img/doctor.jpg') no-repeat 40% 16%, #000000;
+            background-size: cover;
+        }
+
+        /*Page*/
+        .page-content {
+            font-family: 'Poppins';
+            background: #fff;
+            color: #921313;
+        }
+
+        /*Couleur de chaque section */
+        .bg-section {
+            background: #ffff;
+        }
+
+        /*Menu*/
+        .logo {
+            font-family: 'Pacifico';
+            color: #000 !important;
+
+        }
+
+        .menu {
+            background: #ffff;
+            --bs-navbar-color: #000000;
+            margin-top: 3px;
+        }
+
+
+        /*Les bouttons*/
+        .section-btn {
+            border-radius: 6px;
+            color: #ffff !important;
+        }
+
+        .btn-primay {
+            background: #DD1C50;
+        }
+
+        .btn-secondary {
+            background: #c1c1c1;
+        }
+
+        /**Color Indicator carousel**/
+        .carouselIndicatorColor {
+            background-color: #FFDB7E !important;
+        }
+
+        /*Footer*/
+        .bgColorFooter {
+            background: #000000;
+        }
+
+        .footer-title {
+            color: #C5C5C5
+        }
+
+        .footer-item {
+            color: #736E64;
+        }
+    </style>
+</head>
+
+<body class="page-content">
+    <!-- ======= Section Navigation ======= -->
+    <section id="navigation" class="section container">
+        <nav class="navbar navbar-expand-lg menu">
+            <a class="navbar-brand style-name-website logo" href="#">Géraldine Mulle</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav item-menu-navigation  style-menu-navigation">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Qui suis je?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mon cabinet</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Où me trouver?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link style-btn-contact section-btn btn-primay" href="#">
+                            <p>Contactez-moi</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- =======  End Section Navigation ======= -->
+
+    <!-- ======= Section One ======= -->
+    <section id="section-1" class="section container-fluid bg-section full-section">
+        <div class="section-bg-image style-bg-image">
+            <div class="section-style-1"></div>
+            <div class="section-style-2 section-center">
+                <h2 class="section-title">Géraldine Mullet, Diététicienne Lorgues
+                </h2>
+                <p class="section-description">Diététicienne nutritionniste et éducatrice thérapeutique
+                    dans les maladies
+                    chroniques (diplômée
+                    d'état).Installée depuis 2003 à Fréjus puis sur Lorgues.</p>
+                <div class="banner-btn-stretch">
+                    <a  class="btn-1 section-btn btn-primay" href="">
+                        <p class="text-btn-1">Prenez un rdv</p>
+                    </a>
+                    <a class="btn-1 section-btn btn-secondary" href="">
+                        <p class="text-btn-1">Lorem Ipsum</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= End Section One ======= -->
+
+    <!-- ======= Section Two ======= -->
+    <section id="section-2" class="section container bg-section">
+        <div class="section-video element-center">
+            <h2 class="section-title"><span class="underline-title">Video</span>
+            </h2>
+            <p class="section-subtitle">Le Lorem Ipsum est simplement du faux texte employé
+                </u></p>
+            <iframe class="video" src="https://www.youtube.com/embed/wk0iq7D9utY" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- ======= End Section Two ======= -->
+
+    <!-- ======= Section Three ======= -->
+    <section id="section-3" class="section container bg-section">
+        <div class="section-content">
+            <img class="section-image section-picture default-style-img" src="./assets/img/food.png" alt="" />
+            <div class="sub-section">
+                <h2 class="section-title"><span class="underline-title">L'Alimentation est la Première
+                        des Médecines</span>
+                </h2>
+                <p class="section-description">Pour rester en bonne santé et se sentir bien dans son
+                    corps, la nutrition a
+                    toute sa place !
+                    En tant que Diététicienne-Nutritionniste expérimentée, mon rôle est de vous accompagner, avec
+                    bienveillance et écoute, vers votre objectif santé, bien-être ou dans le cadre de la gestion du
+                    poids.
+                    Mon approche est nutritionnelle, comportementale ET personnalisée.
+                    Je serai à 100% là pour vous aider à atteindre votre objectif.
+                    Avec ma collaboratrice, Julia Graindorge, <u>nous vous recevons au cabinet (Paris 17) ou en
+                        téléconsultation.</u></p>
+
+                <div class="section-buttons btn-left">
+                    <a class="btn-contact section-btn btn-primay" href="">
+                        <p class="text-btn-3">Contact</p>
+                    </a>
+                    <a class="btn-contact section-btn btn-primay" href="">
+                        <p class="text-btn-3">Contact</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ======= End Section Three ======= -->
+    <!-- ======= End Section Four ======= -->
+    <section id="section-4" class="section container">
+        <div class="section-content">
+            <div class="sub-section">
+                <h2 class="section-title"><span class="underline-title">Mon cabinet</span></h2>
+                <p class="section-description">Nouvelle collaboration ! Je travaille avec Julia
+                    Graindorge,
+                    Diététicienne-Nutritionniste formée à la
+                    Diététique Comportementale. Elle vous reçoit au cabinet ou en téléconsultation les mercredis et
+                    samedis. Julia a un diplôme en psychologie et pédagogie du comportement alimentaire. Elle est
+                    spécialisée dans les troubles du comportements alimentaires, l’accompagnement dans un projet de
+                    perte de poids et le suivi des enfants et adolescents.</p>
+                <div class="section-buttons btn-left">
+                    <a class="btn-consultation section-btn btn-primay" href="">
+                        <p class="btn-text-1">Consultation au cabinet à Paris ou en ligne</p>
+                    </a>
+                    <a class="btn-consultation section-btn btn-primay" href="">
+                        <p class="btn-text-1">Consultation au cabinet à Paris ou en ligne</p>
+                    </a>
+                </div>
+
+            </div>
+            <img class="section-image shadow-image section-picture default-style-img" src="./assets/img/office.jpg"
+                alt="">
+        </div>
+    </section>
+    <!-- ======= End Section Four ======= -->
+
+    <!-- =======  Section Five ======= -->
+    <section id="section-5" class="section container bg-section">
+        <div class="element-center">
+            <h2 class="section-title"><span class="underline-title">Pourquoi me choisir?</span>
+            </h2>
+            <p class="section-subtitle">Expériences professionnelles dans tous les domaines de la
+                nutrition et pas
+                seulement dans la gestion du
+                poids. Elle est diététicienne en clinique de soins de suite et rééducation, d’écoles, et du CREPS de
+                Boulouris et à l'habitude de travailler avec les enfants, les personnes âgées, les adolescents, les
+                sportifs et les femmes enceintes...Prenant en compte vos besoins, envies, goûts, activités et
+                antécédents médicaux (diabète, cholestérol, intolérances, etc.), madame Casetto établit un plan
+                alimentaire adapté, pour allier plaisir et équilibre.Suivi avec balance impédencemétrie dotée d'un
+                analyseur corporel.</p>
+        </div>
+    </section>
+    <!-- ======= End Section Five ======= -->
+
+    <!-- ======= Section Six ======= -->
+    <section id="section-6" class="section container bg-section">
+        <div class="element-center">
+            <h2 class="section-title"><span class="underline-title">Tarifs</span></h2>
+            <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                consectetur commodo habitasse ultrices.</p>
+        </div>
+        <div class="card-wrapper card-4">
+            <div class="card-layout bgColorCardPrice styleBorderCard">
+                <p class="title-card ">Bilan diététique</p>
+                <div class="card-description">
+                    <p class="sub-card">Faire le point sur votre santé, </p>
+                    <p class="sub-card">Etablissement d’un programme personnalisé </p>
+                    <p class="sub-card">Mise en place d’objectifs </p>
+                    <p class="sub-card">Durée : 1h</p>
+
+                </div>
+                <div class="bottom-card">
+                    <p class="card-price">€ <span>60</span></p>
+                    <a class="btn-card section-btn btn-secondary" href="">
+                        <p class="text-btn-2 ">Prenez un rdv</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-layout bgColorCardPrice styleBorderCard">
+                <p class="title-card ">Bilan diététique</p>
+                <div class="card-description">
+                    <p class="sub-card">Faire le point sur votre santé, </p>
+                    <p class="sub-card">Etablissement d’un programme personnalisé </p>
+                    <p class="sub-card">Mise en place d’objectifs </p>
+                    <p class="sub-card">Durée : 1h</p>
+                </div>
+                <div class="bottom-card">
+                    <p class="card-price">€ <span>60</span></p>
+                    <a class="btn-card section-btn btn-secondary" href="">
+                        <p class="text-btn-2">Prenez un rdv</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card-layout bgColorCardPrice styleBorderCard">
+                <p class="title-card ">Bilan diététique</p>
+                <div class="card-description ">
+                    <p class="sub-card">Faire le point sur votre santé, </p>
+                    <p class="sub-card">Etablissement d’un programme personnalisé </p>
+                    <p class="sub-card">Mise en place d’objectifs </p>
+                    <p class="sub-card">Durée : 1h</p>
+                </div>
+                <div class="bottom-card">
+                    <p class="card-price">€ <span>60</span></p>
+                    <a class="btn-card section-btn btn-secondary" href="">
+                        <p class="text-btn-2">Prenez un rdv</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card-layout bgColorCardPrice styleBorderCard">
+                <p class="title-card ">Bilan diététique</p>
+                <div class="card-description ">
+                    <p class="sub-card">Faire le point sur votre santé, </p>
+                    <p class="sub-card">Etablissement d’un programme personnalisé </p>
+                    <p class="sub-card">Mise en place d’objectifs </p>
+                    <p class="sub-card">Durée : 1h</p>
+                </div>
+                <div class="bottom-card">
+                    <p class="card-price">€ <span>60</span></p>
+                    <a class="btn-card section-btn btn-secondary" href="">
+                        <p class="text-btn-2">Prenez un rdv</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- ======= End Section Six ======= -->
+    <!-- =======  Section Seven ======= -->
+    <section id="section-7" class="section container bg-section">
+
+        <div class="element-center">
+            <h2 class="section-title"><span class="underline-title">Avis</span></h2>
+            <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                consectetur commodo habitasse ultrices.</p>
+        </div>
+        <!-- =======  Carousel Mobile ======= -->
+        <div id="carouselExampleIndicatorsMobile" class="carousel slide carousel-mobile" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicatorsMobile" data-bs-slide-to="0"
+                    class="active carouselIndicatorColor" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsMobile" data-bs-slide-to="1"
+                    class="carouselIndicatorColor" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsMobile" data-bs-slide-to="2"
+                    class="carouselIndicatorColor" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item section-cards-carousel active">
+                    <div class="section-cards card-4">
+                        <div class="card-item bgColorCardNotice">
+                            <p class="title-card">Nada Boro Mobile 1</p>
+                            <p class="sub-card ">Le Lorem Ipsum est simplement du
+                                faux texte employé
+                                dans
+                                la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte
+                                standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla
+                                ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item section-cards-carousel">
+                    <div class="section-cards card-4">
+                        <div class="card-item  bgColorCardNotice">
+                            <p class="title-card">Nada Boro Mobile 2</p>
+                            <p class="sub-card">Le Lorem Ipsum est simplement du
+                                faux texte employé
+                                dans
+                                la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte
+                                standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla
+                                ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item section-cards-carousel">
+                    <div class="section-cards card-4">
+                        <div class="card-item bgColorCardNotice">
+                            <p class="title-card">Nada Boro Mobile 3</p>
+                            <p class="sub-card">Le Lorem Ipsum est simplement du
+                                faux texte employé
+                                dans
+                                la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte
+                                standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla
+                                ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ======= End Carousel Mobile ======= -->
+
+        <!-- ======= Carousel Web ======= -->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-web" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    class="active carouselIndicatorColor" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    class="carouselIndicatorColor" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    class="carouselIndicatorColor" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner carousel-web">
+                <div class="carousel-item section-cards-carousel  active">
+                    <div class="section-cards card-2">
+                        <div class="card-item bgColorCardNotice">
+                            <p class="title-card">Nada Boro 1</p>
+                            <p class="sub-card ">Le Lorem Ipsum est simplement du
+                                faux texte employé
+                                dans
+                                la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte
+                                standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla
+                                ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                            </p>
+                        </div>
+
+                        <div class="card-item bgColorCardNotice">
+                            <p class="title-card">Nada Boro 1</p>
+                            <p class="sub-card">Le Lorem Ipsum est simplement du
+                                faux texte employé
+                                dans
+                                la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte
+                                standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla
+                                ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item section-cards-carousel">
+                    <div class="section-cards card-2">
+                        <div class="card-item bgColorCardNotice">
+                            <p class="title-card">Nada Boro 2</p>
+                            <p class="sub-card">Le Lorem Ipsum est simplement du
+                                faux texte employé
+                                dans
+                                la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte
+                                standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla
+                                ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                            </p>
+                        </div>
+
+                        <div class="card-item bgColorCardNotice">
+                            <p class="title-card">Nada Boro 1</p>
+                            <p class="sub-card">Le Lorem Ipsum est simplement du
+                                faux texte employé
+                                dans
+                                la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte
+                                standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla
+                                ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item  section-cards-carousel">
+                    <div class="section-cards card-2">
+                        <div class="card-item  bgColorCardNotice">
+                            <p class="title-card">Nada Boro 3</p>
+                            <p class="sub-card">Le Lorem Ipsum est simplement du
+                                faux texte employé
+                                dans
+                                la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte
+                                standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla
+                                ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                            </p>
+                        </div>
+
+                        <div class="card-item bgColorCardNotice">
+                            <p class="title-card">Nada Boro 3</p>
+                            <p class="sub-card">Le Lorem Ipsum est simplement du
+                                faux texte employé
+                                dans
+                                la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte
+                                standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla
+                                ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ======= End Carousel Web ======= -->
+
+    </section>
+    <!-- ======= End Section Seven ======= -->
+
+    <!-- ======= Section Eight ======= -->
+    <section id="section-8" class="section container bg-section section-margin-top-1">
+        <div class="element-center">
+            <h2 class="section-title"><span class="underline-title">Blog</span></h2>
+            <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                consectetur commodo habitasse ultrices.</p>
+        </div>
+
+        <div class="blog-wrapper">
+            <div class="card-blog">
+                <div class="top-card-blog">
+                    <img class="section-image image-card default-style-img" src="./assets/img/food-1.jpg" alt="">
+                </div>
+                <div class="bottom-card-blog">
+                    <p class="title-blog ">Fibromyalgie et alimentation</p>
+                    <p class="sub-card ">retrouvez mon interview dans l’article du Journal
+                        des Femmes.</p>
+                    <a class="view-article " href="">voir plus</a>
+                </div>
+            </div>
+
+            <div class="card-blog">
+                <div class="top-card-blog">
+                    <img class="section-image image-card default-style-img" src="./assets/img/women.png" alt="">
+                </div>
+                <div class="bottom-card-blog">
+                    <p class="title-blog ">Fibromyalgie et alimentation</p>
+                    <p class="sub-card ">retrouvez mon interview dans l’article du Journal
+                        des Femmes.</p>
+                    <a class="view-article" href="">voir plus</a>
+                </div>
+            </div>
+
+            <div class="card-blog">
+                <div class="top-card-blog">
+                    <img class="section-image image-card default-style-img" src="./assets/img/ice.png" alt="">
+                </div>
+                <div class="bottom-card-blog">
+                    <p class="title-blog ">Fibromyalgie et alimentation</p>
+                    <p class="sub-card ">retrouvez mon interview dans l’article du Journal
+                        des Femmes.</p>
+                    <a class="view-article " href="">voir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= End Section Eight ======= -->
+    <!-- ======= End Section Nine ======= -->
+    <section id="section-9" class="section container-fluid bg-section section-margin-top-2 section-style-instagram">
+        <div class="feed-instgram">
+            <div class="element-center">
+                <h2 class="section-title">
+                    <span class="underline-title"> Feed Instagram</span>
+                </h2>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed
+                    consectetur commodo habitasse ultrices.</p>
+            </div>
+
+            <!-- ======= Carousel Mobile Instagram ======= -->
+            <div class="craousel-instagram-mobile">
+                <div id="carouselControlsMobile" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item section-cards-carousel active">
+                            <div class="section-cards list-image">
+                                <div class="picture-feed">
+                                    <img class="section-image style-image" src="./assets/img/image_instagram_1.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item section-cards-carousel">
+                            <div class=" section-cards list-image">
+                                <div class="picture-feed">
+                                    <img class="section-image style-image" src="./assets/img/image_instagram_2.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item section-cards-carousel">
+                            <div class="section-cards list-image">
+                                <div class="picture-feed">
+                                    <img class="section-image style-image" src="./assets/img/image_instagram_4.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item section-cards-carousel">
+                            <div class="section-cards list-image">
+                                <div class="picture-feed">
+                                    <img class="section-image style-image" src="./assets/img/image_instagram_3.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControlsMobile"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselControlsMobile"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ======= End Carousel Mobile Instagram ======= -->
+            <!-- ======= Carousel Web Instagram ======= -->
+            <div class="craousel-instagram-web">
+                <div id="carouselInstagramControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item section-cards-carousel  active">
+                            <div class="section-cards list-image">
+                                <div class="picture-feed">
+                                    <img class="section-image style-image" src="./assets/img/image_instagram_1.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="picture-feed">
+                                    <img class="section-image style-image" src="./assets/img/image_instagram_2.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="picture-feed">
+                                    <img class="section-image style-image" src="./assets/img/image_instagram_3.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="picture-feed">
+                                    <img class="section-image style-image" src="./assets/img/image_instagram_4.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item section-cards-carousel">
+                            <div class="section-cards list-image">
+                                <div class="picture-feed">
+                                    <img class="section-image style-image" src="./assets/img/image_instagram_4.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="picture-feed">
+                                    <img class="section-image style-image" src="./assets/img/image_instagram_3.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="picture-feed">
+                                    <img class="section-image style-image" src="./assets/img/image_instagram_2.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="picture-feed">
+                                    <img class="section-image style-image" src="./assets/img/image_instagram_1.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="controls-carousel-instagram">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselInstagramControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselInstagramControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- =======End Carousel Web Instagram ======= -->
+        </div>
+    </section>
+    <!-- ======= End Section Nine ======= -->
+
+    <!-- =======  Section Ten ======= -->
+    <section id="section-10" class="section container-fluid bg-section">
+        <div class="element-center">
+            <h2 class="section-title"> <span class="underline-title">Où me trouver</span></h2>
+            <p class="section-subtitle">227 chemin des fourches, Lorgues 83510</p>
+        </div>
+        <div class="maps">
+            <img class="section-image image-map default-style-img" src="./assets/img/maps.jpg" alt="">
+        </div>
+    </section>
+    <!-- ======= End Section Ten ======= -->
+
+    <!-- =======  Section Eleven ======= -->
+    <section id="section-11" class="section container-fluid bg-section">
+        <div class="other-section">
+            <h2 class="section-title">
+                <span class="underline-title"> Qu'est-ce que le Lorem Ipsum? </span>
+            </h2>
+            <p class="section-subtitle">
+                Le Lorem Ipsum est simplement du faux texte employé
+            </p>
+            <div class="section-buttons btn-center">
+                <a class="btn-other-section  section-btn btn-primay" href="">Pourquoi l'utiliser?</a>
+            </div>
+        </div>
+    </section>
+    <!-- ======= End Section Eleven ======= -->
+    <!-- ======= Footer ======= -->
+    <footer class="bgColorFooter">
+        <div class="footer-page container">
+            <div class="widget-1">
+                <div class="footer-aria">
+                    <p class="text-footer-1 footer-title">Géraldine Mullet</p>
+                    <a href="">
+                        <p class="footer-item">227 chemin des fourches, Lorgues 83510
+                        </p>
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/"> <img class="section-image default-style-img"
+                            src="./assets/img/facebook.svg" alt=""></a>
+                    <a href=""> <img class="section-image default-style-img " src="./assets/img/twitter.svg" alt=""></a>
+                    <a href=""> <img class="section-image default-style-img " src="./assets/img/linkedin.svg"
+                            alt=""></a>
+                    <a href=""> <img class="section-image default-style-img " src="./assets/img/youtube.svg" alt=""></a>
+                    <a href=""> <img class="section-image default-style-img " src="./assets/img/instagram.svg"
+                            alt=""></a>
+                </div>
+            </div>
+
+            <div class="widget-2">
+                <p class="text-footer-1 footer-title">MEMBRE DES ASSOCIATIONS ET RÉSEAUX</p>
+
+                <a href="">
+                    <p class="text-footer-2 footer-item">ADL : Association des Diététiciens Libéraux</p>
+                </a>
+                <a href="">
+                    <p class="text-footer-2 footer-item">ONCODIET : Réseau de Diététiciens Libéraux en
+                        Cancérologie</p>
+                </a>
+                <a href="">
+                    <p class="text-footer-2 footer-item">RESENDO : Réseau Endométriose</p>
+                </a>
+                <a href="">
+                    <p class="text-footer-2 footer-item">AFA : Réseau de diététiciens formés à
+                        l’accompagnement des Mici</p>
+                </a>
+            </div>
+
+            <div class="widget-3">
+
+                <p class="text-footer-1 footer-title">CONTACT</p>
+
+                <a href="">
+                    <p class="text-footer-2 footer-item">Mentions légales</p>
+                </a>
+                <a href="">
+                    <p class="text-footer-2 footer-item">Politique de confidentialité</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

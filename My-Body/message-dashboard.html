@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css-components/sidebar.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="assets/css-components/messageBoard-chat-cards.css" type="text/css" /> -->
+    <link rel="stylesheet" href="assets/css-components/chat.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css-components/cards-notes.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/message-board.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Messagerie</title>
+</head>
+
+<body style="background: #EAE9F1;">
+    <section id="app__diets">
+        <div class="container-diets">
+            <!-- ============================ Main Menu Responsive ================================== -->
+            <div class="main-menu">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">
+                        <img class="image-dietitian" src="./assets/img/dietitian-1.jpg" alt="dietitian">
+                        <p class="name-dietitian">Johanne
+                            Dau</p>
+                    </a>
+
+                    <button class="btn  ml-auto btn-show-patient pp">Patient
+                        <img class="icon-show-patient" src="./assets//img/user.svg" alt="">
+        
+                    </button>
+                    <button class="navbar-toggler collapsed btn-toggler-dietitian" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="navbar-collapse collapse position-navs" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="access-to-home">
+                                        <img class="left-icons " src="./assets/img/home.svg" alt="home">
+                                        <p class="home-nav">Dashboard</p>
+                                    </div>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item nav-space-bottom">
+                                <a class="nav-link" href="#">
+                                    <div class="access-patients-menu">
+                                        <img class="left-icons icon-space-bottom" src="./assets/img/menu-consulting.svg"
+                                            alt="">
+                                        <p class="home-nav">Consultations</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <div class="folder-patients-menu">
+                                        <img class="left-icons icon-space-bottom  " src="./assets/img/users.svg" alt="">
+                                        <p class="home-nav-link  ">Dossiers patients</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <div class="folder-patients-menu">
+                                        <img class="left-icons icon-space-bottom active-page-icon"
+                                            src="./assets/img/star.svg" alt="">
+                                        <p class="home-nav-link  active-page">Noter un repas</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <div class="folder-patients-menu">
+                                        <img class="left-icons icon-space-bottom" src="./assets/img/chat.svg" alt="">
+                                        <p class="home-nav-link">Messagerie</p>
+                                        <span class="badge position-badge-message">3</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item nav-space-bottom">
+                                <a class="nav-link" href="#">
+                                    <div class="access-patients-menu">
+                                        <img class="left-icons icon-space-bottom" src="./assets/img/work.svg" alt="">
+                                        <p class="home-nav">Gestion du compte</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <div class="folder-patients-menu">
+                                        <img class="left-icons icon-space-bottom" src="./assets/img/profile.svg" alt="">
+                                        <p class="home-nav-link">Dossiers patients</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <div class="folder-patients-menu">
+                                        <img class="left-icons icon-space-bottom" src="./assets/img/settings.svg"
+                                            alt="">
+                                        <p class="home-nav-link">Noter un repas</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <div class="folder-patients-menu">
+                                        <img class="left-icons icon-space-bottom" src="./assets/img/send.svg" alt="">
+                                        <p class="home-nav-link">Messagerie</p>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="access-patients-menu">
+                                        <img class="left-icons" src="./assets/img/notification.svg" alt="">
+                                        <p class="home-nav">Notifications</p>
+                                        <span class="badge position-badge-notifications">3</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="access-patients-menu">
+                                        <img class="left-icons" src="./assets/img/logout.svg" alt="">
+                                        <p class="home-nav">Déconnexion</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- ============================ End Main Menu Responsive ================================== -->
+
+            <!-- ============================  Side Bar (Left Dashboard) ================================== -->
+            <div class="left-dashboard">
+                <div class="dietitian">
+                    <img class="image-dietitian" src="./assets/img/dietitian-1.jpg" alt="dietitian">
+                </div>
+                <div>
+                    <div class="access-home">
+                        <img class="left-icons" src="./assets/img/home.svg" alt="" data-toggle="tooltip"
+                            data-placement="top" title="Dashboard">
+                    </div>
+                    <div class="control-patient">
+                        <div class="access-patients">
+                            <img class="left-icons" src="./assets/img/menu-consulting.svg" alt="" data-toggle="tooltip"
+                                data-placement="top" title="Consultations">
+
+                        </div>
+                        <div class="folder-patients">
+                            <img class="left-icons  " src="./assets/img/users.svg" alt="" data-toggle="tooltip"
+                                data-placement="top" title="Dossiers patients">
+
+                        </div>
+                        <div class="review-meal">
+                            <img class="left-icons active-page-icon" src="./assets/img/star.svg" alt=""
+                                data-toggle="tooltip" data-placement="top" title="Noter un repas">
+
+                        </div>
+                        <div class="message">
+                            <img class="left-icons" src="./assets/img/chat.svg" alt="" data-toggle="tooltip"
+                                data-placement="top" title="Messagerie">
+                            <span class="badge">3</span>
+                        </div>
+                    </div>
+                    <div class="account-management">
+                        <div class="access-account">
+                            <img class="left-icons" src="./assets/img/work.svg" alt="" data-toggle="tooltip"
+                                data-placement="top" title="Gestion du compte">
+                        </div>
+                        <div class="my-account">
+                            <img class="left-icons" src="./assets/img/profile.svg" alt="" data-toggle="tooltip"
+                                data-placement="top" title="Mon compte">
+                        </div>
+                        <div class="my-settings">
+                            <img class="left-icons" src="./assets/img/settings.svg" alt="" data-toggle="tooltip"
+                                data-placement="top" title="Paramètres">
+                        </div>
+                        <div class="contact">
+                            <img class="left-icons" src="./assets/img/send.svg" alt="" data-toggle="tooltip"
+                                data-placement="top" title="Contacter myBody">
+                        </div>
+                    </div>
+                    <div class="access-notifications">
+                        <div class="notif">
+                            <img class="left-icons" src="./assets/img/notification.svg " alt="" data-toggle="tooltip"
+                                data-placement="top" title="Notifications">
+                        </div>
+                    </div>
+                    <div class="dietitian-deconnect">
+                        <img class="left-icons" src="./assets/img/logout.svg" alt="" data-toggle="tooltip"
+                            data-placement="top" title="Déconnexion">
+
+                    </div>
+                </div>
+            </div>
+            <!-- ============================ End Side Bar (Left Dashboard) ================================== -->
+
+
+
+            <!-- ============================ Chat Dashboard   ========================================== -->
+
+            <div class="chat-board">
+                <div class="chat custom-height-chat">
+                    <div class="search-chat-space ">
+                        <input class="input-search-chat" type="text" placeholder="Recherche"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rechercher'">
+                        <button class="btn-search-chat"><img src="./assets//img/search-chat.svg" alt=""></button>
+
+                    </div>
+                    <hr class="border-input-search">
+                    <div class="all-messages custom-height-message">
+                        <div class="message-patient active-message-patient ">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat ">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ============================ End Chat Dashboard   ========================================== -->
+
+            <!-- ============================ Chat exchange message   ========================================== -->
+            <div class="chat-place">
+                <div class="message-exchange">
+                    <div class="patient-details">
+                        <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                        <div class="patient-data">
+                            <p class="name-of-patient"><span>Saturnin Domas</span></p>
+                            <p class="date-tracking">Suivi depuis le <span>JJ/MM/AAAA</span></p>
+                        </div>
+                    </div>
+                    <div class="message-folder">
+                        <a class="send-message" href="">
+                            <p class="text-utilis">noter les repas</p><img class="icons-utilis"
+                                src="./assets/img/star.svg" alt="">
+                        </a>
+                        <a class="show-folder-patient" href="">
+                            <p class="text-utilis">voir le dossier patient</p><img class="icons-utilis"
+                                src="./assets/img/show.svg" alt="">
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="body-chat">
+
+
+                        <div class="message-chat" id="chat-messenger">
+                            <div class="day">
+                                <span class="date-message">Aujourd’hui</span>
+                            </div>
+                            <div class="coming-message">
+                                <div class="message-from-patient">
+                                    <div>
+                                        <img class="image-food" src="./assets/img/food.jpg" alt="">
+                                    </div>
+                                    <p class="details-message-client" id="p2">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla quam eu
+                                        faci
+                                        lisis mollis.
+                                    </p>
+                                    <p class="time-receive-message">18:24</p>
+                                </div>
+                                <div class="bottom-left-message"></div>
+                            </div>
+                            <div class="sending-message">
+                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec
+                                    fringilla quam eu faci lisis mollis. </p>
+                                <div class="time-send">
+                                    <p class="time-send-message">18:24</p>
+                                    <img src="./assets/img/send-1.svg" alt="">
+                                </div>
+                                <div class="bottom-right-message"></div>
+                            </div>
+
+                            <div class="coming-message">
+                                <div class="message-from-patient">
+                                    <div>
+                                        <img class="image-food" src="./assets/img/food.jpg" alt="">
+                                    </div>
+                                    <p class="details-message-client">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla quam eu
+                                        faci
+                                        lisis mollis.
+                                    </p>
+                                    <p class="time-receive-message">18:24</p>
+                                </div>
+                                <div class="bottom-left-message"></div>
+                            </div>
+                            <div class="sending-message">
+                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec
+                                    fringilla quam eu faci lisis mollis. </p>
+                                <div class="time-send">
+                                    <p class="time-send-message">18:24</p>
+                                    <img src="./assets/img/send-1.svg" alt="">
+                                </div>
+                                <div class="bottom-right-message"></div>
+                            </div>
+                            <div class="coming-message">
+                                <div class="message-from-patient">
+                                    <div>
+                                        <img class="image-food" src="./assets/img/food.jpg" alt="">
+                                    </div>
+                                    <p class="details-message-client">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla quam eu
+                                        faci
+                                        lisis mollis.
+                                    </p>
+                                    <p class="time-receive-message">18:24</p>
+                                </div>
+                                <div class="bottom-left-message"></div>
+                            </div>
+                            <div class="sending-message">
+                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec
+                                    fringilla quam eu faci lisis mollis. </p>
+                                <div class="time-send">
+                                    <p class="time-send-message">18:24</p>
+                                    <img src="./assets/img/message-read.svg" alt="">
+                                </div>
+                                <div class="bottom-right-message"></div>
+                            </div>
+                            <div class="coming-message">
+                                <div class="message-from-patient">
+                                    <div>
+                                        <img class="image-food" src="./assets/img/food.jpg" alt="">
+                                    </div>
+                                    <p class="details-message-client">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla quam eu
+                                        faci
+                                        lisis mollis.
+                                    </p>
+                                    <p class="time-receive-message">18:24</p>
+                                </div>
+                                <div class="bottom-left-message"></div>
+                            </div>
+                            <div class="sending-message">
+                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec
+                                    fringilla quam eu faci lisis mollis. </p>
+                                <div class="time-send">
+                                    <p class="time-send-message">18:24</p>
+                                    <img src="./assets/img/message-read.svg" alt="">
+                                </div>
+                                <div class="bottom-right-message"></div>
+                            </div>
+                            <div class="sending-message">
+                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec
+                                    fringilla quam eu faci lisis mollis. </p>
+                                <div class="time-send">
+                                    <p class="time-send-message">18:24</p>
+                                    <img src="./assets/img/message-read.svg" alt="">
+                                </div>
+                                <div class="bottom-right-message"></div>
+                            </div>
+                            <div class="coming-message">
+                                <div class="message-from-patient">
+                                    <div>
+                                        <img class="image-food" src="./assets/img/food.jpg" alt="">
+                                    </div>
+                                    <p class="details-message-client">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla quam eu
+                                        faci
+                                        lisis mollis.
+                                    </p>
+                                    <p class="time-receive-message">18:24</p>
+                                </div>
+                                <div class="bottom-left-message"></div>
+                            </div>
+                            <div class="sending-message">
+                                <p class="content-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec
+                                    fringilla quam eu faci lisis mollis. </p>
+                                <div class="time-send">
+                                    <p class="time-send-message">18:24</p>
+                                    <img src="./assets/img/message-read.svg" alt="">
+                                </div>
+                                <div class="bottom-right-message"></div>
+                            </div>
+                        </div>
+                        <form class="form-chat" action="" method="post">
+                            <!-- <div class="preview-picture" id="image-uploaded">
+                                <img class="picture-upload" src="./assets/img/food.jpg" alt="">
+                                <img class="picture-upload" src="./assets/img/food.jpg" alt="">
+                                <img class="picture-upload" src="./assets/img/food.jpg" alt="">
+                                <img class="picture-upload" src="./assets/img/food.jpg" alt="">
+                                <img class="picture-upload" src="./assets/img/food.jpg" alt="">
+                                <img class="picture-upload" src="./assets/img/food.jpg" alt="">
+                            </div> -->
+                            <div class="write-message" id="message-to-patient">
+                                <button class="btn-emoji">
+                                    <img src="./assets/img/emoji.svg" alt="">
+                                </button>
+                                <input class="input-write-message" placeholder="Message" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = 'Message'" type="text" id="msg">
+                                <div class="upload-image">
+                                    <input class="input-camera" type="file" name="pic" accept="image/*;capture=camera">
+                                    <label class="take-picture" for=""> <img src="./assets/img/camera_1.svg"
+                                            alt=""></label>
+                                </div>
+                                <div class="gallery-image">
+                                    <input class="input-gallery" type="file" name="pic" accept="image/*">
+                                    <label class="gallery" for=""> <img src="./assets/img/gallery.svg" alt=""></label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- ============================ End  Chat exchange message   ========================================== -->
+
+
+
+            <!-- ============================ Card Note ================================== -->
+            <div class="create-note">
+                <div class="add-note">
+                    <p class="name-patient-note">Notes <span>Saturnin Domas</span></p>
+                    <div class="make-note">
+                        <img class="image-add" src="./assets/img/plus.svg" alt="">
+                        <p class="text-make-note">Créer une note</p>
+                    </div>
+                    <div class="all-card-note">
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+                        <div class="card-note">
+                            <p class="date-note-patient">JJ/MM/AAAA par Joanne Dau (diet)</p>
+                            <div class="type-of-note">
+                                <p class="title-note">Titre de la note</p>
+                                <button class="btn-delete"> <img src="./assets/img/delete.svg" alt=""></button>
+                            </div>
+                            <p class="resume-note">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est tellus sit eu pretium
+                                aliquam
+                                phasellus eget sapien. Cras vitae nulla nibh a. Sit neque, nisi vitae porta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================ End Card Note ================================== -->
+
+
+            </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('button.btn-show-patient').on('click', function (e) {
+                $('.chat-board').toggleClass('show-patient');
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

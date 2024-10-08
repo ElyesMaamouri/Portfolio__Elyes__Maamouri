@@ -1,0 +1,138 @@
+/* Left Content CSS Fix */
+
+
+.reservation, .privateOffice, .events, .subscription{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px !important;
+    margin-left: 30%;
+    background-color: white;
+    padding: 30px 40px;
+    box-shadow: 0 20px 20px rgba(0,0,0,.03);
+    width: 180px;
+    border-radius: 10px;
+    
+}
+
+.reservation:hover, .privateOffice:hover, .events:hover, .subscription:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+
+}
+
+#content p {
+    color: #707070;
+}
+
+.subscription img {
+    margin-left: 12px !important;
+ 
+    justify-content: center !important;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.reservation img {
+    margin-left: 15px !important;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.privateOffice img {
+    margin-left: 16px !important;
+    margin-bottom: 12px;
+}
+.privateOffice p, .events p, .reservation p, .subscription p {
+    text-align: center !important;
+  
+}
+
+.events img {
+    margin-left: 25px !important;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+/* .events p {
+    margin-left: 20px !important;
+ 
+} */
+
+/* Active Page CSS */
+
+.activePage {
+    background-color: #E3B038 !important;
+}
+
+.activePage img, .activePage p{
+    -webkit-filter: brightness(0) invert(1) !important;  
+    -moz-filter : brightness(0) invert(1) !important;  
+    -o-filter : brightness(0) invert(1) !important;  
+    -ms-filter : brightness(0) invert(1) !important;  
+    filter : brightness(0) invert(1) !important;  
+    font-weight: bold;
+    color: white !important;
+}
+
+@media (max-width: 1340px){
+    .reservation, .privateOffice, .events, .subscription{
+        margin-left: 12% !important;
+    }
+
+}
+
+@media (max-width: 1588px){
+    .reservation, .privateOffice, .events, .subscription{
+        margin-left: 20%;
+        min-width: 165px;
+
+    }
+
+}
+
+@media (max-width: 1198px){
+    .reservation, .privateOffice, .events, .subscription{
+        padding: 30px 35px;
+        margin-left: 5% !important;
+    }
+    .elements{
+        margin-left: 5% !important;
+    }
+
+}
+
+@media (max-width: 1028px){
+    .reservation, .privateOffice, .events, .subscription{
+        padding: 30px 30px;
+        width: 155px !important;
+    }
+    .elements{
+        margin-left: 1% !important;
+    }
+}
+
+@media(max-width: 991px){
+    .reservation, .privateOffice, .events, .subscription{
+        height: 140px !important;
+        padding: 15px 32px;
+       
+    
+    }
+    .elements{
+       justify-content: center;
+        margin-left: 0% !important;
+        margin-right: 2% !important;
+       
+    }
+
+    .elements div{
+
+         font-size: 14px !important;
+     }
+
+}
+
+@media(max-width:1217px){
+    .privateOffice{
+        height: 180px;
+    }
+}

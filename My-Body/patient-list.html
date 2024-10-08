@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/patient-list.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Patient list</title>
+</head>
+
+<body style=" background: #EAE9F1;">
+    <section id="app__diets">
+        <div class="container-diets">
+            <!-- ============================ Main Menu Responsive ================================== -->
+            <div class="main-menu">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">
+                        <img class="image-dietitian" src="./assets/img/dietitian-1.jpg" alt="dietitian">
+                        <p class="name-dietitian">Johanne
+                            Dau</p>
+                    </a>
+                    <button class="navbar-toggler collapsed btn-toggler-dietitian" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse position-navs" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="access-to-home">
+                                        <img class="left-icons active-page-icon" src="./assets/img/home.svg" alt="home">
+                                        <p class="home-nav active-page">Dashboard</p>
+                                    </div>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item nav-space-bottom">
+                                <a class="nav-link" href="#">
+                                    <div class="access-patients-menu">
+                                        <img class="left-icons icon-space-bottom" src="./assets/img/menu-consulting.svg"
+                                            alt="">
+                                        <p class="home-nav">Consultations</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <div class="folder-patients-menu">
+                                        <img class="left-icons icon-space-bottom active-page-icon "
+                                            src="./assets/img/users.svg" alt="">
+                                        <p class="home-nav-link  ">Dossiers patients</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <div class="folder-patients-menu">
+                                        <img class="left-icons icon-space-bottom" src="./assets/img/star.svg" alt="">
+                                        <p class="home-nav-link">Noter un repas</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <div class="folder-patients-menu">
+                                        <img class="left-icons icon-space-bottom" src="./assets/img/chat.svg" alt="">
+                                        <p class="home-nav-link">Messagerie</p>
+                                        <span class="badge position-badge-message">3</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item nav-space-bottom">
+                                <a class="nav-link" href="#">
+                                    <div class="access-patients-menu">
+                                        <img class="left-icons icon-space-bottom" src="./assets/img/work.svg" alt="">
+                                        <p class="home-nav">Gestion du compte</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <div class="folder-patients-menu">
+                                        <img class="left-icons icon-space-bottom" src="./assets/img/profile.svg" alt="">
+                                        <p class="home-nav-link">Dossiers patients</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <div class="folder-patients-menu">
+                                        <img class="left-icons icon-space-bottom" src="./assets/img/settings.svg"
+                                            alt="">
+                                        <p class="home-nav-link">Noter un repas</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <div class="folder-patients-menu">
+                                        <img class="left-icons icon-space-bottom" src="./assets/img/send.svg" alt="">
+                                        <p class="home-nav-link">Messagerie</p>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="access-patients-menu">
+                                        <img class="left-icons" src="./assets/img/notification.svg" alt="">
+                                        <p class="home-nav">Notifications</p>
+                                        <span class="badge position-badge-notifications">3</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="access-patients-menu">
+                                        <img class="left-icons" src="./assets/img/logout.svg" alt="">
+                                        <p class="home-nav">Déconnexion</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- ============================ End Main Menu Responsive ================================== -->
+            <!-- ============================ Side Bar (Left Dashboard) ================================== -->
+            <div class="left-dashboard">
+                <div class="dietitian">
+                    <img class="image-dietitian" src="./assets/img/dietitian-1.jpg" alt="dietitian" data-toggle="tooltip" data-placement="top" title="Johanne Dau">
+                </div>
+                <div>
+                    <div class="access-home">
+                        <img class="left-icons" src="./assets/img/home.svg" alt="" data-toggle="tooltip" data-placement="top" title="Dashboard">
+                    </div>
+                    <div class="control-patient">
+                        <div class="access-patients">
+                            <img class="left-icons" src="./assets/img/menu-consulting.svg" alt="" data-toggle="tooltip" data-placement="top" title="Consultations">
+
+                        </div>
+                        <div class="folder-patients">
+                            <img class="left-icons  " src="./assets/img/users.svg" alt="" data-toggle="tooltip" data-placement="top" title="Dossiers patients">
+
+                        </div>
+                        <div class="review-meal">
+                            <img class="left-icons active-page-icon" src="./assets/img/star.svg" alt="" data-toggle="tooltip" data-placement="top" title="Noter un repas">
+
+                        </div>
+                        <div class="message">
+                            <img class="left-icons" src="./assets/img/chat.svg" alt=""  data-toggle="tooltip" data-placement="top" title="Messagerie">
+                            <span class="badge">3</span>
+                        </div>
+                    </div>
+                    <div class="account-management">
+                        <div class="access-account">
+                            <img class="left-icons" src="./assets/img/work.svg" alt="" data-toggle="tooltip" data-placement="top" title="Gestion du compte">
+                        </div>
+                        <div class="my-account">
+                            <img class="left-icons" src="./assets/img/profile.svg" alt="" data-toggle="tooltip" data-placement="top" title="Mon compte">
+                        </div>
+                        <div class="my-settings">
+                            <img class="left-icons" src="./assets/img/settings.svg" alt=""  data-toggle="tooltip" data-placement="top" title="Paramètres">
+                        </div>
+                        <div class="contact">
+                            <img class="left-icons" src="./assets/img/send.svg" alt=""  data-toggle="tooltip" data-placement="top" title="Contacter myBody">
+                        </div>
+                    </div>
+                    <div class="access-notifications">
+                        <div class="notif">
+                            <img class="left-icons" src="./assets/img/notification.svg " alt=""  data-toggle="tooltip" data-placement="top" title="Notifications">
+                        </div>
+                    </div>
+                    <div class="dietitian-deconnect">
+                        <img class="left-icons" src="./assets/img/logout.svg" alt="" data-toggle="tooltip" data-placement="top" title="Déconnexion">
+
+                    </div>
+                </div>
+            </div>
+            <!-- ============================ End Side Bar (Left Dashboard) ================================== -->
+            <!-- ============================ Patient Section  ================================== -->
+            <div class="sub-container">
+                <div>
+                    <p class="list-patient">Liste de vos patients <span>(9)</span></p>
+                    <p class="access-folder">Accédez à tous les dossiers de vos patients </p>
+                    <div class="name-patient">
+                        <input class="search-patient" type="text" placeholder="Rechercher un patient (nom ou prénom)"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Rechercher un patient (nom ou prénom)'">
+                            <button><img src="./assets/img/search.svg" alt=""></button>
+                    </div>
+                    <div class="table-patient">
+                        <table class="table">
+                            <thead>
+                                <tr class="name-column">
+                                    <th>
+                                        <div class="filter-table">
+                                            <div class="image-arrow">
+                                                <img class="icon-arrow-1" src="./assets/img/arrow-1.svg" alt="">
+                                                <img class="icon-arrow-2" src="./assets/img/arrow-2.svg" alt="">
+                                            </div>
+                                            <p class="data-column"> Nom du patient</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        Cette semaine
+                                    </th>
+                                    <th>Ce mois-ci</th>
+                                    <th>Depuis le suivi</th>
+                                    <th>
+                                        <div class="filter-table">
+                                            <div class="image-arrow">
+                                                <img class="icon-arrow-1" src="./assets/img/arrow-1.svg" alt="">
+                                                <img class="icon-arrow-2" src="./assets/img/arrow-2.svg" alt="">
+                                            </div>
+                                            <p class="data-column"> Suivi depuis le</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="filter-table">
+                                            <div class="image-arrow">
+                                                <img class="icon-arrow-1" src="./assets/img/arrow-1.svg" alt="">
+                                                <img class="icon-arrow-2" src="./assets/img/arrow-2.svg" alt="">
+                                            </div>
+                                            <p class="data-column"> Fin abonnement</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="filter-table">
+                                            <div class="image-arrow">
+                                                <img class="icon-arrow-1" src="./assets/img/arrow-1.svg" alt="">
+                                                <img class="icon-arrow-2" src="./assets/img/arrow-2.svg" alt="">
+                                            </div>
+                                            <p class="data-column">Statut</p>
+                                        </div>
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <div class="patient-details">
+                                            <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                                            <p class="name-patient">Saturnin Domas</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img src="./assets/img/actif.svg" alt="">
+                                            <p class="status-patient">Actif</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis image-show" src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="patient-details">
+                                            <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                                            <p class="name-patient">Saturnin Domas</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img src="./assets/img/actif.svg" alt="">
+                                            <p class="status-patient">Actif</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis image-show" src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="patient-details">
+                                            <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                                            <p class="name-patient">Saturnin Domas</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img src="./assets/img/actif.svg" alt="">
+                                            <p class="status-patient">Actif</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis image-show" src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="patient-details">
+                                            <a class="no-avatar">
+                                                <p class="abbreviation"><span>U</span><span>N</span></p>
+                                            </a>
+                                            <p class="name-patient">Saturnin Domas</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img src="./assets/img/inactif.svg" alt="">
+                                            <p class="status-patient">Inactif</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis image-show" src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="greyed not-allowed-click">
+                                    <th>
+                                        <div class="patient-details">
+                                            <a class="no-avatar not-allowed-click">
+                                                <p class="abbreviation"><span>U</span><span>N</span></p>
+                                            </a>
+                                            <p class="name-patient">Saturnin Domas</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img src="./assets/img/actif.svg" alt="">
+                                            <p class="status-patient">Actif</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient not-allowed-click">
+                                                <img class="icon-utilis" src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient not-allowed-click">
+                                                <img class="icon-utilis" src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient not-allowed-click">
+                                                <img class="icon-utilis image-show" src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="greyed not-allowed-click">
+                                    <th>
+                                        <div class="patient-details ">
+                                            <a class="no-avatar not-allowed-click">
+                                                <p class="abbreviation"><span>U</span><span>N</span></p>
+                                            </a>
+                                            <p class="name-patient">Saturnin Domas</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="date-expired">
+                                            <img src="./assets/img/alert-date.svg" alt="">
+                                            <p class="alert-date"> JJ/MM/AAAA</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img src="./assets/img/actif.svg" alt="">
+                                            <p class="status-patient">Actif</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient not-allowed-click">
+                                                <img class="icon-utilis" src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient not-allowed-click">
+                                                <img class="icon-utilis" src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient not-allowed-click">
+                                                <img class="icon-utilis image-show" src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+
+
+
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="patient-details">
+                                            <a class="no-avatar">
+                                                <p class="abbreviation"><span>U</span><span>N</span></p>
+                                            </a>
+                                            <p class="name-patient">Saturnin Domas</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img src="./assets/img/actif.svg" alt="">
+                                            <p class="status-patient">Actif</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis image-show" src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+
+
+
+                                </tr>
+
+                                <tr>
+                                    <th>
+                                        <div class="patient-details">
+                                            <a class="no-avatar">
+                                                <p class="abbreviation"><span>U</span><span>N</span></p>
+                                            </a>
+                                            <p class="name-patient">Saturnin Domas</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="date-expired">
+                                            <img src="./assets/img/alert-date.svg" alt="">
+                                            <p class="alert-date"> JJ/MM/AAAA</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img src="./assets/img/actif.svg" alt="">
+                                            <p class="status-patient">Actif</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis image-show" src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="patient-details ">
+                                            <a class="no-avatar ">
+                                                <p class="abbreviation"><span>U</span><span>N</span></p>
+                                            </a>
+                                            <p class="name-patient">Saturnin Domas gris</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img class=""
+                                                    src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data ">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img class=""
+                                                    src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data ">32 semi équilibrés
+                                                </p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img 
+                                                    src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data ">12 non équilibrés
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img 
+                                                    src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img 
+                                                    src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data ">32 semi équilibrés
+                                                </p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img 
+                                                    src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data ">12 non équilibrés
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img 
+                                                    src="./assets/img/cercle-green.svg ">
+                                                <p class="balance-data ">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img 
+                                                    src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés
+                                                </p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img 
+                                                    src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data ">12 non équilibrés
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img  src="./assets/img/actif.svg"
+                                                alt="">
+                                            <p class="status-patient ">Non réabonné</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis "
+                                                    src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis "
+                                                    src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis image-show "
+                                                    src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="greyed not-allowed-click">
+                                    <th>
+                                        <div class="patient-details">
+                                            <img class="image-patient "
+                                                src="./assets/img/patient.jpg" alt="">
+                                            <p class="name-patient ">Saturnin Domas gris
+                                            </p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img 
+                                                    src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data ">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img 
+                                                    src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data ">32 semi équilibrés
+                                                </p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img 
+                                                    src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data ">12 non équilibrés
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img 
+                                                    src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img 
+                                                    src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés
+                                                </p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img 
+                                                    src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img 
+                                                    src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data ">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img 
+                                                    src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data ">32 semi équilibrés
+                                                </p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img 
+                                            
+                                                    src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data ">12 non équilibrés
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img src="./assets/img/actif.svg"
+                                                alt="">
+                                            <p class="status-patient ">Non réabonné</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient not-allowed-click">
+                                                <img class="icon-utilis "
+                                                    src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient not-allowed-click">
+                                                <img class="icon-utilis "
+                                                    src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient not-allowed-click">
+                                                <img class="icon-utilis image-show "
+                                                    src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="patient-details">
+                                            <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                                            <p class="name-patient">Saturnin Domas</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img src="./assets/img/actif.svg" alt="">
+                                            <p class="status-patient">Actif</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis image-show" src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="patient-details">
+                                            <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                                            <p class="name-patient">Saturnin Domas</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img src="./assets/img/actif.svg" alt="">
+                                            <p class="status-patient">Actif</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis image-show" src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="patient-details">
+                                            <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                                            <p class="name-patient">Saturnin Domas</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img src="./assets/img/actif.svg" alt="">
+                                            <p class="status-patient">Actif</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis image-show" src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="patient-details">
+                                            <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                                            <p class="name-patient">Saturnin Domas</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img src="./assets/img/actif.svg" alt="">
+                                            <p class="status-patient">Actif</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis image-show" src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="patient-details">
+                                            <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                                            <p class="name-patient">Saturnin Domas</p>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="balanced">
+                                            <div class="balanced-green">
+                                                <img src="./assets/img/cercle-green.svg">
+                                                <p class="balance-data">24 équilibrés</p>
+                                            </div>
+                                            <div class="balanced-orange">
+                                                <img src="./assets/img/cercle-orange.svg">
+                                                <p class="balance-data">32 semi équilibrés</p>
+                                            </div>
+                                            <div class="balanced-red">
+                                                <img src="./assets/img/cercle-red.svg">
+                                                <p class="balance-data">12 non équilibrés</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>JJ/MM/AAAA</td>
+                                    <td>
+                                        <div class="status-of-patient">
+                                            <img src="./assets/img/actif.svg" alt="">
+                                            <p class="status-patient">Actif</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="icons-action">
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/chat.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis" src="./assets/img/star.svg" alt="">
+                                            </div>
+                                            <div class="icon-patient">
+                                                <img class="icon-utilis image-show" src="./assets/img/show.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================ End Patient Section  ================================== -->
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html> 

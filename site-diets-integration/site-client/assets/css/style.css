@@ -1,0 +1,889 @@
+ /*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+
+ .full-section {
+     padding-left: 0;
+     padding-right: 0;
+     --bs-gutter-x: 0 !important;
+ }
+
+ .section-margin-top-1 {
+     margin-top: 35px;
+ }
+
+ .section-margin-top-2 {
+     margin-top: 45px;
+ }
+
+ .bgColorCardPrice {
+     background: #FFFFFF
+ }
+
+ .bgColorCardNotice {
+     background: #F8F8F8;
+ }
+
+ /*Style Border*/
+ .styleBorderCard {
+     border: 1px solid #E9EDEC;
+     border-radius: 20px;
+ }
+
+ /* Nombre de carte des prix et carousel */
+ .card-2,
+ .card-3,
+ .card-4 {
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     width: 100%;
+     gap: 25px;
+ }
+
+ .card-2>*.card-layout {
+     width: 40%;
+
+ }
+
+ .card-3>*.card-layout {
+     width: 30%;
+ }
+
+ .card-4>*.card-layout {
+     width: 22%;
+ }
+
+
+ .card-2>*.card-item {
+     width: 46%;
+
+ }
+
+ .card-3>*.card-item {
+     width: 30%;
+ }
+
+ .card-4>*.card-item {
+     width: 22%;
+ }
+
+ /** Les positions des div dans les sections**/
+ .section-left {
+     flex-direction: row;
+     margin-right: auto;
+     padding-left: 20px;
+ }
+
+ .section-right {
+     flex-direction: row-reverse;
+     margin-left: auto;
+ }
+
+ .section-center {
+     flex-direction: column;
+     text-align: left;
+     gap: 25px !important;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .element-center {
+     text-align: center;
+ }
+
+ .element-right {
+     text-align: right;
+ }
+
+ .element-left {
+     text-align: left;
+ }
+
+ /** Style des section par défaut **/
+ .section-content {
+     display: flex;
+     gap: 98px;
+     align-items: center;
+ }
+
+ /** Style des titres , sous-titre et les images des sections**/
+ .section-title {
+     font-style: normal;
+     font-weight: 600;
+     font-size: 48px;
+     line-height: 54px;
+     letter-spacing: 0.25px;
+     margin-bottom: 30px;
+
+ }
+
+ .section-subtitle,
+ .section-description {
+     font-style: normal;
+     font-weight: 300;
+     font-size: 16px;
+     line-height: 150%;
+ }
+
+ .section-picture {
+     width: 36% !important;
+
+ }
+
+ /**Position des bouttons**/
+ .section-buttons {
+     display: flex;
+     flex-direction: column;
+     gap: 16px;
+ }
+
+ .btn-left {
+     align-items: flex-start
+ }
+
+ .btn-right {
+     align-items: flex-end
+ }
+
+ .btn-center {
+     align-items: center
+ }
+
+ .btn-stretch {
+     align-items: stretch;
+     padding-right: 20px;
+ }
+
+
+ /**Styles des cartes**/
+ .title-card {
+     font-style: normal;
+     font-weight: 700;
+     font-size: 20px;
+     line-height: 34px;
+     text-align: center;
+ }
+
+ .sub-card {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 26px;
+     margin: 0;
+     text-align: left;
+ }
+
+ /**Position des boutons dans la bannière**/
+ .banner-btn-stretch {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
+ .banner-btn-center {
+     display: flex;
+     gap: 10px;
+     justify-content: center;
+ }
+ .banner-btn-left {
+     display: flex;
+     gap: 10px;
+     justify-content: left;
+ }
+ .banner-btn-right {
+     display: flex;
+     gap: 10px;
+     justify-content: right;
+ }
+
+ /*Affichage des carousel*/
+ .carousel-mobile {
+     display: none;
+ }
+
+ .craousel-instagram-mobile {
+     display: none;
+ }
+
+ .default-style-img {
+     aspect-ratio: auto !important;
+ }
+
+ @media (max-width : 991px) {
+
+     .section-picture {
+         width: 55% !important;
+     }
+
+     .card-2>*.card-layout {
+         width: 100%;
+
+     }
+
+     .card-3>*.card-layout {
+         width: 100%;
+     }
+
+     .card-4>*.card-layout {
+         width: 100%;
+     }
+
+     .card-2>*.card-item {
+         width: 100%;
+
+     }
+
+     .card-3>*.card-item {
+         width: 100%;
+     }
+
+     .card-4>*.card-item {
+         width: 100%;
+     }
+
+     .section-content {
+         flex-direction: column-reverse;
+         gap: 30px;
+         padding-left: 10px;
+         padding-right: 10px;
+     }
+
+     .section-title {
+         font-size: 35px;
+     }
+
+     /*Affichage des carousel mobile*/
+     .craousel-instagram-mobile,
+     .carousel-mobile {
+         display: initial;
+     }
+
+     .craousel-instagram-web,
+     .carousel-web {
+         display: none;
+     }
+
+     .banner-btn-stretch,
+     .banner-btn-left,
+     .banner-btn-right,
+     .banner-btn-center {
+         flex-direction: column;
+     }
+ }
+
+ @media(max-width :768px) {
+     .section-title {
+         font-size: 28px;
+     }
+ }
+
+ /*--------------------------------------------------------------
+# Section Navigation
+--------------------------------------------------------------*/
+ .navbar-toggler:focus {
+     box-shadow: 0 0 0 2px #665c5f !important;
+ }
+
+ .style-name-website {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 24px;
+ }
+
+ .style-menu-navigation {
+     font-style: normal;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 22px;
+
+ }
+
+ .style-btn-contact {
+     padding: 12px 16px !important;
+     text-decoration: none;
+     cursor: pointer;
+
+ }
+
+ .style-btn-contact p {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 22px;
+     text-align: center;
+     margin: 0;
+ }
+
+ .item-menu-navigation {
+     display: flex;
+     justify-content: flex-start;
+     gap: 25px;
+     align-items: center;
+     margin-left: auto;
+     margin-right: 0;
+     margin-top: 8px;
+
+ }
+
+ .item-menu-navigation li:last-child {
+     margin-left: auto;
+ }
+
+ @media(max-width : 1200px) {
+     .item-menu-navigation {
+
+         gap: 5px;
+     }
+ }
+
+ @media(max-width :991px) {
+     .item-menu-navigation {
+         align-items: flex-start;
+         width: 100%;
+     }
+
+     .nav-item {
+         width: 100%;
+     }
+ }
+
+ /*--------------------------------------------------------------
+# Section Footer
+--------------------------------------------------------------*/
+ .footer-page {
+     padding-bottom: 48px;
+     padding-top: 48px;
+     display: flex;
+     gap: 75px;
+ }
+
+ .widget-1,
+ .widget-3 {
+     width: 29%;
+ }
+
+ .widget-2 {
+     width: 42%;
+ }
+
+ .text-footer-1 {
+     text-transform: uppercase;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 32px;
+     line-height: 36px;
+     letter-spacing: 0.25px;
+ }
+
+ .text-footer-2 {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 20px;
+ }
+
+ .social-media {
+     margin-top: 58px;
+ }
+
+ .contact a {
+     text-decoration: none;
+ }
+
+ .widget-2 a {
+     text-decoration: none;
+ }
+
+ .widget-3 a {
+     text-decoration: none;
+ }
+
+ .footer-aria a {
+     text-decoration: none;
+ }
+
+ .social-media {
+     display: flex;
+     gap: 15px;
+ }
+
+ @media(max-width : 991px) {
+     .footer-page {
+         flex-direction: column;
+
+     }
+
+     .widget-1,
+     .widget-3 {
+         width: 100%;
+     }
+
+     .widget-2 {
+         width: 100%;
+     }
+ }
+
+ /*--------------------------------------------------------------
+# Section One
+--------------------------------------------------------------*/
+
+ .style-bg-image {
+
+     margin-top: 25px;
+     width: 100%;
+     min-height: 484px;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+
+ .section-style-1 {
+     background-color: #000000;
+     opacity: 0.6;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+ }
+
+ .section-style-2 {
+     z-index: 1;
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .btn-1 {
+     box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.09);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 16px 48px;
+     cursor: pointer;
+     height: 54px;
+     text-decoration: none;
+
+ }
+
+ .text-btn-1 {
+     font-style: normal;
+     font-weight: 600;
+     font-size: 15px;
+     line-height: 22px;
+     text-align: center;
+     margin: 0;
+ }
+
+
+
+ @media (max-width : 991px) {
+     .section-style-2 {
+         width: 100%;
+         padding-left: 15px;
+         padding-right: 15px;
+     }
+ }
+
+ @media(max-width :768px) {
+     .text-btn-1 {
+         padding: 14px 0px;
+     }
+ }
+
+ /*--------------------------------------------------------------
+# Section Two
+--------------------------------------------------------------*/
+ .video {
+     width: 71.5%;
+     height: 500px;
+ }
+
+ @media(max-width : 991px) {
+     .video {
+         width: 98%;
+     }
+ }
+
+ /*--------------------------------------------------------------
+# Section Three & Four
+--------------------------------------------------------------*/
+ .btn-contact {
+     box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.09);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 16px 62px;
+     cursor: pointer;
+     height: 54px;
+     text-decoration: none;
+ }
+
+ .text-btn-3 {
+     font-style: normal;
+     font-weight: 600;
+     font-size: 15px;
+     line-height: 22px;
+     text-align: center;
+
+     margin: 0;
+ }
+
+ .btn-consultation {
+     box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.09);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 16px 64px;
+     cursor: pointer;
+     margin-bottom: 15px;
+     text-decoration: none;
+ }
+
+ .btn-consultation:hover {
+     text-decoration: none;
+ }
+
+ .btn-text-1 {
+     font-style: normal;
+     font-weight: 600;
+     font-size: 15px;
+     line-height: 22px;
+     text-align: center;
+     margin: 0;
+ }
+
+ @media(max-width :991px) {
+
+     .office-dietitian {
+         flex-direction: column;
+         margin-top: 50px;
+         gap: 30px;
+         padding-left: 10px;
+         padding-right: 10px;
+
+     }
+ }
+
+ /*--------------------------------------------------------------
+# Section Five
+--------------------------------------------------------------*/
+
+ .content-choose-me {
+     width: 100%;
+     margin-top: 130px;
+     padding-right: 15px;
+     padding-left: 15px;
+     margin-bottom: 152px;
+ }
+
+ @media(max-width : 1200px) {
+     .content-choose-me {
+         width: 98%;
+         margin-top: 100px;
+     }
+ }
+
+ /*--------------------------------------------------------------
+# Section Six
+--------------------------------------------------------------*/
+ .card-layout {
+     padding: 32px;
+     position: relative;
+     padding-bottom: 200px;
+     margin-bottom: 20px;
+ }
+
+ .card-price {
+     font-style: normal;
+     font-weight: 700;
+     font-size: 34px;
+     line-height: 44px;
+ }
+
+ .btn-card {
+     max-width: 306px;
+     height: 52px;
+     border-radius: 12px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+ }
+
+ .text-btn-2 {
+     font-style: normal;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 26px;
+     text-align: center;
+     margin: 0;
+
+ }
+
+ .bottom-card {
+     margin-top: 40px;
+     position: absolute;
+     bottom: 25px;
+     width: 81%;
+     left: 0;
+     right: 0;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ @media(max-width :768px) {
+     .cost {
+         font-size: 32px;
+         line-height: 42px;
+     }
+
+     .btn-card {
+         margin: 0 auto;
+     }
+ }
+
+ /*--------------------------------------------------------------
+# Section Seven
+--------------------------------------------------------------*/
+
+ .card-item {
+     padding: 30px 15px;
+ }
+
+ .carousel-indicators [data-bs-target] {
+     width: 24px !important;
+     height: 5px !important;
+     border-radius: 11px;
+     opacity: 1 !important;
+     border-top: initial !important;
+     border-bottom: initial !important;
+ }
+
+ .carousel-indicators .active {
+     background: #263238 !important;
+ }
+
+ .carousel-indicators {
+     margin-bottom: -35px !important;
+ }
+
+ @media(max-width :991px) {
+     .sub-card {
+         text-align: center;
+     }
+
+     .card-item {
+         margin-bottom: 20px;
+     }
+
+     .carousel-indicators {
+         display: none !important;
+
+     }
+ }
+
+ @media(max-width :768px) {
+     .card-item {
+         width: 100%;
+         margin-bottom: 30px;
+     }
+
+     .carousel-indicators {
+         bottom: -30px !important;
+     }
+ }
+
+ /*--------------------------------------------------------------
+# Section Eight
+--------------------------------------------------------------*/
+
+ .blog-wrapper {
+     display: flex;
+     gap: 32px;
+     justify-content: space-around;
+ }
+
+ .card-blog {
+     position: relative;
+ }
+
+ .image-card {
+     height: 256px;
+
+ }
+
+ .title-blog {
+     font-style: normal;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 24px;
+     text-align: center;
+ }
+
+ .view-article {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 20px;
+     text-decoration: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .bottom-card-blog {
+     background: rgba(255, 255, 255, 0.8);
+     border-radius: 20px;
+     width: 80%;
+     margin: 0 auto;
+     position: absolute;
+     padding: 12px 15px;
+     right: 0;
+     left: 0;
+     bottom: -56px;
+ }
+
+ @media(max-width :991px) {
+     .card-wrapper {
+         gap: 30px;
+         text-align: center;
+     }
+ }
+
+ @media(max-width :768px) {
+     .blog-wrapper {
+         flex-direction: column;
+         gap: 80px;
+     }
+
+ }
+
+ /*--------------------------------------------------------------
+# Section Nine
+--------------------------------------------------------------*/
+ .picture-feed {
+     width: 23.5%;
+ }
+
+ .list-image {
+     display: flex !important;
+     justify-content: center;
+     padding: 0 25px;
+ }
+
+ .style-image {
+     height: 362px;
+ }
+
+ .carousel-control-next-icon {
+     width: 7rem !important;
+     height: 10rem !important;
+     background-image: url('../img/btn-next-1.svg') !important;
+ }
+
+ .carousel-control-prev-icon {
+     width: 7rem !important;
+     height: 10rem !important;
+     background-image: url('../img/btn-previous.svg') !important;
+ }
+
+ .carousel-control-next,
+ .carousel-control-prev {
+     opacity: 1 !important;
+     width: 67px !important;
+     height: 161px !important;
+     top: 122px !important;
+ }
+
+ .section-style-instagram {
+     padding-left: 0 !important;
+     padding-right: 0 !important;
+ }
+
+ @media(max-width :991px) {
+     .list-image {
+         flex-direction: column;
+         padding: 0 20px;
+     }
+
+     .picture-feed {
+         width: 100%;
+     }
+
+     .carousel-control-prev-icon,
+     .carousel-control-next-icon {
+         display: none !important;
+     }
+ }
+
+ @media(max-width :768px) {
+     .text-instgram {
+         font-size: 32px;
+         line-height: 42px;
+     }
+ }
+
+ /*--------------------------------------------------------------
+# Section Ten
+--------------------------------------------------------------*/
+ .image-map {
+     height: 466px;
+ }
+
+ /*--------------------------------------------------------------
+# Section Eleven
+--------------------------------------------------------------*/
+ .other-section {
+     text-align: center;
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+
+ .title-other-section {
+     font-style: normal;
+     font-weight: 700;
+     font-size: 48px;
+     line-height: 52px;
+ }
+
+ .description-other-section {
+     margin-top: 30px;
+     margin-bottom: 50px;
+     font-style: normal;
+     font-weight: 300;
+     font-size: 16px;
+     line-height: 150%;
+     padding-right: 15px;
+     text-align: center;
+ }
+
+ .btn-other-section {
+     margin-top: 16px;
+     text-decoration: none;
+     padding: 10px 30px;
+
+ }
+
+ .btn-other-section:hover {
+     color: #FFFFFF;
+ }
+
+ @media(max-width :768px) {
+     .title-other-section {
+         font-size: 32px;
+         line-height: 42px;
+     }
+
+ }

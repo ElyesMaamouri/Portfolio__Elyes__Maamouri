@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css-components/sidebar-home-dashboard.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css-components/chat.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/home-dashboard.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Dashboard Diet</title>
+</head>
+
+<body style="background: #EAE9F1;">
+    <section id="app__diets">
+        <div class="container-diets">
+ <!-- ============================ Main Menu Responsive ================================== -->
+ <div class="main-menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img class="image-dietitian" src="./assets/img/dietitian-1.jpg" alt="dietitian">
+            <p class="name-dietitian">Johanne
+                Dau</p>
+        </a>
+        <button class="navbar-toggler collapsed btn-toggler-dietitian" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse position-navs" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="access-to-home">
+                            <img class="left-icons active-page-icon" src="./assets/img/home.svg" alt="home">
+                            <p class="home-nav active-page">Dashboard</p>
+                        </div>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item nav-space-bottom">
+                    <a class="nav-link" href="#">
+                        <div class="access-patients-menu">
+                            <img class="left-icons icon-space-bottom" src="./assets/img/menu-consulting.svg"
+                                alt="">
+                            <p class="home-nav">Consultations</p>
+                        </div>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="folder-patients-menu">
+                            <img class="left-icons icon-space-bottom  " src="./assets/img/users.svg" alt="">
+                            <p class="home-nav-link  ">Dossiers patients</p>
+                        </div>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="folder-patients-menu">
+                            <img class="left-icons icon-space-bottom" src="./assets/img/star.svg" alt="">
+                            <p class="home-nav-link  ">Noter un repas</p>
+                        </div>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="folder-patients-menu">
+                            <img class="left-icons icon-space-bottom" src="./assets/img/chat.svg" alt="">
+                            <p class="home-nav-link">Messagerie</p>
+                            <span class="badge position-badge-message">3</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item nav-space-bottom">
+                    <a class="nav-link" href="#">
+                        <div class="access-patients-menu">
+                            <img class="left-icons icon-space-bottom "
+                                src="./assets/img/work.svg" alt="">
+                            <p class="home-nav ">Gestion du compte</p>
+                        </div>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="folder-patients-menu">
+                            <img class="left-icons icon-space-bottom" src="./assets/img/profile.svg" alt="">
+                            <p class="home-nav-link">Dossiers patients</p>
+                        </div>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="folder-patients-menu">
+                            <img class="left-icons icon-space-bottom" src="./assets/img/settings.svg"
+                                alt="">
+                            <p class="home-nav-link">Noter un repas</p>
+                        </div>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <div class="folder-patients-menu">
+                            <img class="left-icons icon-space-bottom" src="./assets/img/send.svg" alt="">
+                            <p class="home-nav-link">Messagerie</p>
+
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="access-patients-menu">
+                            <img class="left-icons" src="./assets/img/notification.svg" alt="">
+                            <p class="home-nav">Notifications</p>
+                            <span class="badge position-badge-notifications">3</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="access-patients-menu">
+                            <img class="left-icons" src="./assets/img/logout.svg" alt="">
+                            <p class="home-nav">Déconnexion</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- ============================ End Main Menu Responsive ================================== -->
+
+            <!-- ============================ Sidebar (Home Dashboard) ================================== -->
+            <div class="left-dashboard-home">
+                <div class="links">
+                    <div class="dietitian">
+                        <img class="image-dietitian" src="./assets/img/dietitian-1.jpg" alt="dietitian">
+                        <p class="name-dietitian">Johanne <br> Dau</p>
+                    </div>
+                    <div class="all-menu-links">
+                        <div class="access-home">
+                            <img class="left-icons active-page-icon" src="./assets/img/home.svg" alt="">
+                            <p class="dashboard-link active-page-icon">Dashboard</p>
+                        </div>
+                        <div class="control-patient">
+                            <div class="access-patients">
+                                <img class="left-icons" src="./assets/img/menu-consulting.svg" alt="">
+                                <p class="consulting">Consultations</p>
+                            </div>
+                            <div class="folder-patients">
+                                <img class="left-icons  " src="./assets/img/users.svg" alt="">
+                                <p class="general-links">Dossiers patients</p>
+                            </div>
+                            <div class="review-meal">
+                                <img class="left-icons" src="./assets/img/star.svg" alt="">
+                                <p class="general-links">Noter un repas</p>
+                            </div>
+                            <div class="message">
+                                <img class="left-icons" src="./assets/img/chat.svg" alt="">
+                                <p class="general-links">Messagerie</p>
+                                <span class="badge">3</span>
+                            </div>
+                        </div>
+                        <div class="account-management">
+                            <div class="access-account">
+                                <img class="left-icons" src="./assets/img/work.svg" alt="">
+                                <p class="my-account">Gestion du compte</p>
+                            </div>
+                            <div class="my-account">
+                                <img class="left-icons" src="./assets/img/profile.svg" alt="">
+                                <p class="general-links">Mon compte</p>
+                            </div>
+                            <div class="my-settings">
+                                <img class="left-icons" src="./assets/img/settings.svg" alt="">
+                                <p class="general-links">Paramètres</p>
+                            </div>
+                            <div class="contact">
+                                <img class="left-icons" src="./assets/img/send.svg" alt="">
+                                <p class="general-links">Contacter myBody</p>
+                            </div>
+                        </div>
+                        <div class="access-notifications custom-marge">
+                            <div class="notif">
+                                <img class="left-icons" src="./assets/img/notification.svg " alt="">
+                                <p class="notifications">Notifications</p>
+                            </div>
+                        </div>
+                        <div class="dietitian-deconnect">
+                            <img class="left-icons" src="./assets/img/logout.svg" alt="">
+                            <p class="logout">Déconnexion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================ End Sidebar (Home Dashboard) ================================== -->
+
+             <!-- ============================ Midlle Dashboard ========================================== -->
+            <div class="midlle-dashbord" >
+                <div class="welcom">
+                    <div class="message-welcom">
+                        <p class="message-dietitian">Bonjour <span>Johanne</span> !</p>
+                        <p class="salutation-message">Bienvenu dans votre espace myBody</p>
+                    </div>
+                    <div class="notifications-dietitian">
+                        <div class="notice">
+                            <img class="notice-icon active-page-icon" src="./assets/img/notification.svg " alt="">
+
+                             <!-- ####### No notifications Apply class "empty-data" ####### --> 
+                            <span class="badge-notice empty-data">3</span>
+                        </div>
+                        <div class="message-notice">
+                            <p class="notifications-alert">Notifications</p>
+                            <p class="message-alert">vous avez <span>1</span> notification</p>
+                        </div>
+                        <div class="view">
+                            <a class="btn-view-home" href="#">
+                                <p class="view-plus">VOIR</p>
+                                <img class="view-icon" src="./assets/img/display.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                          <!-- ####### No Patient  Apply class "empty-data" ####### -->
+                <div class="actif-patient empty-data">
+                    <a class="most-active-patients" href="">
+                        <p class="text-patient">Vos patients les plus actifs</p>
+                    </a>
+                </div>
+                          <!-- ####### No Patient Actif Apply class "empty-data" ####### --> 
+                <div class="ours-patients-actif empty-data">
+                    <div class="patient-details">
+                        <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                        <p class="name-patient">SaturninSaturnin </p>
+                        <span class="new-patient">nouveau</span>
+                    </div>
+
+                    <div class="patient-details">
+                        <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                        <p class="name-patient">Saturnin</p>
+                    </div>
+
+                    <div class="patient-details">
+                        <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                        <p class="name-patient">Saturnin</p>
+                    </div>
+
+                    <div class="patient-details">
+                        <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                        <p class="name-patient">Saturnin</p>
+                    </div>
+
+                    <div class="patient-details">
+                        <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                        <p class="name-patient">Saturnin</p>
+                    </div>
+
+                    <div class="patient-details">
+                        <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                        <p class="name-patient">Saturnin</p>
+                    </div>
+
+                    <div class="patient-details">
+                        <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                        <p class="name-patient">Saturnin</p>
+                    </div>
+
+                    <div class="patient-details">
+                        <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                        <p class="name-patient">Saturnin</p>
+                    </div>
+
+                    <div class="patient-details">
+                        <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                        <p class="name-patient">Saturnin</p>
+                    </div>
+
+                    <div class="patient-details">
+                        <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                        <p class="name-patient">Saturnin</p>
+                    </div>
+
+                    <div class="patient-details">
+                        <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                        <p class="name-patient">Saturnin</p>
+                    </div>
+
+                    <div class="patient-details">
+                        <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                        <p class="name-patient">Saturnin</p>
+                    </div>
+
+                    <div class="patient-details">
+                        <img class="image-patient" src="./assets/img/patient.jpg" alt="">
+                        <p class="name-patient">Saturnin</p>
+                    </div>
+                </div>
+
+                <div class="statistics">
+                    <p class="title-statistics">Statistiques et performances</p>
+                    <div class="first-statistics">
+
+                        <div class="number-of-patients">
+                            <div class="group-patient">
+                                <img class="image-statistics" src="./assets//img/group-patients.svg" alt="">
+                                <div>
+                                    <p class="patients-number">Nombre de patients</p>
+                                    <p class="currently-patients">en ce moment</p>
+                                </div>
+                            </div>
+                            <div class="count">
+                                <p class="count-number">13</p>
+                            </div>
+                        </div>
+
+                        <div class="patient-feminine ">
+                            <div class="feminine ">
+                                <img class="image-statistics" src="./assets/img/feminine.svg" alt="">
+                                <p class="title-feminine">Patientèle  feminine</p>
+                            </div>
+                          
+                            <div><p class="count-number">25</p></div>
+                        
+                        </div>
+                        <div class="patient-masculine">
+                            <div class="masculine">
+                                <img class="image-statistics" src="./assets/img/masculine.svg" alt="">
+                                <p class="title-masculine">Patientèle masculine</p>
+                            </div>
+                            <p class="count-number">36</p>
+                        </div>
+
+                        <div class="patient-not-binary">
+                            <div class="not-binary">
+                                <img class="image-statistics" src="./assets/img/patient-not-binary.svg" alt="">
+                                <p class="title-not-binary">Patientèle non binaire</p>
+                            </div>
+                            <p class="count-number">30</p>
+                        </div>
+
+                          <!-- ####### No average age Apply class "without-age" ####### --> 
+                        <div class="patient-age without-age">
+                            <div class="age">
+                                <img class="image-statistics" src="./assets/img/age.svg" alt="">
+                                <p class="title-age ">Âge <br> moyen</p>
+                            </div>
+                          <!-- ####### Change the image to (no-age.svg) ####### --> 
+                            <img  class="image-statistics count-number " src="./assets/img/no-age.svg" alt="">
+                        </div>
+
+                        <div class="number-of-meals ">
+                            <div class="group-meals">
+                                <img class="image-statistics" src="./assets//img/fill.svg" alt="">
+                                <div>
+                                    <p class="meals-note">Nombre de repas notés</p>
+                                    <p class="currently-meals">ce mois-ci</p>
+                                </div>
+                            </div>
+                            <div class="count">
+                                <p class="count-number">256</p>
+                            </div>
+                        </div>
+
+                        <div class="number-of-message ">
+                            <div class="group-message">
+                                <img class="image-statistics" src="./assets//img/message.svg" alt="">
+                                <div>
+                                    <p class="meals-note">Nombre de messages reçus</p>
+                                    <p class="currently-message">ce mois-ci</p>
+                                </div>
+                            </div>
+                            <div class="count">
+                                <p class="count-number">395</p>
+                            </div>
+                        </div>
+                        <div class="number-of-message ">
+                            <div class="group-message">
+                                <img class="image-statistics" src="./assets//img/message.svg" alt="">
+                                <div>
+                                    <p class="meals-note">Nombre de messages envoyés</p>
+                                    <p class="currently-message">ce mois-ci</p>
+                                </div>
+                            </div>
+                            <div class="count">
+                                <p class="count-number">245</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings">
+                    <p class="settings-link">Vos paramètres</p>
+                    <p class="edit">Modifier</p>
+                </div>
+                <div class="number-of-patients-allowed ">
+                    <div class="group-meals">
+                        <img class="image-statistics" src="./assets//img/group-patients.svg" alt="">
+                        <div>
+                            <p class="meals-note">Nombre de patients maximum autorisés</p>
+                            <p class="currently-meals">2 patients pour atteindre votre maximum</p>
+                        </div>
+                    </div>
+                    <div class="count">
+                        <p class="count-number">16</p>
+                    </div>
+                </div>
+
+                <button class="contact-dashboard">
+                    <p class="contact-myBody">Contacter myBody</p>
+                    <div class="text-help">
+                        <p class="help-1">besoin d’aide ?</p>
+                        <p class="help-2">Un problème, une absence à notifier, une question</p>
+                    </div>
+                </button>
+            </div>
+    <!-- ============================ End  Midlle Dashboard ========================================== -->
+
+
+     <!-- ============================ Chat Dashboard   ========================================== -->
+            <div class="chat-board ">
+                <div class="chat">
+                    <div class="search-chat-space ">
+                        <input class="input-search-chat" type="text" placeholder="Recherche"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rechercher'">
+                        <button class="btn-search-chat"><img src="./assets//img/search-chat.svg" alt=""></button>
+                      
+                    </div>
+                    <hr class="border-input-search">
+
+
+                     <!-- ###################################### Div no message -- Apply class if you have messages "empty-data"  ############################################ --> 
+                    <div class="no-messages">
+                    <div>
+                        <img src="./assets/img/no-message.svg" alt="">
+                    </div>
+                        <p class="empty-message">Aucun message</p>
+                        <p class="no-message-patient">Vous n’avez aucun message</p>
+                    </div>
+                    <!-- ######################################  End -- Div no message -- Apply class if you have messages "empty-data"  ############################################ -->
+                    
+                    
+
+                    <!-- ####### No Messages Apply class "empty-data" ####### --> 
+                    <div class="all-messages empty-data">
+                        <div class="message-patient active-message-patient ">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat ">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>                         
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient ">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-message-patient">
+                        <div class="message-patient">
+                            <div class="patient-details-chat">
+                                <div> <img class="image-chat-patient" src="./assets/img/patient.jpg" alt=""></div>
+                                <div class="details-chat">
+                                    <p class="name-patient-chat">Saturnin D.</p>
+                                    <p class="text-message">Text Message</p>
+                                </div>
+                                <span class="notif-of-chat remove-notif-of-chat">1</span>
+                            </div>
+                            <div class="receive-message">
+                                <img class="notif-receive" src="./assets/img/send-success.svg" alt="">
+                                <p class="time">18:24</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+             <!-- ============================ Chat Dashboard   ========================================== -->
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

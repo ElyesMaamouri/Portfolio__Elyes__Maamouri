@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- File Css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Owl Carousel Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <title>Home</title>
+</head>
+<body>
+    <!-- =============== Section Navigation ================ -->
+    <header>
+        <aside class="promotional" aria-label="promotional-announcement">
+            <div class="details-announcement main-container">
+                <p class="text-announcement element-display">Need help? Call us 112233344455</p>
+                <div class="discount">
+                    <p class="text-announcement">Summer sale discount off 60% off! </p>
+                    <a class="link-shop-now" href="#">Shop Now</a>
+                </div>
+                <p class="text-announcement element-display">2-3 business days delivery & free returns</p>
+            </div>
+        </aside>
+        <nav class="top-menu">
+            <div class="menu-overlay" id="menu-user-overlay"></div>
+            <div class="main-container navbar">
+                <i class='bx bx-menu-alt-left bx-sm color-icon-menu' id="menu-toggle" onclick="openMenu()"></i>
+                <div class="logo"><a href="#"> <img class="logo-website" src="./assets/img/logo.svg"
+                            alt="smarttechstore.com" /></a></div>
+                <div class="my-overlay" id="menu-overlay"></div>
+                <div class="nav-links" id="links-web-site">
+                    <div class="sidebar-logo">
+                        <img class="logo-website" src="./assets/img/logo.svg" />
+                        <i class='bx bx-x' onclick="closeMenu()"></i>
+                    </div>
+
+                    <ul class="links">
+                        <div class="page-website-1">
+                            <li>
+                                <a class="active-element" href="#" ">home</a>
+                        </li>
+                        <li>
+                            <a href=" #">about</a>
+                            </li>
+                            <li><a href="#">shop</a></li>
+                            <li><a href="#">blogs</a></li>
+                            <li>
+                                <a href="#" onclick="showMenuInSideBar('menu-1','icon-1')">pages </i></a>
+                                <i class='bx bxs-chevron-down htmlcss-arrow arrow ' id="icon-1"></i>
+                                <ul class="js-sub-menu sub-menu" id="menu-1">
+                                    <li><a href="#">Sub page</a></li>
+                                    <li><a href="#"> Sub page</a></li>
+                                    <li><a href="#">Sub page</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">contact</a></li>
+
+                            
+                    </ul>
+                </div>
+            </div>
+
+            </div>
+        </nav>
+        <!-- Popup Search Form (initially hidden) -->
+        <div id="myOverlay" class="overlay">
+            <button class="closebtn" onclick="closeSearch()"><i class='bx bx-x'></i></button>
+            <div class="overlay-content">
+                <form action="">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button class="btn-input-search" type="submit"><i class='bx-sm bx bx-search'
+                            onclick="openSearch()"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="nav-mobile-bottom">
+            <ul class="nav-mobile">
+             <li>
+                 <button class="btn-menu nav-mobile-center-element"><i class='icon-menu-size bx bx-search'
+                         onclick="openSearch()"></i>
+                     <p class="text-nav-mobile">Search</p></button>
+             </li>
+             <li>
+                 <a  class="btn-menu nav-mobile-center-element" href=""><i class='icon-menu-size bx bx-user' >
+                     <p  class="text-nav-mobile"> Account</p>
+                 </i></a>
+             </li>
+             <li>
+                 <button class="btn-menu nav-mobile-center-element">
+                     <i class='icon-menu-size bx bx-heart'></i> <p  class="text-nav-mobile">
+                         Wishlist				
+                     </p>
+                 </button>
+             </li>
+ 
+             <li class="panel-user">
+                 <span class="number-product">5</span>
+                 <a class="btn-menu nav-mobile-center-element"> <i class='bx bx-cart icon-menu-size'> <p  class="text-nav-mobile">Cart</p></i>
+                     </i></a>
+             </li>
+            </ul>
+         </div>
+    </header>
+    <!-- ================  End Section Navigation ================  -->
+
+    <!-- ======= Main Web Site ======= -->
+    <main>
+        <!-- ======================= Section Hero ======================= -->
+        <section id="hero" class="main-container">
+            <div id="carousel-hero" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="bg-hero-1">
+                        <img class="image-hero" src="./assets/img/iphone-15.webp" alt="">
+                        <div class="text-hero">
+                            <h1 class="title-hero">Iphone 15 series</h1>
+                            <p class="description-hero">Limited stocks available. Grab it now!</p>
+                            <div> <a class="link-hero" href="">Shop collection</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="bg-hero-2">
+                        <img class="image-hero" src="./assets/img/samsung.webp" alt="">
+                        <div class="text-hero">
+                            <h1 class="title-hero">Samsung Galaxy S10</h1>
+                            <p class="description-hero">Limited stocks available. Grab it now!</p>
+                            <div>
+                                <a class="link-hero" href="">Shop collection</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="bg-hero-3">
+                        <img class="image-hero" src="./assets/img/apple.webp" alt="">
+                        <div class="text-hero">
+                            <h1 class="title-hero">Iphone 15 series</h1>
+                            <p class="description-hero">Limited stocks available. Grab it now!</p>
+                            <div> <a class="link-hero" href="">Shop collection</a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ======================= End Section Hero ======================= -->
+        <!-- ======================= Section Categorie Section ======================= -->
+        <section id="categorie-section" class="main-container margin-top-section">
+            <div class="categorie-products">
+                <h2 class="title-section">Our Categories</h2>
+                <div id="carousel-categorie" class="owl-carousel owl-theme">
+                    <a href="" class="item">
+                        <div class="categorie">
+                            <img class="picture-categorie" src="./assets/img/airpoods.webp" alt="">
+                            <p class="name-card">Air pods</p>
+                            <p class="quantity"><span>6</span> (items)
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="categorie">
+                            <img class="picture-categorie" src="./assets/img/smartwatche.webp" alt="">
+                            <p class="name-card">Smart watches</p>
+                            <p class="quantity"><span>26</span> (items)
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="categorie">
+                            <img class="picture-categorie" src="./assets/img/airpoods.webp" alt="">
+                            <p class="name-card">Air pods</p>
+                            <p class="quantity"><span>6</span> (items)
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="categorie">
+                            <img class="picture-categorie" src="./assets/img/mac.webp" alt="">
+                            <p class="name-card">Laptops</p>
+                            <p class="quantity"><span>62</span> (items)
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="" class="item">
+                        <div class="categorie">
+                            <img class="picture-categorie" src="./assets/img/mac.webp" alt="">
+                            <p class="name-card">Laptops</p>
+                            <p class="quantity"><span>62</span> (items)
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="" class="item">
+                        <div class="categorie">
+                            <img class="picture-categorie" src="./assets/img/mac.webp" alt="">
+                            <p class="name-card">Laptops</p>
+                            <p class="quantity"><span>62</span> (items)
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="categorie">
+                            <img class="picture-categorie" src="./assets/img/smartwatche.webp" alt="">
+                            <p class="name-card">Smart watches</p>
+                            <p class="quantity"><span>26</span> (items)
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="categorie">
+                            <img class="picture-categorie" src="./assets/img/smartphone.webp" alt="">
+                            <p class="name-card">Mobile phones</p>
+                            <p class="quantity"><span>6</span> (items)
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="categorie">
+                            <img class="picture-categorie" src="./assets/img/mac.webp" alt="">
+                            <p class="name-card">Laptops</p>
+                            <p class="quantity"><span>62</span> (items)
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- ======================= End Section Categorie Section ======================= -->
+        <!-- ======================= Section Best Selling Product ======================= -->
+        <section id="best-selling-product" class="main-container margin-top-section">
+            <div class="best-selling">
+                <h3 class="title-best-selling">Best selling items</h3>
+                <div class="list-product">
+
+                    <a href="" class="product">
+                        <div class="style-image-product">
+                            <img class="picture-product" src="./assets/img/product-1.png" alt="Gimbal Parts">
+                        </div>
+                        <p class="name-product">Gimbal Parts</p>
+                        <p class="price-product">$ <span>400</span></p>
+                    </a>
+
+                    <a href="" class="product">
+                        <div class="style-image-product">
+                            <img class="picture-product" src="./assets/img/product-2.png" alt="AirPods Pro">
+                        </div>
+                        <p class="name-product">AirPods Pro</p>
+                        <p class="price-product">$ <span>400</span></p>
+                    </a>
+
+                    <a href="" class="product">
+                        <div class="style-image-product">
+                            <img class="picture-product" src="./assets/img/product-3.png" alt="Iphone 15 Pro">
+
+                        </div>
+                        <p class="name-product">Iphone 15 Pro</p>
+                        <p class="price-product">$ <span>400</span></p>
+                    </a>
+
+                    <a href="" class="product">
+                        <div class="style-image-product">
+                            <img class="picture-product" src="./assets/img/product-4.png" alt="Iphone X Pro">
+
+                        </div>
+                        <p class="name-product">Iphone X Pro</p>
+                        <p class="price-product">$ <span>400</span></p>
+                    </a>
+
+                    <a href="" class="product">
+                        <div class="style-image-product">
+                            <img class="picture-product" src="./assets/img/product-5.png" alt="PlayStation 5">
+
+                        </div>
+                        <p class="name-product">PlayStation 5</p>
+                        <p class="price-product">$ <span>400</span></p>
+                    </a>
+
+                    <a href="" class="product">
+                        <div class="style-image-product"> <img class="picture-product" src="./assets/img/product-6.png"
+                                alt="Sony PlayStation Move">
+                        </div>
+                        <p class="name-product">Sony PlayStation Move</p>
+                        <p class="price-product">$ <span>400</span></p>
+                    </a>
+
+                    <a href="" class="product">
+                        <div class="style-image-product">
+                            <img class="picture-product" src="./assets/img/product-7.png" alt="Apple MacBook Pro">
+
+                        </div>
+                        <p class="name-product">Apple MacBook Pro</p>
+                        <p class="price-product">$ <span>400</span></p>
+                    </a>
+
+                    <a href="" class="product">
+                        <div class="style-image-product">
+                            <img class="picture-product" src="./assets/img/product-8.png" alt="GoPro">
+                        </div>
+                        <p class="name-product">GoPro</p>
+                        <p class="price-product">$ <span>400</span></p>
+                    </a>
+                </div>
+                <div class="place-to-shop">
+                    <a class="visit-shop" href="">Go to shop</a>
+                </div>
+                <div class="all-promotion margin-top-section">
+                    <div class="promotion-product">
+                        <img class="image-promotion" src="./assets/img/promotion-1.webp" alt="promotion">
+                        <div class="promotions">
+                            <p class="title-promotions">20% Off on Laptops</p>
+                            <p class="description-promotions">Products on sale for limited time only.</p>
+                            <a class="link-shop-promotion" href="">Shop it now</a>
+                        </div>
+                    </div>
+                    <div class="promotion-product">
+                        <img class="image-promotion" src="./assets/img/promotion-2.webp" alt="promotion">
+                        <div class="promotions">
+                            <p class="title-promotions">Apple collections</p>
+                            <p class="description-promotions">Get your best apple products.</p>
+                            <a class="link-shop-promotion" href="">Shop collection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======================= End Section Best Selling Product ======================= -->
+        <!-- ======================= Section Comments Customers ======================= -->
+        <section id="comments-customer" class="main-container margin-top-section">
+            <div class="reviews">
+                <h4 class="title-review-customer">Our customer’s review</h4>
+                <div id="carousel-customer-review" class="owl-carousel owl-theme ">
+                    <div class="item">
+                        <div class="customer-review">
+                            <p class="text-review">“Tempus oncu enim pellen tesque este pretium in neque, elit morbi
+                                sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis
+                                lorem habi.”</p>
+                            <div class="stars-review"><i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <p class="name-customer">Emma Chamberlin</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="customer-review">
+                            <p class="text-review">“Tempus oncu enim pellen tesque este pretium in neque, elit morbi
+                                sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis
+                                lorem habi.”</p>
+                            <div class="stars-review"><i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <p class="name-customer">Thomas John</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="customer-review">
+                            <p class="text-review">“Tempus oncu enim pellen tesque este pretium in neque, elit morbi
+                                sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis
+                                lorem habi.”</p>
+                            <div class="stars-review"><i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <p class="name-customer">Kevin Bryan</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="customer-review">
+                            <p class="text-review">“Tempus oncu enim pellen tesque este pretium in neque, elit morbi
+                                sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis
+                                lorem habi.”</p>
+                            <div class="stars-review"><i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <p class="name-customer">Kevin Bryan</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="customer-review">
+                            <p class="text-review">“Tempus oncu enim pellen tesque este pretium in neque, elit morbi
+                                sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis
+                                lorem habi.”</p>
+                            <div class="stars-review"><i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <p class="name-customer">Emma Chamberlin</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="customer-review">
+                            <p class="text-review">“Tempus oncu enim pellen tesque este pretium in neque, elit morbi
+                                sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis
+                                lorem habi.”</p>
+                            <div class="stars-review"><i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <p class="name-customer">Emma Chamberlin</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="customer-review">
+                            <p class="text-review">“Tempus oncu enim pellen tesque este pretium in neque, elit morbi
+                                sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis
+                                lorem habi.”</p>
+                            <div class="stars-review"><i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <p class="name-customer">Emma Chamberlin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======================= End Section Comments Customers ======================= -->
+        <!-- ======================= Section Lastest Posts ======================= -->
+        <section id="lastest-posts" class="main-container">
+            <div class="all-blogs">
+                <h5 class="title-section"> Latest Posts </h5>
+                <div class="posts-blog">
+                    <a href="" class="post">
+                        <img class="image-post" src="./assets/img/post-1.webp" alt="">
+                        <p class="time-post"><span>Feb 22, 2024</span> - <span> technology</span></p>
+                        <p class="title-post">Technology hack that you don’t know</p>
+                    </a>
+
+                    <a href="" class="post">
+                        <img class="image-post" src="./assets/img/post-2.webp" alt="">
+                        <p class="time-post"><span>Feb 22, 2024</span> - <span>Gadgets</span></p>
+                        <p class="title-post">Technology hack that you don’t know</p>
+                    </a>
+
+                    <a href="" class="post">
+                        <img class="image-post" src="./assets/img/post-3.webp" alt="">
+                        <p class="time-post"><span>Feb 22, 2024</span> - <span> watches</span></p>
+                        <p class="title-post">Best digital watches to buy in this year</p>
+                    </a>
+                </div>
+                <div class="place-link-blog">
+                    <a class="link-blogs" href="">read blogs</a>
+                </div>
+            </div>
+        </section>
+        <!-- ======================= End  Section Lastest Posts ======================= -->
+        <!-- ======================= Section Services Data ======================= -->
+        <section id="services-data" class="main-container">
+            <div class="services">
+                <div class="card-service">
+                    <div class="top-card">
+                        <img class="icon-service" src="./assets/img/panel.svg" alt="">
+                        <p class="title-card-service">Free delivery</p>
+                    </div>
+                    <p class="description-card-service">Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="card-service">
+                    <div class="top-card"> <img class="icon-service" src="./assets/img/cup.svg" alt="">
+                        <p class="title-card-service">Quality guarantee</p>
+                    </div>
+                    <p class="description-card-service">Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
+                </div>
+
+                <div class="card-service">
+                    <div class="top-card">
+                        <img class="icon-service" src="./assets/img/price.svg" alt="">
+                        <p class="title-card-service">Daily offers</p>
+                    </div>
+                    <p class="description-card-service">Amet consectetur adipi elit loreme ipsum dolor sit.</p>
+                </div>
+
+                <div class="card-service">
+                    <div class="top-card">
+                        <img class="icon-service" src="./assets/img/check.svg" alt="">
+                        <p class="title-card-service">100% secure payment</p>
+                    </div>
+                    <p class="description-card-service">Rem Lopsum dolor sit amet, consectetur adipi elit.</p>
+                </div>
+            </div>
+        </section>
+        <!-- ======================= End  Section Services Data ======================= -->
+        <!-- ======================= Section User News Letter ======================= -->
+        <section id="user-news-letter">
+            <div class="news-letter">
+                <div class="details-banner">
+                    <h6 class="title-news-letter">
+                        Subscribe Us now
+                    </h6>
+                    <p class="description-news-letter"> Get latest news, updates and deals directly mailed to your
+                        inbox.
+                    </p>
+                </div>
+                <form class="form-news-letter" action="">
+                    <input class="input-news-letter" placeholder="Your email address here" type="text" name="" id="">
+                    <button class="btn-submit-email">subscribe</button>
+                </form>
+            </div>
+        </section>
+        <!-- ======================= End Section User News Letter ======================= -->
+        <!-- ======================= Section Instagram Container ======================= -->
+        <section id="instagram-container" class="main-container section-instagram-posts">
+            <h6 class="title-section">Shop our instagram</h6>
+            <div id="carousel-instagram" class="owl-carousel owl-theme ">
+                <div class="insta-picture"> <img class="image-instagram" src="./assets/img/samsung-instagram.webp"
+                        alt=""></div>
+                <div class="insta-picture">
+                    <img class="image-instagram" src="./assets/img/drone.webp" alt="">
+                </div>
+                <div class="insta-picture">
+                    <img class="image-instagram" src="./assets/img/buy-iphone.webp" alt="">
+
+                </div>
+                <div class="insta-picture">
+                    <img class="image-instagram" src="./assets/img/apple-prduct.webp" alt="">
+                </div>
+                <div class="insta-picture">
+                    <img class="image-instagram" src="./assets/img/post-3.webp" alt="">
+
+                </div>
+            </div>
+        </section>
+        <!-- ======================= End Section Instagram Container ======================= -->
+        <!--  ======================= Footer  ======================= -->
+        <footer class="style-footer">
+            <div class="gadgets-footer main-container">
+                <div class="gadget width-gadget">
+                    <img src="./assets/img/logo.svg" alt="store">
+                    <p class="description-gadget">Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit.
+                        Gravida massa volutpat aenean odio erat nullam fringilla.</p>
+                    <div class="sociale-media">
+                        <a href=""> <i class='bx bxl-facebook-circle icon-social-media'></i></a>
+                        <a href=""> <i class='bx bxl-instagram icon-social-media'></i></a>
+                        <a href=""> <i class='bx bxl-twitter icon-social-media'></i></a>
+                        <a href=""> <i class='bx bxl-linkedin-square icon-social-media'></i></a>
+                        <a href=""> <i class='bx bxl-youtube icon-social-media'></i></a>
+                    </div>
+                </div>
+
+                <div class="gadget">
+                    <p class="title-gadget">Quick links</p>
+                    <div class="links-gadgets">
+                        <a href="">Home</a>
+                        <a href="">About </a>
+                        <a href="">Shop</a>
+                        <a href="">Blogs</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+
+                <div class="gadget">
+                    <p class="title-gadget">Help & info</p>
+                    <div class="links-gadgets"> 
+                        <a href="">Track Your Order
+                        </a>
+                        <a href="">Returns policies </a>
+                        <a href="">Shipping + Delivery </a>
+                        <a href="">Contact Us
+                        </a>
+                        <a href="">Faqs </a>
+                    </div>
+                </div>
+                <div class="gadget">
+                    <div class="contact-email-phone">
+                        <p class="description-gadget">Do you have any queries or suggestions?
+                        </p>
+                        <a href="" class="details-contact">yourinfo@gmail.com</a>
+                    </div>
+                    <div class="contact-email-phone"></div>
+                    <p class="description-gadget">If you need support? Just give us a call.
+                    </p>
+                    <p class="details-contact">+55 111 222 333 44</p>
+                </div>
+            </div>
+            </div>
+            <hr class="divider-footer">
+            <div class="bottom-footer main-container">
+                <div class="left-bottom-footer">
+                    <div class="ship">
+                        <p class="text-bottom-footer">We ship with:</p>
+                        <img class="icon-bootom-footer" src="./assets/img/dhl.svg" alt="dhl">
+                        <img class="icon-bootom-footer" src="./assets/img/brand-post.svg" alt="brand-post">
+                    </div>
+                    <div class="payment">
+                        <p class="text-bottom-footer">Payment options:</p>
+                        <img class="icon-bootom-footer" src="./assets/img/visa.svg" alt="">
+                        <img class="icon-bootom-footer" src="./assets/img/master-card.svg" alt="">
+                        <img class="icon-bootom-footer" src="./assets/img/paypal.svg" alt="">
+                    </div>
+                </div>
+                <div class="right-bottom-footer">
+                    <p class="text-bottom-footer ">© Copyright 2024 - SmarTechStore</p>
+                </div>
+            </div>
+        </footer>
+        <!--  ======================= Footer  ======================= -->
+    </main>
+    <!-- =======End  Main Web Site ======= -->
+
+    <!-- =======================  Scripts =======================  -->
+    <!-- =======================  Jquery CDN =======================  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- =======================  Script Owl Carousel CDN =======================  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- =======================  Local Scripts =======================  -->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+/* Sign In */
+
+.modal-body h1{
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-body img{
+   
+    margin-top: 20px;
+}
+
+.modal-body form{
+
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.modal-body form input{
+    background-color: #EBEAE9;
+    height: 45px !important;
+    border-radius: 40px;
+    padding-left: 30px;
+    color: #707070 !important;
+ }
+
+ .modal-body form input:hover{
+    background-color: #EBEAE9 !important;
+ }
+
+ .form-group {
+     text-align: right !important;
+ }
+ input[type=password]{
+     margin-bottom: 10px;
+     margin-top: 20px;
+ }
+ .form-group a{
+   color: #707070;
+   font-weight: 600;
+   text-decoration: none;
+}
+
+.register{
+    color: #707070;
+    font-weight: 600;
+    text-decoration: none;
+   
+ }
+
+ .modal-content  {
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    border-radius: 20px !important; 
+}
+
+.fa-times {
+    margin-right: 30px !important;
+    margin-top: 20px !important;
+    font-size: 30px !important;
+    color: #E3B038;
+   
+}
+
+.close {
+    outline: none !important;
+    color: #E3B038;
+}
+
+ .register:hover{
+    color: #707070;
+    text-decoration: none;
+   
+ }
+
+ .nav-item button{
+     box-shadow: none !important;
+ }
+
+.signInBtn {
+    background-color: #E3B038;
+    outline: none;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+    
+}
+.signInBtn:hover {
+    background-color: #E3B038;
+    transform: scale(1.03);
+   
+}
+
+@media(max-width: 991px){
+
+    .modal-body form{
+        width: 80%;
+    }
+
+}
+
+@media(max-width: 400px){
+
+    .modal-body form{
+        width: 95%;
+    }
+
+}
+
+@media(max-width: 350px){
+
+    .fa-times {
+        margin-right: 10px !important;
+        font-size: 25px !important;
+        margin-top: 33px !important;
+       
+    }
+
+}

@@ -1,0 +1,912 @@
+@import url(font.css);
+
+body {
+  background-color: #fafafa;
+}
+
+#hero {
+  background: url("/images/Ellipse.png") no-repeat local -526px 58px;
+}
+
+#navbar .logo {
+  margin-left: 105px;
+  font-family: Bold-700;
+  font-size: 18px;
+  color: #1e2037;
+}
+#navbar img {
+  margin-left: -14px;
+  margin-top: -4px;
+}
+
+#navbar ul {
+  margin-right: 90px;
+}
+#navbar ul li a {
+  font-family: Poppins-SemiBold;
+  font-size: 16px;
+  font-weight: 900;
+  color: #1e2037;
+  margin-right: 15px;
+}
+
+#navbar ul li:nth-child(5) a {
+  color: #6d6bd9;
+  font-size: 13px;
+  border-radius: 8px;
+  border: 1px solid #6d6bd9;
+  padding: 10px 20px;
+}
+
+#hero .section-hero {
+  display: flex;
+  background: url("./images/decore.svg") no-repeat;
+  background-position: right -18px;
+  background-position-x: 135%;
+  margin-top: -230px;
+  padding-top: 327px;
+  padding-bottom: 162px;
+  /* background-size: 51%; */
+  background-size: 755px;
+  height: auto;
+  align-items: center;
+}
+
+#hero .believing {
+  width: 50%;
+  padding-left: 105px;
+}
+
+#hero .doctors {
+  width: 50%;
+  text-align: center;
+}
+
+#hero .believing p:nth-child(1) {
+  font-family: Poppins-Bold;
+  font-size: 50px;
+  padding-right: 35px;
+}
+
+#hero .believing p:nth-child(2) {
+  font-family: Regular;
+  font-size: 14px;
+  color: #a1a1a1;
+  line-height: 30px;
+  padding-right: 35px;
+}
+
+#hero .doctors img {
+  width: 80%;
+}
+
+#hero .find-media {
+  display: flex;
+  margin-top: 35px;
+  padding-right: 25px;
+}
+
+#hero .find-more {
+  padding: 14px 24px;
+  background-color: #6d6bd9;
+  border-radius: 8px;
+  border-color: #6d6bd9;
+  border-style: none;
+  color: white;
+  text-align: center;
+  margin-right: 22px;
+  cursor: pointer;
+  font-family: Poppins-Medium;
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-box-shadow: 5px 5px 43px 5px rgba(109, 107, 217, 0.42);
+  box-shadow: 5px 5px 43px 5px rgba(109, 107, 217, 0.42);
+}
+
+#hero .find-media img {
+  margin-right: 22px;
+}
+
+#hero .play-demo {
+  font-family: Poppins-Medium;
+  font-size: 17px;
+  color: #686d77;
+  margin-top: 16px;
+}
+
+#services .experiences {
+  margin-top: -56px;
+  text-align: center;
+}
+
+#services .experiences p:nth-child(1) {
+  font-family: Regular;
+  font-size: 18px;
+  color: #1e2037;
+  margin-bottom: 4px;
+}
+
+#services .experiences p:nth-child(2) {
+  font-family: Poppins-Bold;
+  font-size: 40px;
+  color: #1e2037;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#service-details .section-service {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  padding-bottom: 35px;
+}
+
+#service-details .card-technology {
+  width: 25%;
+}
+
+#service-details .card-thermpix {
+  width: 25%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 7px 44px -26px #000000;
+  box-shadow: 1px 7px 44px -26px #000000;
+  padding-bottom: 35px;
+  border-radius: 22px;
+  border: none;
+}
+
+#service-details .card-pioneer {
+  width: 25%;
+}
+
+#service-details .title-service {
+  font-size: 25px;
+  font-family: Poppins-Bold;
+  color: #1e2037;
+  margin-top: 25px;
+}
+
+#service-details .content-service {
+  font-size: 16px;
+  font-family: Regular;
+  color: #a1a1a1;
+  margin-top: -10px;
+  line-height: 30px;
+}
+
+#service-details .btn-read-more {
+  color: #6d6bd9;
+  font-size: 14px;
+  font-family: Poppins-Bold;
+  border-radius: 6px;
+  border: 1px solid #6d6bd9;
+  padding: 10px 48px 10px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  background: url("./images/arrow.svg") no-repeat local 105px 13px;
+}
+
+#service-details .card-item-technology {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+#service-details .card-item-thermpix {
+  margin-top: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+#service-details .card-item-pioneer {
+  margin-top: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+#clinical .section-clinical {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+#clinical .doctor-note {
+  width: 50%;
+ 
+  text-align: center;
+}
+
+#clinical .img-doctor-note {
+  width: 70%;
+}
+
+#clinical .clinical-thermography {
+  width: 50%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#clinical .title-clinical {
+  font-size: 40px;
+  font-family: Poppins-Bold;
+  color: #1e2037;
+}
+
+#clinical .details-service {
+  font-family: Regular;
+  font-size: 16px;
+  color: #a1a1a1;
+  line-height: 25px;
+}
+
+#team .our-team {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#team .our-team p:nth-child(1) {
+  font-family: Regular;
+  font-size: 18px;
+  color: #1e2037;
+  margin-bottom: 4px;
+}
+
+#team .our-team p:nth-child(2) {
+  font-family: Poppins-Bold;
+  font-size: 40px;
+  color: #1e2037;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#team-doctor .list-doctor {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#team-doctor .first-doctor {
+  width: 30%;
+  text-align: -webkit-center;
+}
+
+#team-doctor .doctor-lawrence {
+  width: 90%;
+}
+
+#team-doctor .img-doctors {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: -145px;
+}
+
+#team-doctor .name-doctor {
+  -webkit-box-shadow: 1px 7px 44px -26px #000000;
+  box-shadow: 1px 7px 44px -26px #000000;
+  border-radius: 18px;
+  padding-bottom: 200px;
+}
+
+#team-doctor .details-doctor {
+  /* margin-top: 175px; */
+  position: relative;
+  top: 170px;
+}
+
+#team-doctor .name-doctor p {
+  font-family: Poppins-SemiBold;
+  font-size: 30px;
+  color: #000000;
+}
+
+#stat .multiple-stat {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+#stat .stat-details {
+  text-align: center;
+  padding-right: 25px;
+  padding-left: 25px;
+  width: 30%;
+}
+#stat .stat-data {
+  font-size: 60px;
+  color: #6d6bd9;
+  font-family: Bold-700;
+}
+#stat .stat-description {
+  font-size: 20px;
+  font-family: Poppins-Light;
+  color: #696871;
+}
+#news .news-details {
+  margin-top: 40px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: url("./images/background-blog.svg") no-repeat 100% 0%;
+  background-size: cover;
+}
+#news .latest-news {
+  text-align: center;
+}
+
+#news .title-news {
+  font-size: 18px;
+  font-family: Poppins-Light;
+  color: #ffffff;
+}
+#news .our-articles {
+  font-size: 45px;
+  font-family: Bold-700;
+  color: #ffffff;
+}
+#news .doctor-job {
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 14px 24px;
+  border-top-right-radius: 14px 24px;
+}
+#news .article {
+  display: flex;
+  justify-content: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#news .article-details {
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  /* margin-left: -35px; */
+
+  width: 30%;
+}
+#news .blog-details {
+  background-color: white;
+  padding: 18px 15px 40px 15px;
+  border-bottom-left-radius: 14px 24px;
+  border-bottom-right-radius: 14px 24px;
+}
+#news .blog-title {
+  text-align: left;
+  font-size: 18px;
+  font-family: Poppins-Bold;
+  color: #3f3a65;
+}
+#news .blog-description {
+  text-align: left;
+  font-size: 14px;
+  font-family: Poppins-Light;
+}
+#user .user-opinion {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#user .user-say {
+  font-size: 40px;
+  font-family: Poppins-Bold;
+  color: #19191b;
+  margin-bottom: -2px;
+}
+
+#user .say-details {
+  font-size: 21px;
+  font-family: Regular;
+  color: #696871;
+}
+/* ==========  Custom class css display : flex =========== */
+.custom-flex {
+  display: flex;
+  align-items: center;
+}
+#user .user-comments {
+  margin: 0 auto;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+#user .user-description {
+  display: grid;
+}
+#user .card {
+  border: 1px solid #e9e7e7;
+  padding: 16px;
+  border-radius: 10px;
+
+  height: 178px;
+  background-color: #ffffff;
+  border-color: #eae9f2;
+}
+#user .card .comment {
+  font-size: 16px;
+  font-family: Poppins-Light;
+}
+#user .image {
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 16px;
+}
+#user .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* #user .card .col:first-child {
+  justify-content: space-between;
+  margin-bottom: 24px;
+  margin: 0;
+} */
+#user .info {
+  margin-top: 12px;
+}
+#user .info .user-name {
+  font-weight: 21;
+  font-family: Bold-700;
+}
+#user .info .job {
+  font-weight: 16;
+  font-family: Poppins-Light;
+}
+
+#user .card:hover {
+  background-color: #6d6bd9;
+}
+
+#user .card:hover .comment,
+#user .card:hover .user-name,
+#user .card:hover .job {
+  color: white;
+}
+/* ==========  pagination =========== */
+#user .navigation {
+  margin-top: 64px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#user .swiper-pagination-bullet {
+  background-color: #6d6bd9;
+  height: 8px;
+  width: 20px;
+  border-radius: 12px;
+}
+
+#user .swiper-pagination-bullet-active {
+  width: 48px;
+  border-radius: 24px;
+}
+
+#partner .our-partner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 90px;
+  margin-left: 90px;
+  margin-top: 30px;
+}
+#partner .list-partner {
+  text-align: center;
+  margin-top: 28px;
+  padding-right: 40px;
+}
+#partner .list-partner img {
+  filter: grayscale(100%);
+}
+
+#footer .footer-container {
+  display: flex;
+  padding: 50px 90px;
+  background-color: #f5f5f5;
+  margin-top: 80px;
+}
+#footer .envoDoctor-description {
+  width: 25%;
+  /* padding-left: 25px; */
+  padding-right: 25px;
+}
+#footer .envo-doctor {
+  font-size: 24px;
+  font-family: Poppins-Bold;
+  margin-top: -8px;
+}
+#footer .clinical-thermography {
+  font-size: 16px;
+  font-family: Regular;
+  color: #696871;
+  line-height: 28px;
+}
+
+#footer .social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+#footer .title-links {
+  font-size: 16px;
+  font-family: Poppins-Bold;
+}
+#footer .links {
+  font-size: 16px;
+  font-family: Regular;
+  color: #19191b;
+}
+#footer .email-support {
+  color: #5454d4;
+  font-size: 16px;
+  font-family: Regular;
+  word-break: break-all;
+}
+#footer .phone-support {
+  color: #5454d4;
+  font-size: 16px;
+  font-family: Regular;
+}
+#footer .help-center {
+  width: 25%;
+  /* padding-left: 25px; */
+  padding-right: 25px;
+}
+#footer .quick-links {
+  width: 25%;
+  /* padding-left: 25px; */
+  padding-right: 25px;
+}
+#footer .contact-us {
+  width: 25%;
+  /* padding-left: 25px; */
+  padding-right: 25px;
+}
+
+@media (max-width: 1244px) {
+  #hero .section-hero {
+    align-items: center;
+  }
+  #service-details .content-service {
+    text-align: justify;
+    word-break: break-all;
+  }
+  #service-details .section-service {
+    text-align: center;
+  }
+  #clinical .title-clinical {
+    font-size: 26px;
+  }
+  #clinical .clinical-thermography {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #team .our-team p:nth-child(2) {
+    font-size: 26px;
+  }
+  #user .user-comments {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  /* #news .article-details {
+    width: 33%;
+  } */
+}
+
+@media (max-width: 991px) {
+  #navbar ul {
+    margin-right: 0px;
+  }
+  #navbar ul li:nth-child(5) a {
+    text-align: center;
+  }
+  #navbar .navbar-nav {
+    padding-left: 35px;
+  }
+  #hero .section-hero {
+    /* background-size: 585px;*/
+    margin-top: -300px;
+    background: none;
+    padding-bottom: 10px;
+  }
+  #hero .believing {
+    padding-left: 35px;
+  }
+  #navbar .logo {
+    margin-left: 35px;
+  }
+  #hero .find-more {
+    padding: 16px 18px;
+    font-size: 16px;
+    margin-right: 12px;
+  }
+  #hero .find-media img {
+    margin-right: 12px;
+  }
+  #services .experiences {
+    margin-top: 10px;
+  }
+  #service-details .card-item-technology {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  #service-details .card-item-thermpix {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  #service-details .card-item-pioneer {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  #service-details .content-service {
+    font-size: 14px;
+  }
+  #service-details .btn-read-more {
+    padding: 10px 42px 10px 15px;
+  }
+  #clinical .details-service {
+    font-size: 14px;
+  }
+  /* #team-doctor .details-doctor {
+    top: 150px;
+  } */
+  #team-doctor .name-doctor p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #stat .stat-data {
+    font-size: 50px;
+  }
+  #news .article-details {
+    width: 33%;
+  }
+  #news .news-details {
+    background-color: #6d6bd9;
+  }
+  #news .latest-news {
+    margin-top: -80px;
+    margin-bottom: 30px;
+  }
+  #user .say-details {
+    font-size: 16px;
+  }
+  #user .info {
+    margin-top: -4px;
+  }
+  #user .card {
+    height: 200px;
+  }
+  #user .user-comments {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #partner .our-partner {
+    justify-content: center;
+  }
+  #footer .footer-container {
+    padding: 50px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero .section-hero {
+    background: none;
+    display: block;
+    margin-top: -230px;
+    padding-bottom: 20px;
+    padding-top: 270px;
+  }
+  #hero .believing {
+    width: 100%;
+    text-align: center;
+  }
+  #hero .believing p:nth-child(2) {
+    text-align: justify;
+    word-break: break-all;
+  }
+  #hero .find-media {
+    text-align: center;
+    justify-content: center;
+  }
+  #hero .doctors {
+    width: 100%;
+    padding-top: 20px;
+  }
+  #service-details .section-service {
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #service-details .card-technology {
+    width: 100%;
+  }
+  #service-details .card-thermpix {
+    width: 95%;
+    margin: auto;
+  }
+  #service-details .card-thermpix img {
+    margin-top: 35px;
+  }
+  #service-details .card-pioneer {
+    width: 100%;
+  }
+  #clinical .section-clinical {
+    flex-direction: column-reverse;
+  }
+  #clinical .clinical-thermography {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  #clinical .details-service {
+    text-align: justify;
+    word-break: break-all;
+  }
+  #clinical .doctor-note {
+    width: 100%;
+  
+    background-position: center;
+  }
+  #team-doctor .list-doctor {
+    display: block;
+  }
+  #team-doctor .first-doctor {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  #team-doctor .img-doctors {
+    width: 80%;
+  }
+  #team-doctor .name-doctor {
+    width: 85%;
+  }
+  #stat .multiple-stat {
+    display: block;
+  }
+  #stat .stat-details {
+    width: 80%;
+    margin: auto;
+  }
+
+  #news .article {
+    display: block;
+  }
+  #news .article-details {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 35px;
+  }
+  #news .doctor-job {
+    width: 90%;
+    height: none;
+  }
+  #news .blog-details {
+    width: 90%;
+    margin: auto;
+  }
+  #news .latest-news {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #news .news-details {
+    padding-bottom: 40px;
+  }
+  #news .latest-news .our-articles {
+    font-size: 35px;
+  }
+  #user .card {
+    height: 178px;
+  }
+  #footer .footer-container {
+    display: block;
+    text-align: center;
+  }
+  #footer .envoDoctor-description {
+    width: 100%;
+    padding-left: 25px;
+    margin-bottom: 35px;
+  }
+  #footer .help-center {
+    width: 100%;
+    padding-left: 25px;
+    margin-bottom: 35px;
+  }
+  #footer .quick-links {
+    width: 100%;
+    padding-left: 25px;
+    margin-bottom: 35px;
+  }
+  #footer .contact-us {
+    width: 100%;
+    padding-left: 25px;
+    margin-bottom: 35px;
+  }
+  #footer .social-media {
+    margin: auto;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 393px) {
+  #hero .find-media {
+    display: grid;
+    justify-items: center;
+    margin-top: 0px;
+  }
+  #hero .find-media img {
+    margin-top: 20px;
+  }
+  #hero .believing p:nth-child(1) {
+    font-size: 32px;
+  }
+  #hero .find-media .play-demo {
+    margin-right: 16px;
+  }
+  #services .experiences p:nth-child(2) {
+    font-size: 25px;
+  }
+  #service-details .title-service {
+    font-size: 22px;
+  }
+  #clinical .title-clinical {
+    font-size: 22px;
+  }
+
+  #team-doctor .details-doctor {
+    top: 155px;
+  }
+
+  #team-doctor .name-doctor p {
+    font-size: 25px;
+  }
+  #team-doctor .first-doctor {
+    width: 90%;
+  }
+  #stat .stat-data {
+    font-size: 32px;
+  }
+  #stat .stat-description {
+    font-size: 18px;
+  }
+  #user .user-say {
+    font-size: 25px;
+  }
+  #user .card {
+    padding: 6px;
+  }
+  #user .card .comment {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #user .user-description .user-name {
+    font-size: 14px;
+  }
+  #user .user-description .job {
+    font-size: 14px;
+  }
+  #user .user-comments {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #news .doctor-job {
+    width: 100%;
+  }
+  #news .blog-details {
+    width: 100%;
+  }
+  #partner .our-partner {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #partner .list-partner {
+    padding-right: 30px;
+  }
+  #footer .social-media {
+    justify-content: space-between;
+    width: 100%;
+  }
+}

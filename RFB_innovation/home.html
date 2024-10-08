@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <title>GoLancer</title>
+</head>
+
+<body style="background: #F7F7F7 !important;">
+  <!-- First section -->
+  <section id="first__section">
+    <div class="background-main">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid menu">
+          <div>
+            <img class="logo" src="./assets/img/logo_2.svg">
+          </div>
+          <button onclick="openNav()" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="mySideBar" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class=" title-menu" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
+              aria-controls="collapseExample1">
+              Chercher un emploi
+              <img class="img-arrow" width="18" height="8" src="./assets/img/arrow-1.svg">
+              <div class="collapse sub-menu" id="collapseExample1">
+                <a href="#">Action</a>
+                <a href="#">Another action</a>
+                <a href="#">Another action</a>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class=" title-menu" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+              aria-controls="collapseExample2">
+              Mes emplois
+              <img class="img-arrow" width="18" height="8" src="./assets/img/arrow-1.svg">
+              <div class="collapse sub-menu" id="collapseExample2">
+                <a href="#">Action</a>
+                <a href="#">Another action</a>
+                <a href="#">Another action</a>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="upload-menu">
+              <img class="upload-resume" src="./assets/img/upload.svg" style="cursor: pointer;">
+              Upload resume
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class=" title-menu" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false"
+              aria-controls="collapseExample4">
+              Inscription
+            
+              <div class="collapse sub-menu" id="collapseExample4">
+                <a href="#">Action</a>
+                <a href="#">Another action</a>
+                <a href="#">Another action</a>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="title-menu" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false"
+              aria-controls="collapseExample5">
+              Connexion
+              <img class="img-arrow" width="18" height="8" src="./assets/img/arrow-1.svg">
+              <div class="collapse sub-menu" id="collapseExample5">
+                <a href="#">Condidat</a>
+                <a href="#">Proffesionnel</a>
+
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+          </div>
+          <div class="collapse navbar-collapse custom-space" id="navbarSupportedContent">
+            <ul class="navbar-nav menu-left">
+              <li class="nav-item">
+                <li class="nav-item dropdown"  style="position: relative;">
+                <a class="nav-link dropdown-toggle title-menu" data-toggle="dropdown" aria-expanded="false">
+                  Chercher un emploi
+                  <img class="img-arrow" width="18" height="8" src="./assets/img/arrow-1.svg">
+                </a>
+                <div class="dropdown-menu" >
+                  <div class="menu-click"></div>
+                  <a class="dropdown-item" href="#">Action</a>
+                  <div class="dropdown-divider dropdown-divider-line"></div>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider dropdown-divider-line"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown" style="position: relative;">
+                <a class="nav-link dropdown-toggle title-menu" data-toggle="dropdown" aria-expanded="false">
+                  Mes emplois
+                  <img class="img-arrow" width="18" height="8" src="./assets/img/arrow-1.svg">
+                </a>
+                <div class="dropdown-menu">
+                  <div class="menu-click"></div>
+                  <a class="dropdown-item" href="#">Action</a>
+                  <div class="dropdown-divider dropdown-divider-line"></div>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider dropdown-divider-line"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown" style="position: relative;">
+                <a class="nav-link dropdown-toggle title-menu" data-toggle="dropdown" aria-expanded="false">
+                  Explorer
+                  <img class="img-arrow" width="18" height="8" src="./assets/img/arrow-1.svg">
+                </a>
+                <div class="dropdown-menu">
+                  <div class="menu-click"></div>
+                  <a class="dropdown-item" href="#">Action</a>
+                  <div class="dropdown-divider dropdown-divider-line"></div>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider dropdown-divider-line"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="navbar-nav menu-right">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle upload-menu" href="#" role="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  <img class="upload-resume" src="./assets/img/upload.svg">
+                  Upload resume
+                </a>
+              </li>
+              <li class="nav-item  menu-register">
+                <a class="nav-link dropdown-toggle title-menu" href="#" role="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  Inscription
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle title-menu"  data-toggle="dropdown" aria-expanded="false">
+                  Connexion
+                  <img class="img-arrow" width="18" height="8" src="./assets/img/arrow-1.svg">
+                </a>
+                <div class="dropdown-menu login-menu dropdown-menu-right">
+                  <div class="login-steps">
+                    <div class="login-candidate">
+                      <p class="connection">Connectez-vous en tant que </p>
+                      <div class="menu-candidate">
+                        <img class="image-login" src="./assets/img/candidat.jpg" />
+                        <p class="candidate">Candidat</p>
+                      </div>
+                    </div>
+                    <div class="hr-bar"></div>
+                    <div class="login-professional">
+                      <p class="connection">Connectez-vous en tant que </p>
+                      <div class="menu-professionnel">
+                        <img class="image-login" src="./assets/img/professional.jpg" />
+                        <p class="professional">Professionnel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container main-home-page">
+     
+        <div class="jobs">
+          <div class="hero-job">
+            <div class="find-job">
+              <p class="description">Notre <span>job</span>, vous aider à
+                choisir le vôtre.</p>
+              <p class="resume">Votre emploi de rêve vous attend.</p>
+              <div class="search-box">
+                <form action="" method="post">
+                  <div class="form-group-job ">
+                    <input type="text" class="form-control input-serach-job"
+                      placeholder="ex. Développeur ou Chef de projet" onfocus="this.placeholder= ''" onblur="this.placeholder=
+                        'ex. Développeur ou Chef de projet'">
+                  </div>
+                  <div class="form-group-location ">
+                    <input type="text" class="form-control
+                        input-serach-location" placeholder="Lieu, code postale" onfocus="this.placeholder= ''" onblur="this.placeholder=
+                        'Lieu, code postale'">
+                  </div>
+                  <div class="submit-button">
+                    <button class="submit-tag btn-submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <div class="partner">
+                <p class="company">Entreprise de confiance</p>
+                <img src="./assets/img/microsoft_logo.svg" />
+                <img src="./assets/img/Bing_logo.svg" />
+                <img src="./assets/img/udacity_logo.svg" />
+              </div>
+            </div>
+            <div class="image-user ">
+              <img class="picture-user" src="./assets/img/user.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End First section -->
+  <!-- Section Last Jobs -->
+  <section id="last__jobs">
+    <div class="container main-home-page">
+       <div class="latest-job">
+        <p class="title-latest-job">Derniers emplois</p>
+      </div>
+      <div class="all-latest-job">
+        <div class="swiper swiper-jobs">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-job">
+                <div class="company">
+                  <img class="img-company" src="./assets/img/slack-1.png" />
+                  <p class="apply"><a class="btn-apply" href="">Apply now</a></p>
+                </div>
+                <p class="title-job">1-Android Kotlin mobile app developer</p>
+                <p class="company-name">Slack technologies</p>
+                <div class="location-skills">
+                  <div class="icon-jobs">
+                    <img class="image-location" src="./assets/img/pin.svg">
+                    <p class="location-name">Paris</p>
+                  </div>
+                  <div class="skills">
+                    <div class="tags-details-jobs">
+
+                      <p class="name-tag"><a>Angular</a></p>
+                      <p class="name-tag"><a>java</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-job">
+                <div class="company">
+                  <img class="img-company" src="./assets/img/slack-1.png" />
+                  <p class="apply"><a class="btn-apply" href="">Apply now</a></p>
+                </div>
+                <p class="title-job">2-Android Kotlin mobile app developer</p>
+                <p class="company-name">Slack technologies</p>
+                <div class="location-skills">
+                  <div class="icon-jobs">
+                    <img class="image-location" src="./assets/img/pin.svg">
+                    <p class="location-name">Paris</p>
+                  </div>
+                  <div class="skills">
+                    <div class="tags-details-jobs">
+
+                      <p class="name-tag"><a>Angular</a></p>
+                      <p class="name-tag"><a>java</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-job">
+                <div class="company">
+                  <img class="img-company" src="./assets/img/slack-1.png" />
+                  <p class="apply"><a class="btn-apply" href="">Apply now</a></p>
+                </div>
+                <p class="title-job">3-Android Kotlin mobile app developer</p>
+                <p class="company-name">Slack technologies</p>
+                <div class="location-skills">
+                  <div class="icon-jobs">
+                    <img class="image-location" src="./assets/img/pin.svg">
+                    <p class="location-name">Paris</p>
+                  </div>
+                  <div class="skills">
+                    <div class="tags-details-jobs">
+
+                      <p class="name-tag"><a>Angular</a></p>
+                      <p class="name-tag"><a>java</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-job">
+                <div class="company">
+                  <img class="img-company" src="./assets/img/slack-1.png" />
+                  <p class="apply"><a class="btn-apply" href="">Apply now</a></p>
+                </div>
+                <p class="title-job">4-Android Kotlin mobile app developer</p>
+                <p class="company-name">Slack technologies</p>
+                <div class="location-skills">
+                  <div class="icon-jobs">
+                    <img class="image-location" src="./assets/img/pin.svg">
+                    <p class="location-name">Paris</p>
+                  </div>
+                  <div class="skills">
+                    <div class="tags-details-jobs">
+                      <p class="name-tag"><a>Angular</a></p>
+                      <p class="name-tag"><a>java</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-job">
+                <div class="company">
+                  <img class="img-company" src="./assets/img/slack-1.png" />
+                  <p class="apply"><a class="btn-apply" href="">Apply now</a></p>
+                </div>
+                <p class="title-job">5-Flutter mobile app developer</p>
+                <p class="company-name">Slack technologies</p>
+                <div class="location-skills">
+                  <div class="icon-jobs">
+                    <img class="image-location" src="./assets/img/pin.svg">
+                    <p class="location-name">Paris</p>
+                  </div>
+                  <div class="skills">
+                    <div class="tags-details-jobs">
+                      <p class="name-tag"><a>Angular</a></p>
+                      <p class="name-tag"><a>java</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-job">
+                <div class="company">
+                  <img class="img-company" src="./assets/img/slack-1.png" />
+                  <p class="apply"><a class="btn-apply" href="">Apply now</a></p>
+                </div>
+                <p class="title-job">6-Flutter mobile app developer</p>
+                <p class="company-name">Slack technologies</p>
+                <div class="location-skills">
+                  <div class="icon-jobs">
+                    <img class="image-location" src="./assets/img/pin.svg">
+                    <p class="location-name">Paris</p>
+                  </div>
+                  <div class="skills">
+                    <div class="tags-details-jobs">
+                      <p class="name-tag"><a>Angular</a></p>
+                      <p class="name-tag"><a>java</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-job">
+                <div class="company">
+                  <img class="img-company" src="./assets/img/slack-1.png" />
+                  <p class="apply"><a class="btn-apply" href="">Apply now</a></p>
+                </div>
+                <p class="title-job">7-Flutter mobile app developer</p>
+                <p class="company-name">Slack technologies</p>
+                <div class="location-skills">
+                  <div class="icon-jobs">
+                    <img class="image-location" src="./assets/img/pin.svg">
+                    <p class="location-name">Paris</p>
+                  </div>
+                  <div class="skills">
+                    <div class="tags-details-jobs">
+                      <p class="name-tag"><a>Angular</a></p>
+                      <p class="name-tag"><a>java</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-job">
+                <div class="company">
+                  <img class="img-company" src="./assets/img/slack-1.png" />
+                  <p class="apply"><a class="btn-apply" href="">Apply now</a></p>
+                </div>
+                <p class="title-job">8-Flutter mobile app developer</p>
+                <p class="company-name">Slack technologies</p>
+                <div class="location-skills">
+                  <div class="icon-jobs">
+                    <img class="image-location" src="./assets/img/pin.svg">
+                    <p class="location-name">Paris</p>
+                  </div>
+                  <div class="skills">
+                    <div class="tags-details-jobs">
+                      <p class="name-tag"><a>Angular</a></p>
+                      <p class="name-tag"><a>java</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-job">
+                <div class="company">
+                  <img class="img-company" src="./assets/img/slack-1.png" />
+                  <p class="apply"><a class="btn-apply" href="">Apply now</a></p>
+                </div>
+                <p class="title-job">9-Flutter mobile app developer</p>
+                <p class="company-name">Slack technologies</p>
+                <div class="location-skills">
+                  <div class="icon-jobs">
+                    <img class="image-location" src="./assets/img/pin.svg">
+                    <p class="location-name">Paris</p>
+                  </div>
+                  <div class="skills">
+                    <div class="tags-details-jobs">
+                      <p class="name-tag"><a>Angular</a></p>
+                      <p class="name-tag"><a>java</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-job">
+                <div class="company">
+                  <img class="img-company" src="./assets/img/slack-1.png" />
+                  <p class="apply"><a class="btn-apply" href="">Apply now</a></p>
+                </div>
+                <p class="title-job">10-Flutter mobile app developer</p>
+                <p class="company-name">Slack technologies</p>
+                <div class="location-skills">
+                  <div class="icon-jobs">
+                    <img class="image-location" src="./assets/img/pin.svg">
+                    <p class="location-name">Paris</p>
+                  </div>
+                  <div class="skills">
+                    <div class="tags-details-jobs">
+                      <p class="name-tag"><a>Angular</a></p>
+                      <p class="name-tag"><a>java</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-job">
+                <div class="company">
+                  <img class="img-company" src="./assets/img/slack-1.png" />
+                  <p class="apply"><a class="btn-apply" href="">Apply now</a></p>
+                </div>
+                <p class="title-job">11-Flutter mobile app developer</p>
+                <p class="company-name">Slack technologies</p>
+                <div class="location-skills">
+                  <div class="icon-jobs">
+                    <img class="image-location" src="./assets/img/pin.svg">
+                    <p class="location-name">Paris</p>
+                  </div>
+                  <div class="skills">
+                    <div class="tags-details-jobs">
+                      <p class="name-tag"><a>Angular</a></p>
+                      <p class="name-tag"><a>java</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-job">
+                <div class="company">
+                  <img class="img-company" src="./assets/img/slack-1.png" />
+                  <p class="apply"><a class="btn-apply" href="">Apply now</a></p>
+                </div>
+                <p class="title-job">12-Flutter mobile app developer</p>
+                <p class="company-name">Slack technologies</p>
+                <div class="location-skills">
+                  <div class="icon-jobs">
+                    <img class="image-location" src="./assets/img/pin.svg">
+                    <p class="location-name">Paris</p>
+                  </div>
+                  <div class="skills">
+                    <div class="tags-details-jobs">
+                      <p class="name-tag"><a>Angular</a></p>
+                      <p class="name-tag"><a>java</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="navigation fix-height custom-flex">
+        <div class="pagination-job"></div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section Last Jobs -->
+  <!-- Section Search Jobs -->
+  <div class="background-1-best-jobs"></div>
+  <section id="best__jobs">
+    <div class="container main-home-page">
+      <div class="jobs">
+        <div class="find-jobs">
+          <p class="title-find">Trouvez votre <span>emploi</span> idéal</p>
+          <p class="resume-job">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+        <div class="exemple-job">
+          <img src="./assets/img/jobs-post.svg">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Section Search Jobs -->
+  <div class="background-2-best-jobs"></div>
+  <!-- Section Control Jobs -->
+  <section id="control__jobs">
+    <div class="container main-home-page">
+      <div class="profil-main">
+        <div class="profil-job">
+          <div class="example-profil">
+            <div class="visibility">
+              <div class="user">
+                <img src="./assets/img/user-profil.svg">
+              </div>
+              <p class="visibility-profil">La visibilité du profil
+              </p>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="image-rect">
+              <img src="./assets/img/rect-6.svg" />
+              <img src="./assets/img/rect-7.svg" />
+              <img src="./assets/img/rect-5.svg" />
+            </div>
+          </div>
+          <div class="example-profil">
+            <div class="visibility">
+              <div class="user">
+                <img src="./assets/img/mail.svg">
+              </div>
+              <div class="item-profil">
+                <p class="visibility-profil-1">Alertes
+                  emploi personnalisées
+                </p>
+              </div>
+              <div class="date">
+                <img src="./assets/img/date.svg">
+              </div>
+            </div>
+            <div class="image-rect">
+              <img src="./assets/img/rect-6.svg" />
+              <img src="./assets/img/rect-7.svg" />
+              <img src="./assets/img/rect-5.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="control-jobs">
+          <div class="control-find-jobs">
+            <p class="control-title-find">Prenez le <span>contrôle</span> de
+              votre contenu</p>
+            <p class="control-resume-job">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text
+              ever since the 1500s, when an unknown printer took a galley of
+              type
+              and scrambled it to make a type specimen book.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section Control Jobs -->
+  <div class="background-3-best-jobs"></div>
+  <!--  Section Tech Career -->
+  <section id="tech__career">
+    <div class="container main-home-page">
+      <div class="description-tech">
+        <div class="tech">
+          <p class="title-career">Obtenez un aperçu de votre <span>carrière
+              technologique</span></p>
+          <p class="resume-career">Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an
+            unknown printer took a galley of type and scrambled it to make a
+            type specimen book.
+          </p>
+        </div>
+        <div class="stat">
+          <img src="./assets/img/chart_img.svg" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section Tech Career -->
+  <!--  Section Partner -->
+  <section id="partner">
+    <div class="container main-home-page">
+      <div class="supported">
+        <p class="supported-by">Nous sommes soutenus par</p>
+        <div class="swiper partner-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-1.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-2.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-3.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-4.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-5.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-6.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-1.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-2.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-3.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-4.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-5.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-6.svg" />
+            </div>
+            <div class="swiper-slide image-partner" style="text-align: center;">
+              <img width="100" height="100" src="./assets/img/partner-1.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-2.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-3.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-4.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-5.svg" />
+            </div>
+            <div class="swiper-slide image-partner">
+              <img width="100" height="100" src="./assets/img/partner-6.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation custom-flex partner-bullet">
+        <div class="pagination-partner"></div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+  </section>
+  <!-- End Section Partner -->
+  <!--  Section Comments -->
+  <section id="comments">
+    <div class="container main-home-page">
+      <div class="all-comments">
+        <div class="about-comments">
+          <p class="title-comment">Ce que les gens disent sur nous</p>
+        </div>
+        <div class="swiper comment-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-comment">
+                <div class="image-quote">
+                  <img src="./assets/img/quote.svg" />
+                </div>
+                <p class="comment-details">
+                  1- Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="client">
+                  <div class="image-client">
+                    <img class="client-picture" src="./assets/img/client.jpg" />
+                  </div>
+                  <div class="client-occupation">
+                    <p class="name-client">Herman Jensen </p>
+                    <p class="name-occupation">Founder & Leader</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-comment">
+                <div class="image-quote">
+                  <img src="./assets/img/quote.svg" />
+                </div>
+                <p class="comment-details">
+                  2- Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="client">
+                  <div class="image-client">
+                    <img class="client-picture" src="./assets/img/client.jpg" />
+                  </div>
+                  <div class="client-occupation">
+                    <p class="name-client">Herman Jensen </p>
+                    <p class="name-occupation">Founder & Leader</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-comment">
+                <div class="image-quote">
+                  <img src="./assets/img/quote.svg" />
+                </div>
+                <p class="comment-details">
+                  3- Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="client">
+                  <div class="image-client">
+                    <img class="client-picture" src="./assets/img/client.jpg" />
+                  </div>
+                  <div class="client-occupation">
+                    <p class="name-client">Herman Jensen </p>
+                    <p class="name-occupation">Founder & Leader</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-comment">
+                <div class="image-quote">
+                  <img src="./assets/img/quote.svg" />
+                </div>
+                <p class="comment-details">
+                  4- Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="client">
+                  <div class="image-client">
+                    <img class="client-picture" src="./assets/img/client.jpg" />
+                  </div>
+                  <div class="client-occupation">
+                    <p class="name-client">Herman Jensen </p>
+                    <p class="name-occupation">Founder & Leader</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-comment">
+                <div class="image-quote">
+                  <img src="./assets/img/quote.svg" />
+                </div>
+                <p class="comment-details">
+                  5- Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="client">
+                  <div class="image-client">
+                    <img class="client-picture" src="./assets/img/client.jpg" />
+                  </div>
+                  <div class="client-occupation">
+                    <p class="name-client">Herman Jensen </p>
+                    <p class="name-occupation">Head of product</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navigation custom-flex fix-height-bullet comment-bullet">
+            <div class="pagination-card-comment"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section Comments -->
+  <!--Section Update-->
+  <section id="update">
+    <div class="container main-home-page">
+      <div class="description-update">
+        <p class="title-update">Dernières mises à jour et nouvelles</p>
+      </div>
+      <div class="all-card-blog">
+        <div class="card-blog">
+          <div class="image-of-blog">
+            <img class="image-blog" src="./assets/img/blog-2.jpg" />
+            <a class="tag-blog">High-tech</a>
+          </div>
+          <div class="details-blog">
+            <p class="title-blog">Content Analysis Method and Examples</p>
+            <p class="resume-blog">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum
+              is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry.</p>
+          </div>
+        </div>
+        <div class="card-blog">
+          <div class="image-of-blog">
+            <img class="image-blog" src="./assets/img/blog-1.jpg" />
+            <a class="tag-blog">High-tech</a>
+          </div>
+          <div class="details-blog">
+            <p class="title-blog">Content Analysis Method and Examples</p>
+            <p class="resume-blog">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum
+              is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="show-article">
+        <button class="btn-show-articles">Voir plus d’articles</button>
+      </div>
+    </div>
+  </section>
+  <!-- End Section Updates -->
+  <!--  Section Show Jobs -->
+  <section id="show__jobs">
+    <div class="container main-home-page">
+      <div class="browse-jobs">
+        <p class="item-browse-jobs">Parcourir jobs</p>
+      </div>
+    </div>
+  </section>
+    <!-- End Section Show Jobs -->
+       <!--  Section Skills -->
+  <section id="skills">
+    <div class="container main-home-page">
+      <div class="all-skills">
+        <div class="tab">
+          <div class="btn-tab">
+     
+            <div>
+              <a class="tablinks active" onclick="openProject(event, 'Topskills')">
+                Top skills </a>
+            </div>
+            <div>
+              <a class="tablinks" onclick="openProject(event, 'Trendingskills')">
+                Trending skills
+              </a>
+            </div>
+            <div>
+              <a class="tablinks" onclick="openProject(event, 'TopSkills')">
+                Top skills in Europe
+              </a>
+            </div>
+            <hr class="line">
+          </div>
+          <div class="tabs-skills">
+            <div id="Topskills" class="tabcontent" style="display: block">
+              <div class="skills-tab">
+                <div>
+                  <p class="skill-name">1-Data Entry Specialists</p>
+                  <p class="skill-name">Video Editors</p>
+                  <p class="skill-name">Data Analyst</p>
+                  <p class="skill-name">Shopify Developer</p>
+                  <p class="skill-name">Ruby on Rails Developer</p>
+                  <p class="skill-name">Android Developer</p>
+                  <p class="skill-name">Bookkeeper</p>
+                </div>
+                <div>
+                  <p class="skill-name">1-Content Writer</p>
+                  <p class="skill-name">Copywriter Database</p>
+                  <p class="skill-name">Administrator Data</p>
+                  <p class="skill-name"> Scientist Front-End</p>
+                  <p class="skill-name">Developer Game </p>
+                  <p class="skill-name">Developer Graphic </p>
+                  <p class="skill-name">Designer iOS Developer </p>
+                  <p class="skill-name">Java Developer </p>
+                </div>
+                <div>
+                  <p class="skill-name">1-Content Writer</p>
+                  <p class="skill-name">Copywriter Database</p>
+                  <p class="skill-name">Administrator Data</p>
+                  <p class="skill-name"> Scientist Front-End</p>
+                  <p class="skill-name">Developer Game </p>
+                  <p class="skill-name">Developer Graphic </p>
+                  <p class="skill-name">Designer iOS Developer </p>
+                  <p class="skill-name">Java Developer </p>
+                </div>
+              </div>
+            </div>
+            <div id="Trendingskills" class="tabcontent">
+              <div class="skills-tab">
+                <div>
+                  <p class="skill-name">2-Data Entry Specialists</p>
+                  <p class="skill-name">Video Editors</p>
+                  <p class="skill-name">Data Analyst</p>
+                  <p class="skill-name">Shopify Developer</p>
+                  <p class="skill-name">Ruby on Rails Developer</p>
+                  <p class="skill-name">Android Developer</p>
+                  <p class="skill-name">Bookkeeper</p>
+                </div>
+                <div>
+                  <p class="skill-name">2-Content Writer</p>
+                  <p class="skill-name">Copywriter Database</p>
+                  <p class="skill-name">Administrator Data</p>
+                  <p class="skill-name"> Scientist Front-End</p>
+                  <p class="skill-name">Developer Game </p>
+                  <p class="skill-name">Developer Graphic </p>
+                  <p class="skill-name">Designer iOS Developer </p>
+                  <p class="skill-name">Java Developer </p>
+                </div>
+                <div>
+                  <p class="skill-name">2-Content Writer</p>
+                  <p class="skill-name">Copywriter Database</p>
+                  <p class="skill-name">Administrator Data</p>
+                  <p class="skill-name"> Scientist Front-End</p>
+                  <p class="skill-name">Developer Game </p>
+                  <p class="skill-name">Developer Graphic </p>
+                  <p class="skill-name">Designer iOS Developer </p>
+                  <p class="skill-name">Java Developer </p>
+                </div>
+              </div>
+            </div>
+            <div id="TopSkills" class="tabcontent">
+              <div class="skills-tab">
+                <div>
+                  <p class="skill-name">3-Data Entry Specialists</p>
+                  <p class="skill-name">Video Editors</p>
+                  <p class="skill-name">Data Analyst</p>
+                  <p class="skill-name">Shopify Developer</p>
+                  <p class="skill-name">Ruby on Rails Developer</p>
+                  <p class="skill-name">Android Developer</p>
+                  <p class="skill-name">Bookkeeper</p>
+                </div>
+                <div>
+                  <p class="skill-name">3-Content Writer</p>
+                  <p class="skill-name">Copywriter Database</p>
+                  <p class="skill-name">Administrator Data</p>
+                  <p class="skill-name"> Scientist Front-End</p>
+                  <p class="skill-name">Developer Game </p>
+                  <p class="skill-name">Developer Graphic </p>
+                  <p class="skill-name">Designer iOS Developer </p>
+                  <p class="skill-name">Java Developer </p>
+                </div>
+                <div>
+                  <p class="skill-name">3-Content Writer</p>
+                  <p class="skill-name">Copywriter Database</p>
+                  <p class="skill-name">Administrator Data</p>
+                  <p class="skill-name"> Scientist Front-End</p>
+                  <p class="skill-name">Developer Game </p>
+                  <p class="skill-name">Developer Graphic </p>
+                  <p class="skill-name">Designer iOS Developer </p>
+                  <p class="skill-name">Java Developer </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <!-- End  Section Skills -->
+  <!-- ========================== Footer Start ========================================= -->
+  <footer class="dark-footer skin-dark-footer">
+    <div>
+      <div class="container main-home-page">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <img src="assets/img/logo-light.png" class="img-fluid f-logo" width="120" alt="">
+              <p>407-472 Rue Saint-Sulpice, Montreal<br>Quebec, H2Y 2V8</p>
+              <ul class="footer-bottom-social">
+                <li><a href="#"><i class="ti-facebook"></i></a></li>
+                <li><a href="#"><i class="ti-twitter"></i></a></li>
+                <li><a href="#"><i class="ti-instagram"></i></a></li>
+                <li><a href="#"><i class="ti-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="footer-widget">
+              <h4 class="widget-title">Useful links</h4>
+              <ul class="footer-menu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQs Page</a></li>
+                <li><a href="#">Checkout</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="footer-widget">
+              <h4 class="widget-title">Developers</h4>
+              <ul class="footer-menu">
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Stays</a></li>
+                <li><a href="#">Adventures</a></li>
+                <li><a href="#">Author Detail</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="footer-widget">
+              <h4 class="widget-title">Useful links</h4>
+              <ul class="footer-menu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Press</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="footer-widget">
+              <h4 class="widget-title">Useful links</h4>
+              <ul class="footer-menu">
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy &amp; Terms</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-lg-12 col-md-12 text-center">
+            <p class="mb-0">© 2021 Workoo. Designd By <a href="https://themezhub.com">Themez Hub</a> All Rights Reserved
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- =========================== Footer End ========================================= -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/index.js"></script>
+  <!-- Swiper JS -->
+  <script>
+    const swiper = new Swiper(".swiper-jobs", {
+      grabCursor: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      slidesPerGroup: 4,
+      speed: 2800,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        reverseDirection: false,
+      },
+      pagination: {
+        el: ".pagination-job",
+        clickable: true,
+        type: "bullets",
+      
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        991: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+      },
+    });
+    const partnerSwiper = new Swiper(".partner-swiper", {
+      grabCursor: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      slidesPerGroup: 6,
+      speed: 2800,
+      autoplay: {
+        delay: 3000,
+        // disableOnInteraction: false,
+        // reverseDirection: false,
+      },
+      pagination: {
+        el: ".pagination-partner",
+        clickable: true,
+        type: "bullets",
+      },
+      breakpoints: {
+
+        768: {
+          slidesPerView: 2,
+
+        },
+        991: {
+          slidesPerView: 4,
+
+        },
+        1200: {
+          slidesPerView: 6,
+
+        },
+      },
+    });
+    const commentSwiper = new Swiper(".comment-swiper", {
+      freeMode: {
+        enabled: true,
+        sticky: true,
+      },
+      grabCursor: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      slidesPerGroup: 2,
+      speed: 2800,
+      autoplay: {
+        delay: 3000,
+      },
+      pagination: {
+        el: ".pagination-card-comment",
+        clickable: true,
+        type: "bullets",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        991: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+          slidesPerGroup: 1,
+        },
+      },
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+    <script>
+let firstCategory = $('.category-11'), subFirstCategory = $('.category-1');
+let secondCategory = $('.category-12'), subSecondCategory = $('.category-2');
+let thirdCategory = $('.category-13'), subThirdCategory = $('.category-3');
+let connect = $('.connect-1'), subConnect = $('.connect-11');
+$(document).on('click', '*', function(evt) {
+    evt.stopPropagation(); 
+    if ($(this).is(subFirstCategory))   
+    firstCategory.toggle();
+    else if (!$(this).closest(firstCategory).length) 
+    firstCategory.hide();
+    if ($(this).is(subSecondCategory))   
+   secondCategory.toggle();
+    else if (!$(this).closest(secondCategory).length) 
+    secondCategory.hide();
+    if ($(this).is(subThirdCategory)) 
+   thirdCategory.toggle();
+    else if (!$(this).closest(thirdCategory).length)
+    thirdCategory.hide();
+    if ($(this).is(connect)) 
+    subConnect.toggle();
+    else if (!$(this).closest(subConnect).length)
+    subConnect.hide();
+});
+      </script>
+</body>
+
+</html>

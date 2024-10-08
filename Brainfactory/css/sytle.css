@@ -1,0 +1,1930 @@
+
+/* body {
+    background-color: #FAFAFA;
+} */
+
+/* Home page */
+ 
+/* Navbar */
+#navbarHome{
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    background: url('../img/NavbarBgHome.png') no-repeat;
+    padding-bottom: 90px;
+}
+
+#navbarHome nav div ul li, #navbarRate nav div ul li , #navbarContact nav div ul li, #navbarConcept  nav div ul li, #navbarCalendar nav div ul li{
+    padding-left: 50px;
+    padding-top: 30px;
+    
+}
+
+
+#navbarHome nav div ul li a, #navbarRate nav div ul li a, #navbarContact nav div ul li a, #navbarConcept nav div ul li a, #navbarCalendar nav div ul li a{
+
+    color: white !important;
+    font-size: 20px;
+}
+
+#navbarHome nav div ul, #navbarRate nav div ul, #navbarContact nav div ul, #navbarConcept nav div ul, #navbarCalendar nav div ul{
+
+padding-right: 3%;
+}
+
+
+#navbarHome div nav .navbar-brand, #navbarRate div nav .navbar-brand, #navbarContact div nav .navbar-brand, #navbarConcept div nav .navbar-brand, #navbarCalendar div nav .navbar-brand  {
+   
+    padding-left: 60px;
+    padding-top: 27px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#navbarHome div nav .navbar-brand, #navbarContact div nav .navbar-brand, #navbarConcept div nav .navbar-brand, #navbarCalendar div nav .navbar-brand{
+    padding-left: 60px;
+    color: #727272;
+}
+#navbarRate div nav .navbar-brand, #navbarContact div nav .navbar-brand, #navbarConcept div nav .navbar-brand, #navbarCalendar div nav .navbar-brand{
+    padding-left: 40px;
+    color: white;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 30px !important;
+    margin-top: 28px;
+   
+}
+.navbar-toggler {
+    outline: none !important;
+}
+@media (max-width: 1600px){
+    #navbarHome nav div ul{
+
+        padding-right: 0px;
+        }
+}
+
+@media (max-width: 1503px){
+
+    #navbarHome nav div ul li, #navbarRate nav div ul li, #navbarContact nav div ul li, #navbarConcept nav div ul li, #navbarCalendar nav div ul li{
+        padding-left: 30px;
+     
+    }
+
+    #navbarHome nav div ul li a{
+
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1375px){
+
+    #navbarHome nav div ul li {
+        padding-left: 25px;
+     
+    }
+   
+}
+
+@media (max-width: 1260px){
+
+    #navbarHome nav div ul li a{
+
+        font-size: 18px;
+    }
+
+    #navbarHome nav div ul li {
+        padding-left: 20px;
+     
+    }
+   
+}
+
+
+@media (max-width: 1130px){
+
+    #navbarHome nav div ul li a{
+
+        font-size: 15px;
+    }
+
+    #navbarHome nav div ul li {
+        padding-left: 15px;
+     
+    }
+   
+}
+
+@media (max-width: 991px){
+
+    #navbarHome nav div ul li a{
+        font-size: 17px;
+       color: white !important;
+    }
+
+    #navbarHome nav div ul li,  #navbarRate nav div ul li, #navbarContact nav div ul li, #navbarConcept nav div ul li, #navbarCalendar nav div ul li  {
+        padding-left: 0px;
+        padding-top: 12px;
+   
+        font-weight: bold;
+     
+    }
+
+}
+
+
+/* Header */
+
+#headerHome {
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    background: url('../img/HeaderBgHome.png') no-repeat ;
+    background-position: right -20px top;
+
+    background-size: 53% 100%;
+    margin-top: -230px;
+    padding-top: 200px;
+}
+.headerImgHome {
+    padding-bottom: 30%;
+    width: 70%;
+
+}
+.headerHome {
+    padding-left: 11%;
+    padding-top: 50px;
+}
+.headerHome p:nth-child(1){
+    font-size: 50px;
+    color: #727272;
+    font-weight: bold;
+    line-height: 65px;
+    
+}
+.headerHome p:nth-child(3){
+    font-size: 15px;
+    color: #727272;
+    padding-bottom: 15px;
+    width: 80%;
+
+    
+}
+.headerHome a{
+    background-color: #FECD1B;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+@media (max-width: 1300px){
+
+    .headerHome {
+    
+        padding-top: 30px;
+    }
+
+    .headerHome p:nth-child(1){
+        font-size: 40px;
+        line-height: 55px;
+        
+    }
+
+}
+
+@media (min-width: 1434px){
+
+    .headerHome p:nth-child(3){
+  
+        width: 60%;
+    
+        
+    }
+
+}
+
+@media (max-width: 1160px){
+
+    .headerHome {
+    
+        padding-top: 20px;
+    }
+
+    .headerHome p:nth-child(1){
+        font-size: 35px;
+        line-height: 42px;
+        
+    }
+
+}
+
+@media (max-width: 1000px){
+
+    .headerHome {
+    
+        padding-top: 10px;
+    }
+
+    .headerHome p:nth-child(1){
+        font-size: 28px;
+        line-height: 32px;
+        
+    }
+
+}
+@media (max-width: 985px){
+
+  
+    #navbarHome div nav .navbar-brand {
+
+        font-size: 25px;
+    }
+
+}
+
+
+
+
+@media (max-width: 991px){
+
+    #navbarHome{
+        background: none;
+        background-color: #2161BE;
+    }
+
+    #headerHome{
+        text-align: center;
+        background: none;
+        background-color: #2161BE;
+        padding-bottom: 35px;
+ 
+    } 
+    .headerHome {
+        text-align: center;
+    }
+    .headerImgHome {
+        display: none;
+    }
+   
+    .headerHome p:nth-child(2){
+      font-size: 25px;
+      color: white;
+      width: 60%;
+      font-weight: bold;
+      margin-left: 15%;
+          
+      }
+
+      .headerHome p:nth-child(3){
+        font-size: 18px;
+        color: white;
+        width: 100%;
+        margin-left: -5% !important;
+       
+        }
+
+        #navbarHome div nav .navbar-brand {
+           
+            padding-left: 0px;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .headerHome a{
+         
+            margin-right: 10%;
+         }
+}
+
+@media (max-width: 419px){
+
+    .headerHome p:nth-child(2){
+        font-size: 20px !important;
+        
+        }
+
+        .headerHome a{
+    
+            margin-right: 8%;
+         }
+    
+}
+
+/* Service */
+
+
+#serviceHome{
+    padding-top: 80px;
+    padding-bottom: 100px;
+   
+    background: url('../img/ServiceBgRight.png') no-repeat, url('../img/ServiceBgLeft.png') no-repeat;
+    background-position: left bottom, right 50%;
+}
+
+#serviceRate div p:nth-child(1), #serviceHome div p:nth-child(1){
+    font-size: 18px;
+    color: #FF4B57;
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    font-weight: bold;
+}
+
+.services{
+    font-size: 40px;
+    color: #2568EF;
+  font-family: sans-serif;
+    font-weight: 900;
+    margin-top: -21px;
+    margin-bottom: 7%;
+}
+
+.serviceRate p:nth-child(2), .serviceHome p:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    padding-top: 20px;
+}
+
+.serviceRate p:nth-child(3), .serviceHome p:nth-child(3){
+    
+  color: #797975;
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    padding-top: 4px;
+    padding-bottom: 15px;
+}
+
+@media (max-width:1500px){
+
+    #serviceRate , #serviceHome{
+ 
+        background-position: left -40px bottom, right -50px bottom;
+    }
+
+}
+
+@media (max-width:1240px){
+
+    #serviceRate, #serviceHome{
+ 
+        background-position: left -60px bottom, right -100px bottom;
+    }
+
+}
+
+@media (max-width:991px){
+
+    #serviceRate, #serviceHome{
+ 
+        background-position: left -60px bottom, right -100px top 60px;
+    }
+
+}
+
+@media (max-width:767px){
+
+    #serviceRate, #serviceHome{
+ 
+        background: none;
+    }
+
+    .services{
+        font-size: 30px;
+       
+    }
+
+}
+
+/* Contact */
+
+#contactHome{
+    background: url('../img/ContactBg.png') no-repeat center ;
+    padding-top: 200px;
+    margin-bottom: 80px;
+    background-position: top ;
+    background-size: 110% 600px;
+    padding-bottom: 100px;
+}
+
+.contactHome p , .contactHome a{
+    color: white;
+
+}
+
+.contactHome p:nth-child(1){
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+
+}
+
+.contactHome p:nth-child(2){
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+   
+}
+.contactHome a{
+    background-color: #FED22B;
+    padding: 15px 30px;
+    border-radius: 30px;
+
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.fa-long-arrow-alt-right {
+    padding-top: 12px;
+    font-size: 30px;
+}
+@media (max-width: 767px){
+    #contactHome{
+        margin-top: -40px;
+    }
+
+    .contactHome p:nth-child(1){
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+    
+    }
+}
+
+/* Time Zone */
+
+#timeZoneHome {
+    
+    padding-bottom: 900px;
+    background: url('../img/timeZoneHomeBg.png') no-repeat;
+    background-position:  right 0px top ;
+
+}
+
+.sectionTitleHome{
+    font-family: sans-serif;
+    color: #2568EF;
+    font-size: 50px;
+    font-weight: 900;
+    padding-bottom: 5%;
+
+}
+
+.timeZoneHomeImg {
+    width: 60%;
+}
+
+.timeZoneHome p {
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    font-size: 20px;
+    padding-top: 20%;
+    width: 80%;
+    color: #797975;
+}
+
+@media (max-width: 1445px){
+
+ 
+
+    .timeZoneHomeImg {
+        width: 70%;
+    }
+    
+
+}
+
+@media (max-width: 1135px){
+
+    .timeZoneHome p {
+      
+        padding-top: 18%;
+        font-size: 18px;
+   
+    }
+    .timeZoneHomeImg {
+        width: 75%;
+    }
+
+    #timeZoneHome {
+        background-position:  right -80px top ;
+    
+    }
+    
+
+}
+
+@media (max-width: 991px){
+
+    .timeZoneHome p {
+      
+        width: 95%;
+   
+    }
+    .timeZoneHomeImg {
+        width: 80%;
+    }
+
+    .sectionTitleHome{
+        padding-bottom: 40px;
+    
+    }
+
+}
+
+@media (max-width: 977px){
+
+    #timeZoneHome {
+        background-position:  right -130px top ;
+    
+    }
+    
+   
+    }
+
+    @media (max-width: 880px){
+
+        #timeZoneHome {
+            background-position:  right -170px top ;
+        
+        }
+        
+       
+        }
+
+@media (max-width: 823px){
+
+    .timeZoneHome p {
+        padding-top: 10%;
+        width: 95%;
+   
+    }
+    
+   
+    }
+    
+
+@media (max-width: 767px){
+    
+    .timeZoneHome div {
+        text-align: center;
+    }
+    .timeZoneHome p {
+        padding-top: 10%;
+        width: 100%;
+        text-align: center;
+   
+    }
+    
+    .timeZoneHomeImg {
+        width: 60%;
+    }
+
+    .sectionTitleHome{
+   
+        font-size: 38px;
+   
+    
+    }
+
+    #timeZoneHome {
+        background: none ;
+    
+    }
+   
+    }
+    
+    @media (max-width: 441px){
+    
+      #timeZoneHome{
+          margin-top: -60px;
+      }
+    
+        }
+
+/* Adress */
+
+
+#addressHome{
+    margin-top: -1050px;
+    background: url('../img/addressHomeBg.png') no-repeat;
+    background-size: 8%;
+    background-position:  left -20px 100px 20px ;
+    padding-bottom: 400px;
+}
+.addressSectionTitle {
+    font-family: sans-serif;
+    color: #2568EF;
+    font-size: 50px;
+    font-weight: 900;
+    padding-bottom: 5%;
+    padding-top: 280px;
+}
+.map div iframe{
+    border-radius: 30px !important;
+}
+
+@media (max-width:767px ){
+
+    #addressRate{
+     
+        background: none;
+   
+    }
+    .addressSectionTitle {
+   
+        padding-top: 190px;
+        font-size: 38px;
+    }
+
+
+}
+
+/* Footer */
+
+
+#footerHome {
+    margin-top: -240px;
+    background: url("../img/footerHomeBg.png") no-repeat;
+    background-position: top ;
+    background-size: 100% 700px;
+    padding-bottom: 70px;
+}
+
+.footerHome , .footerRate {
+    padding-top: 250px;
+    color: white;
+    margin-left: 7%;
+}
+
+.footerHomeSection1 p:nth-child(1){
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.footerHomeSection1 {
+    margin-top: -90px;
+}
+.footerHomeSection1 p:nth-child(2), .footerHomeSection1 p:nth-child(3) , .footerHomeSection1 p:nth-child(4), .footerHomeSection1  p:nth-child(5){
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+}
+.footerHomeSection1 p:nth-child(3){
+margin-top: -12px !important;
+padding-bottom: 20px;
+}
+.footerHomeSection1 p:nth-child(4){
+  
+    padding-bottom: 15px;
+}
+
+ .footerHomeSection1 div img{
+        margin-right: 10px;
+        margin-bottom: 30px;
+}
+
+.footerHomeSection2 {
+
+    padding-top: 40px;
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    font-weight: bold;
+  
+}
+.footerHomeSection2 a {
+    color: white;
+    text-decoration: none !important;
+}
+
+@media(max-width: 1050px){
+    
+.footerHome, .footerRate {
+   
+    margin-left: 3%;
+}
+}
+
+@media(max-width: 824px){
+    
+    .footerHome, .footerRate {
+       
+        margin-left: 0%;
+    }
+    }
+
+@media(max-width: 767px){
+    
+        #footerHome, #footerRate {
+           
+           background: none !important;
+           background-color: #2365DF !important;
+           text-align: center;
+           margin-top: -320px;
+           padding-bottom: 20px;
+        }
+
+        .footerHome, .footerRate{
+            padding-top: 140px;
+        }
+
+      
+}
+
+/* rate page */
+
+#navbarRate{
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    padding-bottom: 900px;
+    background: url('../img/ratePagebg.png') no-repeat;
+
+    background-size: 100% 35%;
+
+}
+
+#navbarRate div p:nth-child(2), #navbarRate div p:nth-child(3), #navbarContact div p:nth-child(2), #navbarContact div p:nth-child(3), #navbarConcept div p:nth-child(2), #navbarConcept div p:nth-child(3), #navbarCalendar div p:nth-child(2), #navbarCalendar div p:nth-child(3) {
+    color: white;
+    text-align: center;
+    line-height: 30px;
+   
+}
+
+#navbarRate div p:nth-child(2), #navbarContact div p:nth-child(2), #navbarConcept div p:nth-child(2), #navbarCalendar div p:nth-child(2){
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 100px;
+
+}
+#navbarRate div p:nth-child(3), #navbarContact div p:nth-child(3), #navbarConcept div p:nth-child(3), #navbarCalendar div p:nth-child(3)  {
+   font-size: 18px;
+
+}
+
+@media(max-width: 991px){
+    #navbarRate, #navbarContact, #navbarConcept , #navbarCalendar{
+    background: none !important;
+    background-color: #2161BE !important;
+    padding-bottom: 30px !important;
+    }
+
+    #navbarRate div p:nth-child(2), #navbarContact div p:nth-child(2), #navbarConcept div p:nth-child(2), #navbarCalendar div p:nth-child(2){
+     
+        padding-top: 50px;
+    
+    }
+
+    #navbarRate div nav .navbar-brand, #navbarContact div nav .navbar-brand, #navbarConcept div nav .navbar-brand, #navbarCalendar div nav .navbar-brand{
+        padding-left: 0;
+    }
+
+}
+
+
+
+/* Offer */
+
+
+#offerRate {
+    margin-top: -700px;
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    background: url("../img/OfferRateBgRight.png") no-repeat , url("../img/OfferRateBgLeft.png") no-repeat;
+    background-position:  left top, right bottom;
+    padding-bottom: 100px;
+}
+
+.offerRate p:nth-child(1), .formsContact p:nth-child(1), .CalendarPartner p:nth-child(1), .CalendarPresence p:nth-child(1) , .Calendar p:nth-child(1){
+
+    font-size: 30px;
+    font-weight: bold;
+    color: #FF4B57;
+
+}
+.offerRate p:nth-child(1){
+
+    padding-bottom: 80px;
+
+}
+
+.offerRate p:nth-child(1) span, .formsContact p:nth-child(1) span, .CalendarPartner p:nth-child(1) span, .CalendarPresence p:nth-child(1) span, .Calendar p:nth-child(1) span  {
+
+   
+    color: #2568EF;
+
+}
+
+#offerRate .card {
+    /* border: none; */
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+
+#offerRate .card-title {
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#offerRate .card-body p:nth-child(2){
+    color: #FF4B57;
+    font-weight: 600;
+ 
+ 
+}
+
+#offerRate .card-body {
+    background: url('../img/OfferRateLine.png') no-repeat center center , url('../img/OfferRateLine2.png') no-repeat center center;
+    background-position: 50% 25%, 50% 61% ;
+    background-size: 95%;
+}
+#offerRate .card-text {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-right: 7%;
+}
+#offerRate .card-text sup{
+    color: #FF4B57;
+ 
+}
+
+#offerRate .card-body p:nth-child(4){
+    background-color: #FDC602;
+    color: white;
+    font-size: 13px;
+    width: 100px;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 4px 0;
+    margin-top: 20px !important;
+  margin-bottom: 40px !important;
+    margin: auto;
+}
+
+.offerElements {
+    color: #FF4B57;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.fa-check-circle {
+    color: #2568EF;
+    font-size: 18px;
+    margin-right: 2%;
+}
+
+.offerRate a {
+    background-color: #FDC602;
+    padding: 15px 20px 15px 24px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: white;
+}
+
+.arrowOfferRate {
+    font-size: 48px;
+    padding-top: 28px;
+   padding-left: 1%;
+}
+
+@media (max-width: 1165px){
+
+    #offerRate {
+        background-position:  left -60px top , right -60px bottom;
+        padding-bottom: 70px;
+    }
+
+    
+
+}
+
+@media (min-width: 992px){
+
+    .offerRate .row {
+        margin-bottom: 50px;
+    }
+
+    
+
+}
+
+@media (min-width: 768px){
+
+    .offerRate .row {
+        margin-bottom: 30px;
+    }
+
+    
+
+}
+
+@media (max-width: 991px){
+
+    #offerRate {
+        margin-top: 50px;
+    }
+
+    .offerRate p:nth-child(1) {
+
+        padding-top: 20px;
+        padding-bottom: 50px;
+    
+    }
+
+    
+
+}
+
+@media (max-width: 767px){
+
+    #offerRate {
+       background: none;
+    }
+
+
+}
+
+/* Service */
+
+#serviceRate{
+    padding-top: 50px;
+    background: url("../img/ServiceRateBg.png") no-repeat top left;
+    padding-bottom: 200px;
+}
+
+@media (max-width: 767px) {
+    #serviceRate{
+       
+        background: none;
+    }
+}
+
+/* Adress */
+
+#addressRate{
+    margin-top: -340px;
+    background-size: 8%;
+    background: url('../img/addressRateBg.png') no-repeat;
+    background-position: right ;
+    padding-bottom: 50px;
+   
+}
+
+@media (max-width: 767px){
+    #addressRate{
+        background: none;
+
+    }
+
+    #footerRate {
+           
+        background: none !important;
+        background-color: #2365DF !important;
+        text-align: center;
+        margin-top: -10px !important;
+     
+     }
+    
+}
+
+
+/* Footer */
+
+#footerRate {
+    margin-top: 60px;
+    background: url("../img/footerHomeBg.png") no-repeat;
+    background-position: top ;
+    background-size: 100% 700px;
+    padding-bottom: 70px;
+}
+
+
+/* Contact page */
+
+/* NavBar */
+
+#navbarContact{
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    padding-bottom: 900px;
+    background: url('../img/HeaderContactBg.png') no-repeat;
+    background-size: 100% 35%;
+
+}
+
+/* Form */
+
+
+
+#formsContact {
+    margin-top: -700px;
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    background: url('../img/FormsContactBgLeft.png') no-repeat, url('../img/FormsContactBgRight.png') no-repeat ;
+    background-position:  left -20px bottom, right -20px top;
+    padding-bottom: 80px;
+}
+
+#formsContact form {
+    padding-top: 40px;
+}
+.form-group input, .form-group textarea {
+ 
+    padding: 20px 40px;
+    border-radius: 35px;
+}
+.form-group input{
+    height: 70px;
+}
+.form-group textarea {
+    height: 200px;
+
+}
+
+.form-group  {
+    margin-bottom: 50px;
+
+}
+
+.formsContact p:nth-child(1){
+
+    padding-bottom: 30px;
+
+}
+
+#formsContact form button {
+    border-radius: 30px;
+    padding: 12px 25px;
+   background-color: #FDC602 !important;
+   border-color: #FDC602;
+}
+
+.iconSubmitContact {
+    margin-left: 15px;
+   font-size: 22px !important;
+   padding-top: 4px;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #CFCFCF !important;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #CFCFCF !important;
+
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #CFCFCF !important;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #CFCFCF !important;
+  }
+
+@media (max-width: 991px){
+
+    #formsContact {
+        margin-top: 50px;
+        background-position:  left -90px bottom, right -90px top;
+    }
+
+    .formsContact p:nth-child(1) {
+
+        padding-top: 10px;
+   
+    
+    }
+
+}
+
+@media (max-width: 767px){
+
+    #formsContact {
+        background: none;
+    }
+
+
+}
+
+
+@media (max-width: 310px){
+
+   
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ font-size: 15px !important;
+ 
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 15px !important;
+   
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 15px !important;
+  
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 15px !important;
+
+  }
+
+  .form-group input, .form-group textarea {
+ 
+    padding: 25px 20px;
+  
+}
+
+    
+
+}
+
+
+/* Contact Informations */
+
+#ContactInformations{
+   
+    padding-top: 30px;
+    margin-bottom: 80px !important;
+    padding-bottom: 20px;
+}
+.ContactInformations, .ConceptContactInformations {
+    width: 80%;
+    background-color: #2568EF;
+    color: white;
+    height: 180px;
+    border-radius: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.ContactInformations div p , .ConceptContactInformations div p{
+   
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+  
+}
+
+#ContactInformations .fa-map-marker-alt, #ContactInformations .fa-phone-alt, #ContactInformations .fa-envelope, #ConceptContactInformations .fa-map-marker-alt, #ConceptContactInformations .fa-phone-alt, #ConceptContactInformations .fa-envelope {
+    font-size: 40px;
+   margin-top: 10px;
+
+ 
+ 
+}
+
+.ContactInformations div  p:nth-child(1), .ConceptContactInformations div  p:nth-child(1){
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.ContactInformations div  p:nth-child(2), .ConceptContactInformations div  p:nth-child(2) {
+
+    font-size: 15px;
+}
+
+@media (max-width: 1250px) and (min-width: 992px) {
+    #ContactInformations .fa-map-marker-alt, #ContactInformations .fa-phone-alt, #ContactInformations .fa-envelope, #ConceptContactInformations .fa-map-marker-alt, #ConceptContactInformations .fa-phone-alt, #ConceptContactInformations .fa-envelope {
+        font-size: 35px;
+     
+    }
+
+    .ContactInformations div  p:nth-child(1), .ConceptContactInformations div  p:nth-child(1){
+       
+        font-size: 16px;
+    }
+
+    .ContactInformations div  p:nth-child(1), .ContactInformations div  p:nth-child(2), .ConceptContactInformations div  p:nth-child(1), .ConceptContactInformations div  p:nth-child(2)  {
+       
+        padding-left: 15px;
+    }
+    
+}
+
+@media (max-width: 991px){
+    .ContactInformations, .ConceptContactInformations {
+        height: 300px;
+    }
+
+    #ContactInformations .fa-map-marker-alt, #ContactInformations .fa-phone-alt, #ContactInformations .fa-envelope, #ConceptContactInformations .fa-map-marker-alt, #ConceptContactInformations .fa-phone-alt, #ConceptContactInformations .fa-envelope {
+       margin-top: 0px;
+       margin-left: 20%;
+    }
+    
+}
+
+
+@media (max-width: 767px){
+    .ContactInformations, .ConceptContactInformations {
+        height: 500px;
+    }
+
+    #ContactInformations .fa-map-marker-alt, #ContactInformations .fa-phone-alt, #ContactInformations .fa-envelope, #ConceptContactInformations .fa-map-marker-alt, #ConceptContactInformations .fa-phone-alt, #ConceptContactInformations .fa-envelope {
+        margin-bottom: 20px;
+       margin-left: 0;
+       font-size: 35px;
+    }
+
+    .ContactInformations div p , .ConceptContactInformations div p {
+   line-height: 10px;
+      
+    }
+    
+}
+
+
+/* Concept page */
+
+/* Header */
+
+#navbarConcept{
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    padding-bottom: 900px;
+    background: url('../img/ConceptHeaderBg.png') no-repeat;
+    background-size: 100% 35%;
+
+}
+
+/* Domicilation */
+
+#conceptDomicilation{
+    margin-top: -700px;
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    background: url('../img/ConceptDomicilationBg.png') no-repeat;
+    background-position:  left top;
+    padding-bottom: 300px;
+
+
+}
+.domicilationTxt, .formationTxt {
+    text-align: left !important;
+    padding-top: 7%;
+    color: #797975;
+    font-size: 18px;
+    padding-left: 7% !important;
+}
+
+.formationTxt {
+    padding-top: 8% !important;
+}
+
+.conceptDomicilationImg, .conceptFormationImg {
+    width: 55%;
+}
+.ConceptsectionTitle, .ConceptTitleZoneHoraire {
+
+    
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 50px;
+  
+}
+
+.ConceptsectionTitle {
+    color: #FF4B57;
+}
+.ConceptTitleZoneHoraire {
+    color: #2568EF;
+}
+@media (max-width: 1450px){
+    .conceptDomicilationImg, .conceptFormationImg {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1100px){
+    .domicilationTxt{
+     
+        padding-top: 3.2% !important;
+       
+    }
+
+    .formationTxt {
+        padding-top: 6% !important;
+
+    }
+    #conceptDomicilation, #conceptCoWorking, #conceptFormation{
+        background-position:  left -50px  top;
+        background-size: 30% !important;
+    
+    }
+}
+
+@media (max-width: 991px){
+    #conceptDomicilation{
+        margin-top: 60px !important;
+    }
+
+    .domicilationTxt, .formationTxt {
+     
+       font-size: 17px;
+       
+    }
+
+    #conceptDomicilation, #conceptCoWorking, #conceptFormation{
+        background-position:  left  top;
+        background-size: 30% ;
+    
+    }
+}
+
+@media (max-width: 814px){
+    .domicilationTxt {
+     
+        padding-top: 2% !important;
+       
+    }
+
+}
+
+@media (max-width: 767px){
+    .domicilationTxt, .formationTxt {
+        text-align: center !important;
+        margin-top: -30px !important;
+        padding-bottom: 20px;
+        padding-left: 0% !important;
+    }
+
+    #conceptDomicilation, #conceptCoWorking, #conceptFormation{
+        background: none !important;
+    
+    }
+
+    .conceptDomicilationImg, .conceptFormationImg {
+        width: 90%;
+    }
+
+    .ConceptsectionTitle, .ConceptTitleZoneHoraire {
+
+       
+        padding-bottom: 0px;
+      
+    }
+}
+
+
+/* Financement */
+
+#conceptFinancement, #conceptIncubateur, #conceptZoneHoraire {
+    margin-top: -140px;
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    background: url('../img/ConceptFinancementBg.png') no-repeat;
+    background-position:  right top;
+
+    padding-bottom: 300px;
+}
+
+.conceptFinancementImg {
+    width: 55% !important;
+    margin-right: 5%;
+}
+
+.FinancementTxt, .IncubateurTxt {
+    text-align: left !important;
+    padding-top: 7%;
+    color: #797975;
+    font-size: 18px;
+   
+}
+
+.ZoneHoraireTxt {
+    text-align: left !important;
+    padding-top: 5%;
+    color: #797975;
+    font-size: 18px;
+}
+
+
+
+@media (max-width: 991px){
+    #conceptFinancement, #conceptIncubateur, #conceptZoneHoraire{
+        margin-top: -190px;
+    }
+
+    .conceptFinancementTxt {
+     
+       font-size: 17px;
+       
+    }
+
+
+}
+
+@media (max-width: 1100px){
+    #conceptFinancement, #conceptIncubateur, #conceptZoneHoraire {
+   
+        background-position:  right -100px top !important;
+   
+    }
+}
+
+
+@media (max-width: 1450px){
+    .conceptFinancementImg {
+        width: 70% !important;
+    }
+}
+
+@media (max-width: 1163px){
+    .FinancementTxt {
+     
+        padding-top: 5% !important;
+       
+    }
+
+}
+
+@media (max-width: 991px){
+    #conceptFinancement, #conceptIncubateur, #conceptZoneHoraire{
+        margin-top: -150px;
+    }
+
+    .FinancementTxt, .IncubateurTxt, .ZoneHoraireTxt {
+     
+       font-size: 17px;
+       
+    }
+
+ 
+}
+
+@media (max-width: 814px){
+    .FinancementTxt {
+     
+        padding-top: 3% !important;
+       
+    }
+
+}
+
+@media (max-width: 767px){
+    .FinancementTxt {
+        text-align: center !important;
+        padding-top: 40px !important;
+        padding-bottom: 20px;
+
+    }
+
+    #conceptFinancement, #conceptIncubateur, #conceptZoneHoraire{
+        background: none;
+        margin-top: -200px;
+    
+    }
+
+    .conceptFinancementImg {
+        width: 100% !important;
+       
+    }
+    .ConceptsectionTitle, .ConceptTitleZoneHoraire {
+        padding-bottom: 30px;
+    }
+
+}
+
+/* Co-Working */
+
+#conceptCoWorking, #conceptFormation{
+    margin-top: -120px;
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    background: url('../img/ConceptDomicilationBg.png') no-repeat;
+    background-position:  left top;
+    padding-bottom: 300px;
+
+
+}
+
+@media (max-width: 767px){
+    #conceptCoWorking, #conceptFormation{
+        margin-top: -250px;
+    }
+
+}
+
+/* Incubateur */
+
+.IncubateurTxt {
+    padding-top: 9% !important;
+}
+
+@media (max-width: 890px){
+    .IncubateurTxt {
+        padding-top: 7% !important;
+    }
+}
+
+@media (max-width: 767px){
+    .IncubateurTxt {
+        text-align: center !important;
+       
+    }
+}
+
+/* Formation */
+.conceptFormationImg {
+    padding-bottom: 120px;
+}
+.btnFormation {
+  
+    text-decoration: none !important;
+    background-color: #FDC602;
+    color: white;
+   
+    padding: 15px 40px;
+    border-radius: 30px;
+}
+
+.btnFormation:hover{
+    color: black;
+    font-weight: bold;
+}
+
+@media (max-width: 831px) {
+    .formationTxt{
+        padding-top: 4% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .conceptFormationImg {
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 350px) {
+    .btnFormation {
+       font-size: 15px;
+        padding: 15px 20px;
+    
+    }
+}
+
+/* Zone Horaire */
+
+@media (max-width: 1164px){
+
+    .ZoneHoraireTxt {
+            padding-top: 4%;
+    }
+
+}
+
+@media (max-width: 923px){
+
+    .ZoneHoraireTxt {
+            padding-top: 3%;
+    }
+
+}
+
+@media (max-width: 767px){
+
+    .ZoneHoraireTxt {
+            text-align: center !important;
+            padding-top: 35px;
+    }
+
+}
+
+#ConceptContactInformations{
+   
+   margin-top: -130px;
+    margin-bottom: 80px !important;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 767px){
+
+    #ConceptContactInformations{
+   
+        margin-top: -250px;
+        
+     }
+
+}
+
+
+/* Informations */
+
+#ConceptInformations{
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    background: url('../img/ConceptInformaitonsBgLeft.png') no-repeat, url('../img/ConceptInformationsBgRight.png') no-repeat;
+    background-position:  right top, left top;
+    padding-bottom: 300px;
+    margin-bottom: 130px;
+}
+
+.fa-building, .fa-tv, .fa-handshake{
+
+    
+    color: #F96232;
+
+}
+.fa-tv, .fa-handshake{
+    font-size: 48px !important;
+}
+.fa-building {
+    font-size: 60px !important;
+}
+
+.infoNum {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.infoTxt {
+    padding-top: 25px;
+    font-weight: bold;
+    color: #727272;
+    margin-left: 10%;
+}
+
+.ConceptInformations .row {
+    margin-left: -4%;
+    padding-top: 50px;
+}
+
+@media (max-width: 1160px){
+    .ConceptInformations .row {
+        margin-left: -6% !important;
+    }
+}
+
+@media (max-width: 767px){
+   .infoTxt{
+    padding-bottom: 60px;
+   }
+
+   .ConceptInformations .row {
+    margin-top : -50px
+}
+#ConceptInformations{
+    background: none;
+    padding-bottom: 200px;
+}
+
+}
+
+/* Calendar Page */
+
+/* Navbar */
+
+#navbarCalendar{
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    padding-bottom: 900px;
+    background: url('../img/CalendarNavbarBg.png') no-repeat;
+    background-size: 100% 35%;
+
+}
+
+/* Partner */
+
+#CalendarPartner {
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    margin-top: -700px;
+    background: url('../img/CalendarPartnerBg.png') no-repeat;
+    background-position: top right;
+    padding-bottom: 600px;
+
+}
+
+
+.CalendarPartner .row {
+    padding-top: 100px;
+}
+
+.CalendarPartner .row div img {
+   padding-bottom: 30px;
+}
+
+@media (max-width: 991px){
+    #CalendarPartner{
+        margin-top: 60px;
+    }
+
+    #CalendarPartner{
+        background-position: 20px -100px right !important;
+        background-size: 30%;
+    }
+
+    .CalendarPartner .row {
+        padding-top: 70px;
+    }
+   
+}
+
+@media (max-width: 767px){
+    #CalendarPartner{
+        background: none;
+    }
+
+}
+
+/* Presence */
+
+#CalendarPresence {
+    margin-top: -470px;
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif;
+    padding-bottom: 30px !important;
+    background: url('../img/CalendarPresenceBg.png') no-repeat;
+    background-position: top left;
+}
+
+#CalendarPresence .carousel-inner img {
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+
+
+  #CalendarPresence .carousel-indicators li, #Calendar .carousel-indicators li{
+    display: inline-block;
+    width: 17px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 17px;
+    text-indent: -999px;
+    border: 1px solid #ADC2EC;
+    background: #ADC2EC;
+    border-radius: 50%;
+}
+
+
+
+
+#CalendarPresence .carousel-indicators .active, #Calendar .carousel-indicators .active {
+   
+    border: 1px solid #2568EF;
+    background: #2568EF;
+}
+
+@media (max-width: 991px){
+    #CalendarPresence{
+        margin-top: -500px;
+        background-position:  top left -200px;
+    }
+
+    #CalendarPresence .carousel-item img{
+       width: 80%;
+      }
+}
+
+@media (max-width: 767px){
+    #CalendarPresence{
+        margin-top: -550px;
+        background: none;
+    }
+    }
+
+
+
+/* Agenda */
+
+#Calendar {
+    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman' ,sans-serif !important;
+    padding-top: 50px;
+    background: url('../img/notreAgendaBg.png') no-repeat;
+    background-position: right;
+}
+
+#Calendar .card {
+    margin-top: 60px !important;
+    width: 80%;
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
+    border-radius: 30px;
+    overflow:hidden
+   
+}
+
+#Calendar .card-block{
+
+    padding-top: 35px;
+
+}
+
+#Calendar .card:nth-child(3) {
+ 
+    margin-bottom: 65px;
+  }
+
+.Calendardate {
+    padding-top: 50px;
+    font-size: 22px;
+   
+}
+
+.month {
+    margin-top: -20px;
+}
+.card-title {
+    font-weight: bold;
+}
+#Calendar .card-text{
+    color: #A4A4A4 !important;
+}
+
+#Calendar .cardMd .card .card-body p{
+    font-size: 15px !important;
+    font-weight: none !important;
+}
+.cardMd p:nth-child(1){
+    color: black;
+   
+}
+.month{
+    padding-top: 10px;
+}
+
+#Calendar .fa-map-marker-alt, .fa-thumbtack {
+    font-size: 20px;
+    color: #FF4B57;
+    margin-right: 10px;
+
+}
+
+
+
+.fa-thumbtack {
+    margin-left: 30px;
+
+}
+.card-block span {
+    font-size: 20px;
+    color: #727272;
+  
+}
+
+.dateCardMd {
+   padding-top: 30px;
+   font-size: 20px;
+   font-weight: bold;
+    
+   
+}
+
+@media (max-width: 1355px){
+    #Calendar .card-block{
+
+        margin-left: 6%;
+        padding-top: 25px;
+    
+    }
+    .card-title {
+        font-size: 22px;
+        
+    }
+
+
+}
+
+@media (max-width: 1275px){
+    #Calendar .card-block{
+
+        padding-top: 18px;
+    
+    }
+    .card-block span{
+        font-size: 18px;
+    }
+    .card-block .row {
+       
+        margin-top: -5px !important;
+    }
+}
+
+@media (max-width: 1200px){
+    #Calendar .card-block{
+
+        margin-left: 15%;
+    
+    }
+}
+
+@media (min-width: 1061px){
+
+    .cardMd{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1061px){
+
+    .cardLg{
+        display: none;
+    }
+
+}
+
+@media (max-width: 767px){
+    #Calendar {
+   
+        background: none;
+ 
+    }
+
+    #Calendar .card:nth-child(3) {
+ 
+        margin-bottom: 60px;
+      }
+}
+
+@media (max-width: 344px){
+
+    .cardMd .card{
+        width: 17rem !important;
+    }
+
+}
